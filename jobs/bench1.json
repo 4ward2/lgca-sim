@@ -1,0 +1,26 @@
+[
+ {
+  "name": "bench_P_B_s4242",
+  "cmd": "python sim/b_arm.py train --task P --seed 4242 --out out/bench_P_B_s4242 --threads 4 && python sim/b_arm.py evaluate out/bench_P_B_s4242 --hook --threads 4"
+ },
+ {
+  "name": "bench_M_B_s4242",
+  "cmd": "python sim/b_arm.py train --task M --seed 4242 --out out/bench_M_B_s4242 --threads 4 && python sim/b_arm.py evaluate out/bench_M_B_s4242 --hook --threads 4"
+ },
+ {
+  "name": "bench_cycles_B_s4242",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 4242 --out out/bench_cycles_B_s4242 --threads 4 && python sim/b_arm.py evaluate out/bench_cycles_B_s4242 --hook --threads 4"
+ },
+ {
+  "name": "bench_inpaint_B_s4242",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 4242 --out out/bench_inpaint_B_s4242 --threads 4 && python sim/b_arm.py evaluate out/bench_inpaint_B_s4242 --hook --threads 4"
+ },
+ {
+  "name": "bench_cycles_R_s4242",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 4242 --out out/bench_cycles_R_s4242 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "bench_inpaint_F_s4242",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 4242 --out out/bench_inpaint_F_s4242 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ }
+]

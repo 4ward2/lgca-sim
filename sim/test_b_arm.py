@@ -203,7 +203,7 @@ def test_frozen_gate():
     from unittest.mock import patch
     config = dict(task="P", steps=2000, eval_every=250, n_val=None,
                   deploy=ba.DEPLOY["P"], thr=ba.THR)
-    final = dict(last_step=2000, best_deploy_step=250)
+    final = dict(last_step=2000, best_deploy_step=250, val={"score": 1.0}, val2={"score": 0.5})
     cases = [("config", "steps", 100), ("config", "steps", 2000.0),
              ("config", "eval_every", 50), ("config", "eval_every", True),
              ("config", "n_val", 1), ("config", "n_val", "missing"),
@@ -212,7 +212,10 @@ def test_frozen_gate():
              ("final", "best_deploy_step", 251), ("final", "best_deploy_step", 0),
              ("final", "best_deploy_step", 250.0),
              ("last.pt", "step", 1999), ("best_deploy.pt", "step", 500),
-             ("final", None, None), ("final", None, [])]
+             ("final", None, None), ("final", None, []),
+             ("final", "val", "missing"), ("final", "val2", "missing"), ("final", "val", []),
+             ("final", "val", {}), ("final", "val2", {"score": None}), ("final", "val", {"score": True}),
+             ("final", "val", {"score": float("nan")}), ("final", "val2", {"score": float("inf")})]
     with tempfile.TemporaryDirectory() as out, \
             patch.object(ba, "fixed_set", side_effect=AssertionError("data generated")), \
             patch.object(ba, "test_specs", side_effect=AssertionError("test specs requested")), \

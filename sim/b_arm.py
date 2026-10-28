@@ -868,6 +868,11 @@ def frozen_b_problems(run_dir):
     best = fin.get("best_deploy_step")
     if not (type(best) is int and EVAL_EVERY <= best <= STEPS and best % EVAL_EVERY == 0):
         problems.append("final best_deploy_step invalid")
+    for key in ("val", "val2"):  # same condition as report_a2: final.val/val2 objects with a finite score
+        v = fin.get(key)
+        sc = v.get("score") if isinstance(v, dict) else None
+        if not (type(sc) in (int, float) and math.isfinite(sc)):
+            problems.append(f"final {key}.score missing or non-finite")
     for name, expected in (("last.pt", STEPS), ("best_deploy.pt", best)):
         try:
             ck = torch.load(os.path.join(run_dir, name), map_location="cpu")

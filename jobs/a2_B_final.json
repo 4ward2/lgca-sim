@@ -1,0 +1,282 @@
+[
+ {
+  "name": "P_B_s1",
+  "cmd": "python sim/b_arm.py train --task P --seed 1 --out out/P_B_s1 --threads 4 && python sim/b_arm.py evaluate out/P_B_s1 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s2",
+  "cmd": "python sim/b_arm.py train --task P --seed 2 --out out/P_B_s2 --threads 4 && python sim/b_arm.py evaluate out/P_B_s2 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s3",
+  "cmd": "python sim/b_arm.py train --task P --seed 3 --out out/P_B_s3 --threads 4 && python sim/b_arm.py evaluate out/P_B_s3 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s4",
+  "cmd": "python sim/b_arm.py train --task P --seed 4 --out out/P_B_s4 --threads 4 && python sim/b_arm.py evaluate out/P_B_s4 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s5",
+  "cmd": "python sim/b_arm.py train --task P --seed 5 --out out/P_B_s5 --threads 4 && python sim/b_arm.py evaluate out/P_B_s5 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s6",
+  "cmd": "python sim/b_arm.py train --task P --seed 6 --out out/P_B_s6 --threads 4 && python sim/b_arm.py evaluate out/P_B_s6 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s7",
+  "cmd": "python sim/b_arm.py train --task P --seed 7 --out out/P_B_s7 --threads 4 && python sim/b_arm.py evaluate out/P_B_s7 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s8",
+  "cmd": "python sim/b_arm.py train --task P --seed 8 --out out/P_B_s8 --threads 4 && python sim/b_arm.py evaluate out/P_B_s8 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s9",
+  "cmd": "python sim/b_arm.py train --task P --seed 9 --out out/P_B_s9 --threads 4 && python sim/b_arm.py evaluate out/P_B_s9 --locked --threads 4"
+ },
+ {
+  "name": "P_B_s10",
+  "cmd": "python sim/b_arm.py train --task P --seed 10 --out out/P_B_s10 --threads 4 && python sim/b_arm.py evaluate out/P_B_s10 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s1",
+  "cmd": "python sim/b_arm.py train --task A --seed 1 --out out/A_B_s1 --threads 4 && python sim/b_arm.py evaluate out/A_B_s1 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s2",
+  "cmd": "python sim/b_arm.py train --task A --seed 2 --out out/A_B_s2 --threads 4 && python sim/b_arm.py evaluate out/A_B_s2 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s3",
+  "cmd": "python sim/b_arm.py train --task A --seed 3 --out out/A_B_s3 --threads 4 && python sim/b_arm.py evaluate out/A_B_s3 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s4",
+  "cmd": "python sim/b_arm.py train --task A --seed 4 --out out/A_B_s4 --threads 4 && python sim/b_arm.py evaluate out/A_B_s4 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s5",
+  "cmd": "python sim/b_arm.py train --task A --seed 5 --out out/A_B_s5 --threads 4 && python sim/b_arm.py evaluate out/A_B_s5 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s6",
+  "cmd": "python sim/b_arm.py train --task A --seed 6 --out out/A_B_s6 --threads 4 && python sim/b_arm.py evaluate out/A_B_s6 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s7",
+  "cmd": "python sim/b_arm.py train --task A --seed 7 --out out/A_B_s7 --threads 4 && python sim/b_arm.py evaluate out/A_B_s7 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s8",
+  "cmd": "python sim/b_arm.py train --task A --seed 8 --out out/A_B_s8 --threads 4 && python sim/b_arm.py evaluate out/A_B_s8 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s9",
+  "cmd": "python sim/b_arm.py train --task A --seed 9 --out out/A_B_s9 --threads 4 && python sim/b_arm.py evaluate out/A_B_s9 --locked --threads 4"
+ },
+ {
+  "name": "A_B_s10",
+  "cmd": "python sim/b_arm.py train --task A --seed 10 --out out/A_B_s10 --threads 4 && python sim/b_arm.py evaluate out/A_B_s10 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s1",
+  "cmd": "python sim/b_arm.py train --task M --seed 1 --out out/M_B_s1 --threads 4 && python sim/b_arm.py evaluate out/M_B_s1 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s2",
+  "cmd": "python sim/b_arm.py train --task M --seed 2 --out out/M_B_s2 --threads 4 && python sim/b_arm.py evaluate out/M_B_s2 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s3",
+  "cmd": "python sim/b_arm.py train --task M --seed 3 --out out/M_B_s3 --threads 4 && python sim/b_arm.py evaluate out/M_B_s3 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s4",
+  "cmd": "python sim/b_arm.py train --task M --seed 4 --out out/M_B_s4 --threads 4 && python sim/b_arm.py evaluate out/M_B_s4 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s5",
+  "cmd": "python sim/b_arm.py train --task M --seed 5 --out out/M_B_s5 --threads 4 && python sim/b_arm.py evaluate out/M_B_s5 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s6",
+  "cmd": "python sim/b_arm.py train --task M --seed 6 --out out/M_B_s6 --threads 4 && python sim/b_arm.py evaluate out/M_B_s6 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s7",
+  "cmd": "python sim/b_arm.py train --task M --seed 7 --out out/M_B_s7 --threads 4 && python sim/b_arm.py evaluate out/M_B_s7 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s8",
+  "cmd": "python sim/b_arm.py train --task M --seed 8 --out out/M_B_s8 --threads 4 && python sim/b_arm.py evaluate out/M_B_s8 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s9",
+  "cmd": "python sim/b_arm.py train --task M --seed 9 --out out/M_B_s9 --threads 4 && python sim/b_arm.py evaluate out/M_B_s9 --locked --threads 4"
+ },
+ {
+  "name": "M_B_s10",
+  "cmd": "python sim/b_arm.py train --task M --seed 10 --out out/M_B_s10 --threads 4 && python sim/b_arm.py evaluate out/M_B_s10 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s1",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 1 --out out/cycles_reach_B_s1 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s1 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s2",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 2 --out out/cycles_reach_B_s2 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s2 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s3",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 3 --out out/cycles_reach_B_s3 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s3 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s4",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 4 --out out/cycles_reach_B_s4 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s4 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s5",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 5 --out out/cycles_reach_B_s5 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s5 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s6",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 6 --out out/cycles_reach_B_s6 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s6 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s7",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 7 --out out/cycles_reach_B_s7 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s7 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s8",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 8 --out out/cycles_reach_B_s8 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s8 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s9",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 9 --out out/cycles_reach_B_s9 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s9 --locked --threads 4"
+ },
+ {
+  "name": "cycles_reach_B_s10",
+  "cmd": "python sim/b_arm.py train --task cycles_reach --seed 10 --out out/cycles_reach_B_s10 --threads 4 && python sim/b_arm.py evaluate out/cycles_reach_B_s10 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s1",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 1 --out out/cycles_B_s1 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s1 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s2",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 2 --out out/cycles_B_s2 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s2 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s3",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 3 --out out/cycles_B_s3 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s3 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s4",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 4 --out out/cycles_B_s4 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s4 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s5",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 5 --out out/cycles_B_s5 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s5 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s6",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 6 --out out/cycles_B_s6 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s6 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s7",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 7 --out out/cycles_B_s7 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s7 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s8",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 8 --out out/cycles_B_s8 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s8 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s9",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 9 --out out/cycles_B_s9 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s9 --locked --threads 4"
+ },
+ {
+  "name": "cycles_B_s10",
+  "cmd": "python sim/b_arm.py train --task cycles --seed 10 --out out/cycles_B_s10 --threads 4 && python sim/b_arm.py evaluate out/cycles_B_s10 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s1",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 1 --out out/inpaint_B_s1 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s1 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s2",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 2 --out out/inpaint_B_s2 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s2 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s3",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 3 --out out/inpaint_B_s3 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s3 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s4",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 4 --out out/inpaint_B_s4 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s4 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s5",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 5 --out out/inpaint_B_s5 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s5 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s6",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 6 --out out/inpaint_B_s6 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s6 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s7",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 7 --out out/inpaint_B_s7 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s7 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s8",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 8 --out out/inpaint_B_s8 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s8 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s9",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 9 --out out/inpaint_B_s9 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s9 --locked --threads 4"
+ },
+ {
+  "name": "inpaint_B_s10",
+  "cmd": "python sim/b_arm.py train --task inpaint --seed 10 --out out/inpaint_B_s10 --threads 4 && python sim/b_arm.py evaluate out/inpaint_B_s10 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s1",
+  "cmd": "python sim/b_arm.py train --task life --seed 1 --out out/life_B_s1 --threads 4 && python sim/b_arm.py evaluate out/life_B_s1 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s2",
+  "cmd": "python sim/b_arm.py train --task life --seed 2 --out out/life_B_s2 --threads 4 && python sim/b_arm.py evaluate out/life_B_s2 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s3",
+  "cmd": "python sim/b_arm.py train --task life --seed 3 --out out/life_B_s3 --threads 4 && python sim/b_arm.py evaluate out/life_B_s3 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s4",
+  "cmd": "python sim/b_arm.py train --task life --seed 4 --out out/life_B_s4 --threads 4 && python sim/b_arm.py evaluate out/life_B_s4 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s5",
+  "cmd": "python sim/b_arm.py train --task life --seed 5 --out out/life_B_s5 --threads 4 && python sim/b_arm.py evaluate out/life_B_s5 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s6",
+  "cmd": "python sim/b_arm.py train --task life --seed 6 --out out/life_B_s6 --threads 4 && python sim/b_arm.py evaluate out/life_B_s6 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s7",
+  "cmd": "python sim/b_arm.py train --task life --seed 7 --out out/life_B_s7 --threads 4 && python sim/b_arm.py evaluate out/life_B_s7 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s8",
+  "cmd": "python sim/b_arm.py train --task life --seed 8 --out out/life_B_s8 --threads 4 && python sim/b_arm.py evaluate out/life_B_s8 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s9",
+  "cmd": "python sim/b_arm.py train --task life --seed 9 --out out/life_B_s9 --threads 4 && python sim/b_arm.py evaluate out/life_B_s9 --locked --threads 4"
+ },
+ {
+  "name": "life_B_s10",
+  "cmd": "python sim/b_arm.py train --task life --seed 10 --out out/life_B_s10 --threads 4 && python sim/b_arm.py evaluate out/life_B_s10 --locked --threads 4"
+ }
+]

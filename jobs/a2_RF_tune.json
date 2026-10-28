@@ -1,0 +1,482 @@
+[
+ {
+  "name": "cycles_reach_R_G384_alpha0.0_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 0 --out out/cycles_reach_R_G384_alpha0.0_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.0_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 101 --out out/cycles_reach_R_G384_alpha0.0_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.0_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 102 --out out/cycles_reach_R_G384_alpha0.0_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.0_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 0 --out out/cycles_reach_R_G384_alpha0.0_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.0_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 101 --out out/cycles_reach_R_G384_alpha0.0_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.0_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 102 --out out/cycles_reach_R_G384_alpha0.0_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.5_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 0 --out out/cycles_reach_R_G384_alpha0.5_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.5_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 101 --out out/cycles_reach_R_G384_alpha0.5_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.5_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 102 --out out/cycles_reach_R_G384_alpha0.5_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.5_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 0 --out out/cycles_reach_R_G384_alpha0.5_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.5_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 101 --out out/cycles_reach_R_G384_alpha0.5_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "cycles_reach_R_G384_alpha0.5_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm R --G 384 --seed 102 --out out/cycles_reach_R_G384_alpha0.5_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "cycles_reach_F_G384_K1_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 0 --out out/cycles_reach_F_G384_K1_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "cycles_reach_F_G384_K1_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 101 --out out/cycles_reach_F_G384_K1_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "cycles_reach_F_G384_K1_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 102 --out out/cycles_reach_F_G384_K1_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "cycles_reach_F_G384_K2_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 0 --out out/cycles_reach_F_G384_K2_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "cycles_reach_F_G384_K2_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 101 --out out/cycles_reach_F_G384_K2_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "cycles_reach_F_G384_K2_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 102 --out out/cycles_reach_F_G384_K2_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "cycles_reach_F_G384_K4_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 0 --out out/cycles_reach_F_G384_K4_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "cycles_reach_F_G384_K4_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 101 --out out/cycles_reach_F_G384_K4_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "cycles_reach_F_G384_K4_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 102 --out out/cycles_reach_F_G384_K4_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "cycles_reach_F_G384_K8_s0",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 0 --out out/cycles_reach_F_G384_K8_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "cycles_reach_F_G384_K8_s101",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 101 --out out/cycles_reach_F_G384_K8_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "cycles_reach_F_G384_K8_s102",
+  "cmd": "python sim/train_a2.py --task cycles_reach --arm F --G 384 --seed 102 --out out/cycles_reach_F_G384_K8_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.0_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 0 --out out/cycles_R_G384_alpha0.0_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.0_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 101 --out out/cycles_R_G384_alpha0.0_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.0_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 102 --out out/cycles_R_G384_alpha0.0_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.0_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 0 --out out/cycles_R_G384_alpha0.0_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.0_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 101 --out out/cycles_R_G384_alpha0.0_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.0_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 102 --out out/cycles_R_G384_alpha0.0_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.5_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 0 --out out/cycles_R_G384_alpha0.5_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.5_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 101 --out out/cycles_R_G384_alpha0.5_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.5_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 102 --out out/cycles_R_G384_alpha0.5_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.5_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 0 --out out/cycles_R_G384_alpha0.5_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.5_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 101 --out out/cycles_R_G384_alpha0.5_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "cycles_R_G384_alpha0.5_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm R --G 384 --seed 102 --out out/cycles_R_G384_alpha0.5_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "cycles_F_G384_K1_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 0 --out out/cycles_F_G384_K1_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "cycles_F_G384_K1_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 101 --out out/cycles_F_G384_K1_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "cycles_F_G384_K1_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 102 --out out/cycles_F_G384_K1_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "cycles_F_G384_K2_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 0 --out out/cycles_F_G384_K2_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "cycles_F_G384_K2_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 101 --out out/cycles_F_G384_K2_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "cycles_F_G384_K2_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 102 --out out/cycles_F_G384_K2_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "cycles_F_G384_K4_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 0 --out out/cycles_F_G384_K4_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "cycles_F_G384_K4_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 101 --out out/cycles_F_G384_K4_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "cycles_F_G384_K4_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 102 --out out/cycles_F_G384_K4_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "cycles_F_G384_K8_s0",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 0 --out out/cycles_F_G384_K8_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "cycles_F_G384_K8_s101",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 101 --out out/cycles_F_G384_K8_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "cycles_F_G384_K8_s102",
+  "cmd": "python sim/train_a2.py --task cycles --arm F --G 384 --seed 102 --out out/cycles_F_G384_K8_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.0_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 0 --out out/inpaint_R_G384_alpha0.0_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.0_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 101 --out out/inpaint_R_G384_alpha0.0_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.0_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 102 --out out/inpaint_R_G384_alpha0.0_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.0_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 0 --out out/inpaint_R_G384_alpha0.0_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.0_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 101 --out out/inpaint_R_G384_alpha0.0_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.0_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 102 --out out/inpaint_R_G384_alpha0.0_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.5_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 0 --out out/inpaint_R_G384_alpha0.5_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.5_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 101 --out out/inpaint_R_G384_alpha0.5_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.5_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 102 --out out/inpaint_R_G384_alpha0.5_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.5_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 0 --out out/inpaint_R_G384_alpha0.5_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.5_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 101 --out out/inpaint_R_G384_alpha0.5_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "inpaint_R_G384_alpha0.5_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 102 --out out/inpaint_R_G384_alpha0.5_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "inpaint_F_G384_K1_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 0 --out out/inpaint_F_G384_K1_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "inpaint_F_G384_K1_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 101 --out out/inpaint_F_G384_K1_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "inpaint_F_G384_K1_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 102 --out out/inpaint_F_G384_K1_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "inpaint_F_G384_K2_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 0 --out out/inpaint_F_G384_K2_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "inpaint_F_G384_K2_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 101 --out out/inpaint_F_G384_K2_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "inpaint_F_G384_K2_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 102 --out out/inpaint_F_G384_K2_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "inpaint_F_G384_K4_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 0 --out out/inpaint_F_G384_K4_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "inpaint_F_G384_K4_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 101 --out out/inpaint_F_G384_K4_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "inpaint_F_G384_K4_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 102 --out out/inpaint_F_G384_K4_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "inpaint_F_G384_K8_s0",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 0 --out out/inpaint_F_G384_K8_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "inpaint_F_G384_K8_s101",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 101 --out out/inpaint_F_G384_K8_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "inpaint_F_G384_K8_s102",
+  "cmd": "python sim/train_a2.py --task inpaint --arm F --G 384 --seed 102 --out out/inpaint_F_G384_K8_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "life_R_G384_alpha0.0_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 0 --out out/life_R_G384_alpha0.0_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.0_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 101 --out out/life_R_G384_alpha0.0_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.0_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 102 --out out/life_R_G384_alpha0.0_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.0_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 0 --out out/life_R_G384_alpha0.0_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.0_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 101 --out out/life_R_G384_alpha0.0_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.0_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 102 --out out/life_R_G384_alpha0.0_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.5_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 0 --out out/life_R_G384_alpha0.5_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.5_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 101 --out out/life_R_G384_alpha0.5_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.5_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 102 --out out/life_R_G384_alpha0.5_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.5_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 0 --out out/life_R_G384_alpha0.5_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.5_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 101 --out out/life_R_G384_alpha0.5_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "life_R_G384_alpha0.5_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task life --arm R --G 384 --seed 102 --out out/life_R_G384_alpha0.5_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "life_F_G384_K1_s0",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 0 --out out/life_F_G384_K1_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "life_F_G384_K1_s101",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 101 --out out/life_F_G384_K1_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "life_F_G384_K1_s102",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 102 --out out/life_F_G384_K1_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "life_F_G384_K2_s0",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 0 --out out/life_F_G384_K2_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "life_F_G384_K2_s101",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 101 --out out/life_F_G384_K2_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "life_F_G384_K2_s102",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 102 --out out/life_F_G384_K2_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "life_F_G384_K4_s0",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 0 --out out/life_F_G384_K4_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "life_F_G384_K4_s101",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 101 --out out/life_F_G384_K4_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "life_F_G384_K4_s102",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 102 --out out/life_F_G384_K4_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "life_F_G384_K8_s0",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 0 --out out/life_F_G384_K8_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "life_F_G384_K8_s101",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 101 --out out/life_F_G384_K8_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "life_F_G384_K8_s102",
+  "cmd": "python sim/train_a2.py --task life --arm F --G 384 --seed 102 --out out/life_F_G384_K8_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 0 --out out/midframe_R_G384_alpha0.0_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 101 --out out/midframe_R_G384_alpha0.0_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 102 --out out/midframe_R_G384_alpha0.0_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 0 --out out/midframe_R_G384_alpha0.0_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 101 --out out/midframe_R_G384_alpha0.0_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 102 --out out/midframe_R_G384_alpha0.0_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.5_beta2.0_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 0 --out out/midframe_R_G384_alpha0.5_beta2.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.5_beta2.0_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 101 --out out/midframe_R_G384_alpha0.5_beta2.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.5_beta2.0_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 102 --out out/midframe_R_G384_alpha0.5_beta2.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 2.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.5_beta4.0_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 0 --out out/midframe_R_G384_alpha0.5_beta4.0_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.5_beta4.0_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 101 --out out/midframe_R_G384_alpha0.5_beta4.0_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.5_beta4.0_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 102 --out out/midframe_R_G384_alpha0.5_beta4.0_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.5 --beta 4.0"
+ },
+ {
+  "name": "midframe_F_G384_K1_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 0 --out out/midframe_F_G384_K1_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "midframe_F_G384_K1_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 101 --out out/midframe_F_G384_K1_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "midframe_F_G384_K1_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 102 --out out/midframe_F_G384_K1_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 1"
+ },
+ {
+  "name": "midframe_F_G384_K2_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 0 --out out/midframe_F_G384_K2_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "midframe_F_G384_K2_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 101 --out out/midframe_F_G384_K2_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "midframe_F_G384_K2_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 102 --out out/midframe_F_G384_K2_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 2"
+ },
+ {
+  "name": "midframe_F_G384_K4_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 0 --out out/midframe_F_G384_K4_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "midframe_F_G384_K4_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 101 --out out/midframe_F_G384_K4_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "midframe_F_G384_K4_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 102 --out out/midframe_F_G384_K4_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s0",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 0 --out out/midframe_F_G384_K8_s0 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "midframe_F_G384_K8_s101",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 101 --out out/midframe_F_G384_K8_s101 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ },
+ {
+  "name": "midframe_F_G384_K8_s102",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 102 --out out/midframe_F_G384_K8_s102 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8"
+ }
+]

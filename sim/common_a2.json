@@ -92,5 +92,5 @@
   "midframe"
  ],
  "inherits": "common.json @ 3bb0dd5 (Stage A lock) for the R/F recipe",
- "locked": false
+ "locked": true
 }

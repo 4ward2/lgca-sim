@@ -197,7 +197,62 @@ def test_smoke_train():
     print("smoke train + hook evaluation + diag ok")
 
 
+def test_frozen_gate():
+    """Every refusal starts from a valid synthetic run; no model or data is loaded."""
+    import tempfile
+    from unittest.mock import patch
+    config = dict(task="P", steps=2000, eval_every=250, n_val=None,
+                  deploy=ba.DEPLOY["P"], thr=ba.THR)
+    final = dict(last_step=2000, best_deploy_step=250)
+    cases = [("config", "steps", 100), ("config", "steps", 2000.0),
+             ("config", "eval_every", 50), ("config", "eval_every", True),
+             ("config", "n_val", 1), ("config", "n_val", "missing"),
+             ("config", "deploy", "wrong"), ("config", "thr", 3),
+             ("final", "last_step", 1999), ("final", "last_step", 2000.0),
+             ("final", "best_deploy_step", 251), ("final", "best_deploy_step", 0),
+             ("final", "best_deploy_step", 250.0),
+             ("last.pt", "step", 1999), ("best_deploy.pt", "step", 500),
+             ("final", None, None), ("final", None, [])]
+    with tempfile.TemporaryDirectory() as out, \
+            patch.object(ba, "fixed_set", side_effect=AssertionError("data generated")), \
+            patch.object(ba, "test_specs", side_effect=AssertionError("test specs requested")), \
+            patch.object(ba, "load_run", side_effect=AssertionError("model loaded before refusal")):
+        def baseline():
+            for name, obj in (("config", config), ("final", final)):
+                with open(os.path.join(out, name + ".json"), "w") as f:
+                    json.dump(obj, f)
+            torch.save(dict(step=2000), os.path.join(out, "last.pt"))
+            torch.save(dict(step=250), os.path.join(out, "best_deploy.pt"))
+            assert ba.frozen_b_problems(out) == []
+        for name, key, value in cases:
+            baseline()
+            path = os.path.join(out, name if name.endswith(".pt") else name + ".json")
+            if name.endswith(".pt"):
+                torch.save({key: value}, path)
+            elif key is None:
+                if value is None:
+                    os.remove(path)
+                else:
+                    with open(path, "w") as f: json.dump(value, f)
+            else:
+                obj = dict(config if name == "config" else final)
+                if value == "missing": del obj[key]
+                else: obj[key] = value
+                with open(path, "w") as f: json.dump(obj, f)
+            expected = name if key is None or name.endswith(".pt") else key
+            try:
+                ba.main(["evaluate", out, "--locked", "--threads", "2"])
+                raise AssertionError("invalid frozen run accepted")
+            except SystemExit as exc:
+                assert expected in str(exc), (name, key, str(exc))
+            assert not os.path.exists(os.path.join(out, "test.json"))
+    print("frozen B gate tests ok (synthetic; no training or data generation)")
+
+
 if __name__ == "__main__":
+    test_frozen_gate()
+    if sys.argv[1:] == ["gate"]:
+        sys.exit(0)
     test_four_state()
     test_adapter_consistency()
     test_oracles()

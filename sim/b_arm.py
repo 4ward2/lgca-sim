@@ -838,18 +838,52 @@ def eval_test(cfg, ck, locked):
     return out
 
 
+def frozen_b_problems(run_dir):
+    """Audit frozen artifacts before loading models or requesting any evaluation data."""
+    problems = []
+    def obj(name):
+        try:
+            with open(os.path.join(run_dir, name), encoding="utf-8-sig") as f:
+                value = json.load(f)
+            if not isinstance(value, dict):
+                raise ValueError("not an object")
+            return value
+        except Exception as exc:
+            problems.append(f"{name}: {exc}")
+            return {}
+    def integer(value, expected):
+        return type(value) is int and value == expected
+    cfg, fin = obj("config.json"), obj("final.json")
+    for key, expected in (("steps", STEPS), ("eval_every", EVAL_EVERY)):
+        if not integer(cfg.get(key), expected):
+            problems.append(f"config {key} must be {expected}")
+    if "n_val" not in cfg or cfg["n_val"] is not None:
+        problems.append("config n_val must be present and None")
+    if cfg.get("task") not in DEPLOY or cfg.get("deploy") != DEPLOY.get(cfg.get("task")):
+        problems.append("config deploy mismatch")
+    if type(cfg.get("thr")) not in (int, float) or cfg["thr"] != THR:
+        problems.append("config thr mismatch")
+    if not integer(fin.get("last_step"), STEPS):
+        problems.append("final last_step mismatch")
+    best = fin.get("best_deploy_step")
+    if not (type(best) is int and EVAL_EVERY <= best <= STEPS and best % EVAL_EVERY == 0):
+        problems.append("final best_deploy_step invalid")
+    for name, expected in (("last.pt", STEPS), ("best_deploy.pt", best)):
+        try:
+            ck = torch.load(os.path.join(run_dir, name), map_location="cpu")
+            if not integer(ck.get("step"), expected):
+                problems.append(f"{name} step mismatch")
+        except Exception as exc:
+            problems.append(f"{name}: {exc}")
+    return problems
+
+
 def evaluate(a):
     torch.set_num_threads(a.threads)
     if a.locked:
-        cfg = json.load(open(os.path.join(a.run_dir, "config.json")))
-        for key, expected in (("steps", 2000), ("eval_every", 250)):
-            if type(cfg.get(key)) is not int or cfg[key] != expected:
-                raise SystemExit(f"locked evaluation requires frozen {key}={expected}")
-        if "n_val" not in cfg or cfg["n_val"] is not None or cfg.get("deploy") != DEPLOY[cfg["task"]]:
-            raise SystemExit("locked evaluation requires frozen n_val/deploy")
-        last_step = torch.load(os.path.join(a.run_dir, "last.pt"), map_location="cpu")["step"]
-        if type(last_step) is not int or last_step != 2000:
-            raise SystemExit("locked evaluation requires last.pt at step 2000")
+        problems = frozen_b_problems(a.run_dir)
+        if problems:
+            raise SystemExit("locked evaluation requires frozen artifacts: " + "; ".join(problems))
     cfg, ck = load_run(a.run_dir)
     if a.locked:
         print("LOCKED evaluation: test seeds (12345 / 24680) and extrapolation sizes", flush=True)

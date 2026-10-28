@@ -68,6 +68,8 @@ def inherit(final_a=FINAL_A, final_a2=FINAL_A2):
     target = os.path.join(os.path.dirname(final_a2), "inherit_stageA.json")
     records = _object(target) if os.path.exists(target) else {}
     for path, hashes in records.items():
+        if not os.path.isdir(path):
+            raise ValueError(f"listed directory missing: {path}")
         if _hashes(path) != hashes:
             raise ValueError(f"hash mismatch: {path}")
     updated = dict(records)
@@ -121,6 +123,8 @@ def _check_run(final_dir, d, seed, arm, final_a2=FINAL_A2):
             require(isinstance(r.get("checkpoint_steps"), dict), "checkpoint_steps missing")
             integer(r["checkpoint_steps"], "best_deploy", step)
         elif arm in "RF":
+            require(G in (384, 1536) if stage_a else G == COMPARE_G,
+                    "directory G invalid (registered budget)")
             integer(cfg, "G", G if stage_a else COMPARE_G)
             if stage_a:
                 target = os.path.join(os.path.dirname(final_a2), "inherit_stageA.json")

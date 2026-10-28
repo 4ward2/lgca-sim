@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import report_a2 as ra
 
 assert ra.DEPLOY == b_arm.DEPLOY and ra.THR == b_arm.THR
+assert ra.B_BUDGET == dict(steps=b_arm.STEPS, eval_every=b_arm.EVAL_EVERY)
 assert ra.N_TEST_A == tasks.N_TEST and ra.N_TEST_A2 == evaluate_a2.N_TEST
 
 CRIT_KEYS = ("", "_v2", "_ws", "_wT4", "_wTmax")
@@ -223,4 +224,96 @@ assert set(g["win_B"]) == set(ra.MAIN) and g["new_lines"] == {}
 assert r["sources"] and all(os.path.isabs(p) for paths in r["sources"].values() for p in paths)
 s = ra.summarize({("P", "B", None): {1: {"M1": 1, "M2": 0, "bar": 0}}}, seeds=(1,))
 assert s[("P", "B", None)]["success_indist"] == 1 and s[("P", "B", None)]["success_extra"] == 0
+# R1/R3: independent mutations of otherwise admitted new-task R/F runs.
+for arm in ("R", "F"):
+    for filename, key, value, why in (
+        ("directory", None, "life_{}_G1536_cfg_s1", "directory G"),
+        ("directory", None, "life_{}_cfg_s1", "directory G"),
+        ("config", "G", 1536, "G mismatch"),
+        ("config", "G", 384.0, "G mismatch"),
+        ("config", "steps", 5999, "steps"),
+        ("test", "hook", True, "hook"),
+        ("test", "test_seed", 777, "test_seed"),
+        ("test", "n_test", 2, "n_test")):
+        fa, fa2 = dirs()
+        write(fa2, "life", arm, 384, 1, 1, 1)
+        name = f"life_{arm}_G384_cfg_s1"
+        assert ra._check_run(fa2, name, 1, arm, fa2)[0] is not None
+        if filename == "directory":
+            new = value.format(arm)
+            os.rename(os.path.join(fa2, name), os.path.join(fa2, new))
+            name = new
+        else:
+            path = os.path.join(fa2, name, filename + ".json")
+            obj = json.load(open(path)); obj[key] = value
+            json.dump(obj, open(path, "w"))
+        rec, reason = ra._check_run(fa2, name, 1, arm, fa2)
+        assert rec is None and why in reason, (filename, key, reason)
+
+# The highest median may be later; equal maxima select the first.
+fa, fa2 = dirs()
+write(fa2, "life", "R", 384, 1, 1, 1)
+name = "life_R_G384_cfg_s1"
+sel = os.path.join(os.path.dirname(fa2), "selected_life_R.json")
+json.dump([dict(cfg={"tuned": 2}, median=0), dict(cfg={"tuned": 1}, median=1)], open(sel, "w"))
+assert ra._check_run(fa2, name, 1, "R", fa2)[0] is not None
+json.dump([dict(cfg={"tuned": 1}, median=1), dict(cfg={"tuned": 2}, median=1)], open(sel, "w"))
+assert ra._check_run(fa2, name, 1, "R", fa2)[0] is not None
+path = os.path.join(fa2, name, "config.json")
+obj = json.load(open(path)); obj["tuned"] = 2
+json.dump(obj, open(path, "w"))
+rec, reason = ra._check_run(fa2, name, 1, "R", fa2)
+assert rec is None and "selected cfg mismatch" in reason
+
+# Merge a genuinely unlisted complete Y, skip incomplete Z, refuse deleted X atomically.
+fa, fa2 = dirs()
+write(fa, "P", "R", 384, 1, 1, 1)
+target = os.path.join(os.path.dirname(fa2), "inherit_stageA.json")
+x = os.path.abspath(os.path.join(fa, "P_R_G384_cfg_s1"))
+original = json.load(open(target))[x]
+write(fa, "A", "R", 384, 1, 1, 1)
+y = os.path.abspath(os.path.join(fa, "A_R_G384_cfg_s1"))
+# write() normally registers Stage A fixtures; remove Y to exercise the merge.
+json.dump({x: original}, open(target, "w"))
+write(fa, "M", "R", 384, 1, 1, 1, fail=True)
+z = os.path.abspath(os.path.join(fa, "M_R_G384_cfg_s1"))
+merged = ra.inherit(fa, fa2)
+assert set(merged) == {x, y} and merged[x] == original and z not in merged
+assert json.load(open(target)) == merged
+before = open(target, "rb").read()
+shutil.rmtree(x)
+try:
+    ra.inherit(fa, fa2)
+    raise AssertionError("deleted inherited run accepted")
+except ValueError as exc:
+    assert "listed directory missing" in str(exc)
+    assert open(target, "rb").read() == before
+
+# Producer identity: synthetic data/scoring only, with real generators forbidden.
+from unittest.mock import Mock, patch
+import numpy as np
+calls = []
+def fake_fixed(task, spec, count, seed):
+    calls.append((task, spec, count, seed))
+    return spec[0], {"diff": np.array([1, 2])}
+def fake_run(*args, **kwargs):
+    return {"correct": np.array([True, False])}
+with patch.object(evaluate_a2, "fixed_set_a2", side_effect=fake_fixed), \
+        patch.object(evaluate_a2.t2, "generate", side_effect=AssertionError("real generation")), \
+        patch.object(evaluate_a2, "run_masked", side_effect=fake_run), \
+        patch.object(evaluate_a2, "summarize", return_value={"exact": 0.5}), \
+        patch.object(evaluate_a2, "effective_gates", return_value=1):
+    model = Mock()
+    model.gates_per_position.return_value = 1
+    model.regs_per_position.return_value = 1
+    produced = evaluate_a2.eval_test_a2(model, dict(task="life", arm="R"))
+assert produced["hook"] is False
+assert produced["test_seed"] == evaluate_a2.TEST_SEED_A2 and produced["n_test"] == evaluate_a2.N_TEST
+assert calls and len(calls) == 1 + len(evaluate_a2.t2.TASKS_A2["life"]["extra"])
+assert all(seed == evaluate_a2.TEST_SEED_A2 and count == evaluate_a2.N_TEST for _, _, count, seed in calls)
+
+for missing in ("cycles", "cycles_reach"):
+    r = scenario({t: good for t in BTASKS if t != missing}, F0)
+    assert P(r)["main"] == "POSITIVE"
+    assert P(r)["prior"] == "protocol failure (Q/Q+ incomplete)", P(r)
 print("report_a2 tests ok")

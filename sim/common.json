@@ -1,0 +1,42 @@
+{
+ "lr": 0.1,
+ "steps": 4000,
+ "resid": 10.0,
+ "mode": "soft",
+ "eval_every": 250,
+ "ckpt": false,
+ "wiring": "nbr",
+ "lconn": 4,
+ "xbias": 0.5,
+ "readout": 8,
+ "trim": true,
+ "opt": "dlca",
+ "wd": 0.0,
+ "keep_best": true,
+ "perch": true,
+ "select_seeds": {
+  "P": [
+   0,
+   101,
+   102
+  ],
+  "A": [
+   0,
+   101,
+   102
+  ],
+  "M": [
+   0
+  ]
+ },
+ "per_task": {
+  "A": {
+   "steps": 6000
+  },
+  "M": {
+   "steps": 6000,
+   "ckpt": true
+  }
+ },
+ "locked": true
+}

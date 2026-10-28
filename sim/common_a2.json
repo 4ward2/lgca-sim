@@ -1,0 +1,96 @@
+{
+ "lr": 0.1,
+ "steps": 4000,
+ "resid": 10.0,
+ "mode": "soft",
+ "eval_every": 250,
+ "ckpt": false,
+ "wiring": "nbr",
+ "lconn": 4,
+ "xbias": 0.5,
+ "readout": 8,
+ "trim": true,
+ "opt": "dlca",
+ "wd": 0.0,
+ "keep_best": true,
+ "perch": true,
+ "per_task": {
+  "cycles": {
+   "steps": 6000,
+   "ckpt": true
+  },
+  "cycles_reach": {
+   "steps": 6000,
+   "ckpt": true
+  },
+  "inpaint": {
+   "steps": 6000,
+   "ckpt": true
+  },
+  "life": {
+   "steps": 6000,
+   "ckpt": true
+  },
+  "midframe": {
+   "steps": 6000,
+   "ckpt": true
+  }
+ },
+ "select_seeds": {
+  "cycles": [
+   0,
+   101,
+   102
+  ],
+  "cycles_reach": [
+   0,
+   101,
+   102
+  ],
+  "inpaint": [
+   0,
+   101,
+   102
+  ],
+  "life": [
+   0,
+   101,
+   102
+  ],
+  "midframe": [
+   0,
+   101,
+   102
+  ]
+ },
+ "final_seeds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "b_tasks": [
+  "P",
+  "A",
+  "M",
+  "cycles_reach",
+  "cycles",
+  "inpaint",
+  "life"
+ ],
+ "rf_tasks": [
+  "cycles_reach",
+  "cycles",
+  "inpaint",
+  "life",
+  "midframe"
+ ],
+ "inherits": "common.json @ 3bb0dd5 (Stage A lock) for the R/F recipe",
+ "locked": false
+}

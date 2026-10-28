@@ -1,0 +1,26 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      OMP_NUM_THREADS: "4"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python sim/selftest.py
+      - run: python sim/test_tasks_a2.py
+      - run: python sim/test_report_a2.py
+      - run: python sim/test_b_arm.py

@@ -1,5 +1,5 @@
 """Tests for sim/b_arm.py (brief_A2 section 9.2). Validation-seed / training-stream data only; no test seeds,
-no extrapolation sizes, the --locked path is never executed."""
+no extrapolation sizes, locked evaluation is tested only for refusal before data generation."""
 import json
 import math
 import os
@@ -148,6 +148,14 @@ def test_smoke_train():
             assert set(fin["small_graph_diag"]) == {"5", "6"}
             for v in fin["small_graph_diag"].values():
                 assert v["cells"] == v["graphs"] * int(list(fin["small_graph_diag"].keys())[0]) ** 2 or v["cells"] > 0
+        # Refusal must happen before either test specs or fixed data can be requested.
+        from unittest.mock import patch
+        with patch.object(ba, "fixed_set", side_effect=AssertionError("data generated")), patch.object(ba, "test_specs", side_effect=AssertionError("test specs requested")):
+            try:
+                ba.main(["evaluate", out, "--locked", "--threads", "2"])
+                raise AssertionError("non-frozen run accepted")
+            except SystemExit as exc:
+                assert "frozen" in str(exc)
         # the evaluate path, exercised on validation-seed, in-distribution data only (test hook)
         hook = ba.main(["evaluate", out, "--hook", "--threads", "2"])
         hj = json.load(open(os.path.join(out, "test_hook.json")))
@@ -165,6 +173,27 @@ def test_smoke_train():
     # diag subcommand on the Q+ run
     dg = ba.main(["diag", os.path.join(TMP, "cycles_reach"), "--count", "20", "--threads", "2"])
     assert set(dg) == {"5", "6"} and all("by_tail" in v for v in dg.values())
+    cfg, ck = ba.load_run(os.path.join(TMP, "cycles_reach"))
+    for n, v in dg.items():
+        d = ba.t2.generate("cycles_reach", np.random.default_rng(v["stream"]), v["count"], int(n))
+        _, pred = ba.cell_states(ck["best_deploy"]["deploy"], to_internal(d["x"]), int(n) ** 2)
+        for rec in v["per_graph"]:
+            k = rec["k"]
+            assert rec["fp"] + rec["fn"] == int((pred[k].numpy() != (d["y"][k] > .5)).sum())
+    # Tiny inpaint hook with untrained checkpoints: no additional training.
+    from unittest.mock import patch
+    bp = ba.BPNet(*ba.task_info("inpaint"))
+    dep = ba.deploy_model(bp, "inpaint")
+    ck = {k: dict(bp=bp, deploy=dep, step=0) for k in ("best_deploy", "best_soft", "last")}
+    with patch.object(ba, "test_specs", return_value=((16, 4), [(16, 4)], (16, 4), 777, 4)):
+        res = ba.eval_test(dict(task="inpaint", deploy="bp_hard", n_val=4), ck, False)
+    for lab in ("edge", "noedge"):
+        v = res["M2_bitacc_" + lab]
+        assert v is None or 0 <= v <= 1
+        for per in res["per_size"].values():
+            v = per["bitacc_" + lab]
+            assert v is None or 0 <= v <= 1
+    shutil.rmtree(TMP)
     print("smoke train + hook evaluation + diag ok")
 
 

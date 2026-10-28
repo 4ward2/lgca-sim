@@ -201,7 +201,7 @@ def eval_test_a2(model, cfg):
     ex = ["_".join(map(str, s)) for s in info["extra"]]
     ind = "_".join(map(str, info["indist"]))
     bar = {"cycles": "32", "cycles_reach": "32", "inpaint": "32_16", "midframe": "32_8", "life": "64"}[task]
-    out = dict(per_size=per, M1=per[ind]["exact"], M2=float(np.mean([per[k]["exact"] for k in ex])), bar=per[bar]["exact"])
+    out = dict(hook=False, test_seed=TEST_SEED_A2, n_test=N_TEST, per_size=per, M1=per[ind]["exact"], M2=float(np.mean([per[k]["exact"] for k in ex])), bar=per[bar]["exact"])
     for suf, key in (("_v2", "exact_v2"), ("_ws", "exact_ws")):
         out["M1" + suf] = per[ind].get(key, per[ind]["exact"])
         out["M2" + suf] = float(np.mean([per[k].get(key, per[k]["exact"]) for k in ex]))

@@ -12,7 +12,7 @@ Deployment (3.3), fixed per task line before training:
     o(unknown), o(contradiction) by majority vote over the masked cells of ONE training-stream batch.
   * inpaint/life: hard max-product LLR-BP, Q = 6 bits, delta = 0.25 (no rounding to bits).
 Checkpoints (3.4): best_deploy (deployed model's selection score on val 777, ties -> earlier step), best_soft
-(soft BP evaluated with hard argmax readout, diagnostic), last (step 2000).
+(soft BP with Bernoulli-mixture readout sum softmax(b)*sigmoid(O) > 0.5, diagnostic), last (step 2000).
 Selection score (3.5): mean "halted and correct" over the in-distribution sizes (1D {8,12,16}; 2D {8,10,12};
 inpaint (16, d in {2,3,4}); life {8,12,16}; evaluate_a2.VAL_SPECS for the new tasks).
 Halting (3.6): sim/evaluate.run_hard (P/A/M) and sim/evaluate_a2.run_masked (new tasks): readout unchanged for
@@ -365,6 +365,7 @@ def score(model, task, seed=VAL_SEED, mode="hard", count=None, specs=None):
             per[key]["exact_edge"] = float(r["correct"][e].mean()) if e.any() else None
             per[key]["exact_noedge"] = float(r["correct"][~e].mean()) if (~e).any() else None
             per[key]["bitacc_edge"] = float(r["bitacc"][e].mean()) if e.any() else None
+            per[key]["bitacc_noedge"] = float(r["bitacc"][~e].mean()) if (~e).any() else None
             per[key]["edge_frac"] = float(e.mean())
     return float(np.mean([v["exact"] for v in per.values()])), per
 
@@ -459,7 +460,10 @@ def small_graph_diag(model, task, seed=VAL_SEED, count=100, sizes=None):
         ok = (pred == y).reshape(count, -1).all(1)
         out[str(n)] = dict(graphs=count, graphs_exact=float(ok.mean()), cells=int(y.size), fp=int((pred & ~y).sum()),
                            fn=int((~pred & y).sum()), unknown=int((s == 3).sum()), contradiction=int((s == 0).sum()),
-                           by_tail=by_tail)
+                           by_tail=by_tail, stream=[seed, n, 99], count=count,
+                           per_graph=[dict(k=k, exact=bool(ok[k]), fp=int((pred[k] & ~y[k]).sum()),
+                                           fn=int((~pred[k] & y[k]).sum()), unknown=int((s[k] == 3).sum()),
+                                           contradiction=int((s[k] == 0).sum())) for k in range(count)])
     return out
 
 
@@ -775,6 +779,8 @@ def eval_test(cfg, ck, locked):
             e = d["edge"]
             per[key]["exact_edge"] = float(r["correct"][e].mean()) if e.any() else None
             per[key]["exact_noedge"] = float(r["correct"][~e].mean()) if (~e).any() else None
+            per[key]["bitacc_edge"] = float(r["bitacc"][e].mean()) if e.any() else None
+            per[key]["bitacc_noedge"] = float(r["bitacc"][~e].mean()) if (~e).any() else None
             per[key]["edge_frac"] = float(e.mean())
         if task == "A":
             _, _, ds = fixed_set(task, spec, count, seed, force_fullchain=True)
@@ -798,6 +804,10 @@ def eval_test(cfg, ck, locked):
         out["M1_" + w] = per[kind].get("exact_" + w, per[kind]["exact"])
         out["M2_" + w] = float(np.mean([per[k].get("exact_" + w, per[k]["exact"]) for k in kex]))
         out["bar_" + w] = per[kbar].get("exact_" + w, per[kbar]["exact"])
+    if task == "inpaint":
+        for lab in ("edge", "noedge"):
+            vals = [per[k]["bitacc_" + lab] for k in kex if per[k]["bitacc_" + lab] is not None]
+            out["M2_bitacc_" + lab] = float(np.mean(vals)) if vals else None
     out["outcome_frac_extra"] = [float(np.mean([per[k].get("outcome_frac", [0, 0, 0])[i] for k in kex])) for i in range(3)]
     th, hh, dd, ok = (np.concatenate(p) for p in (pool_th, pool_h, pool_d, pool_ok))
     out["rho_halt"] = float(spearmanr(th[hh], dd[hh])[0]) if hh.sum() > 2 and np.unique(dd[hh]).size > 1 else None
@@ -830,6 +840,16 @@ def eval_test(cfg, ck, locked):
 
 def evaluate(a):
     torch.set_num_threads(a.threads)
+    if a.locked:
+        cfg = json.load(open(os.path.join(a.run_dir, "config.json")))
+        for key, expected in (("steps", 2000), ("eval_every", 250)):
+            if type(cfg.get(key)) is not int or cfg[key] != expected:
+                raise SystemExit(f"locked evaluation requires frozen {key}={expected}")
+        if "n_val" not in cfg or cfg["n_val"] is not None or cfg.get("deploy") != DEPLOY[cfg["task"]]:
+            raise SystemExit("locked evaluation requires frozen n_val/deploy")
+        last_step = torch.load(os.path.join(a.run_dir, "last.pt"), map_location="cpu")["step"]
+        if type(last_step) is not int or last_step != 2000:
+            raise SystemExit("locked evaluation requires last.pt at step 2000")
     cfg, ck = load_run(a.run_dir)
     if a.locked:
         print("LOCKED evaluation: test seeds (12345 / 24680) and extrapolation sizes", flush=True)

@@ -1,0 +1,61 @@
+name: batch
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: "jobs/<batch>.json"
+        required: true
+      max_parallel:
+        description: "concurrent jobs"
+        default: "12"
+run-name: batch ${{ inputs.manifest }}
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      names: ${{ steps.p.outputs.names }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        env:
+          MANIFEST: ${{ inputs.manifest }}
+        run: |
+          python3 -c "import json,os; print('names=' + json.dumps([j['name'] for j in json.load(open(os.environ['MANIFEST']))]))" >> "$GITHUB_OUTPUT"
+  run:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ fromJSON(inputs.max_parallel) }}
+      matrix:
+        name: ${{ fromJSON(needs.plan.outputs.names) }}
+    env:
+      OMP_NUM_THREADS: "4"
+      MANIFEST: ${{ inputs.manifest }}
+      NAME: ${{ matrix.name }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: job
+        run: |
+          mkdir -p out
+          CMD=$(python -c "import json,os; print(next(j['cmd'] for j in json.load(open(os.environ['MANIFEST'])) if j['name']==os.environ['NAME']))")
+          echo "$CMD"
+          start=$(date +%s)
+          set +e
+          bash -c "$CMD" 2>&1 | tee "out/$NAME.log"
+          rc=${PIPESTATUS[0]}
+          echo "{\"name\": \"$NAME\", \"rc\": $rc, \"sec\": $(( $(date +%s) - start )), \"commit\": \"$GITHUB_SHA\"}" > "out/$NAME.status.json"
+          exit $rc
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.name }}
+          path: out/
+          retention-days: 30

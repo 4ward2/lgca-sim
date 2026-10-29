@@ -1,0 +1,82 @@
+[
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s1",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 1 --out out/midframe_R_G384_alpha0.0_beta2.0_s1 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s1 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s2",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 2 --out out/midframe_R_G384_alpha0.0_beta2.0_s2 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s2 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s3",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 3 --out out/midframe_R_G384_alpha0.0_beta2.0_s3 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s3 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s4",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 4 --out out/midframe_R_G384_alpha0.0_beta2.0_s4 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s4 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s5",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 5 --out out/midframe_R_G384_alpha0.0_beta2.0_s5 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s5 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s6",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 6 --out out/midframe_R_G384_alpha0.0_beta2.0_s6 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s6 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s7",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 7 --out out/midframe_R_G384_alpha0.0_beta2.0_s7 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s7 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s8",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 8 --out out/midframe_R_G384_alpha0.0_beta2.0_s8 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s8 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s9",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 9 --out out/midframe_R_G384_alpha0.0_beta2.0_s9 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s9 --locked --threads 4"
+ },
+ {
+  "name": "midframe_R_G384_alpha0.0_beta2.0_s10",
+  "cmd": "python sim/train_a2.py --task midframe --arm R --G 384 --seed 10 --out out/midframe_R_G384_alpha0.0_beta2.0_s10 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 2.0 && python sim/evaluate_a2.py out/midframe_R_G384_alpha0.0_beta2.0_s10 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s1",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 1 --out out/midframe_F_G384_K8_s1 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s1 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s2",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 2 --out out/midframe_F_G384_K8_s2 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s2 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s3",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 3 --out out/midframe_F_G384_K8_s3 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s3 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s4",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 4 --out out/midframe_F_G384_K8_s4 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s4 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s5",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 5 --out out/midframe_F_G384_K8_s5 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s5 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s6",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 6 --out out/midframe_F_G384_K8_s6 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s6 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s7",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 7 --out out/midframe_F_G384_K8_s7 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s7 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s8",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 8 --out out/midframe_F_G384_K8_s8 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s8 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s9",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 9 --out out/midframe_F_G384_K8_s9 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s9 --locked --threads 4"
+ },
+ {
+  "name": "midframe_F_G384_K8_s10",
+  "cmd": "python sim/train_a2.py --task midframe --arm F --G 384 --seed 10 --out out/midframe_F_G384_K8_s10 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --K 8 && python sim/evaluate_a2.py out/midframe_F_G384_K8_s10 --locked --threads 4"
+ }
+]

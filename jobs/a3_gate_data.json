@@ -1,0 +1,18 @@
+[
+ {
+  "name": "data_4_train",
+  "cmd": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 4 --count 2000 --seed 60071 --time-limit 1800 --split train --output out/data_4_train/"
+ },
+ {
+  "name": "data_9_train",
+  "cmd": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 9 --count 1000 --seed 60072 --time-limit 1800 --split train --output out/data_9_train/"
+ },
+ {
+  "name": "data_4_dev",
+  "cmd": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 4 --count 200 --seed 61071 --time-limit 1800 --split dev --output out/data_4_dev/"
+ },
+ {
+  "name": "data_9_dev",
+  "cmd": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 9 --count 200 --seed 61072 --time-limit 1800 --split dev --output out/data_9_dev/"
+ }
+]

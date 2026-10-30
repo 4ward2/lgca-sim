@@ -1,0 +1,6 @@
+[
+ {
+  "name": "inpaint_R_G384_alpha0.0_beta4.0_s6",
+  "cmd": "python sim/train_a2.py --task inpaint --arm R --G 384 --seed 6 --out out/inpaint_R_G384_alpha0.0_beta4.0_s6 --threads 4 --lr 0.1 --steps 6000 --resid 10.0 --mode soft --eval_every 250 --wd 0.0 --ckpt --wiring nbr --lconn 4 --xbias 0.5 --readout 8 --opt dlca --trim --keep_best --perch --alpha 0.0 --beta 4.0 && python sim/evaluate_a2.py out/inpaint_R_G384_alpha0.0_beta4.0_s6 --locked --threads 4"
+ }
+]

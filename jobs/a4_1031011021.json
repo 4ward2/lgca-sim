@@ -1,0 +1,120 @@
+[
+ {
+  "name": "checker-qualification",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 smoke --suite checker --input in/checker-qualification --out out/checker-qualification --threads 4",
+  "fetch": [
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/checker-qualification"
+   }
+  ]
+ },
+ {
+  "name": "pilot-b",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --arm b --seed 173001 --input in/pilot-b --out out/pilot-b --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/pilot-b"
+   },
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/pilot-b"
+   }
+  ]
+ },
+ {
+  "name": "pilot-dt-small",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --arm dt-small --seed 173001 --input in/pilot-dt-small --out out/pilot-dt-small --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/pilot-dt-small"
+   },
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/pilot-dt-small"
+   }
+  ]
+ },
+ {
+  "name": "pilot-f",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --arm f --seed 173001 --input in/pilot-f --out out/pilot-f --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/pilot-f"
+   },
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/pilot-f"
+   }
+  ]
+ },
+ {
+  "name": "pilot-r",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --arm r --seed 173001 --input in/pilot-r --out out/pilot-r --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/pilot-r"
+   },
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/pilot-r"
+   }
+  ]
+ },
+ {
+  "name": "pilot-shared64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --arm shared64 --seed 173001 --input in/pilot-shared64 --out out/pilot-shared64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/pilot-shared64"
+   },
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/pilot-shared64"
+   }
+  ]
+ },
+ {
+  "name": "pilot-unshared64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --arm unshared64 --seed 173001 --input in/pilot-unshared64 --out out/pilot-unshared64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/pilot-unshared64"
+   },
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/pilot-unshared64"
+   }
+  ]
+ },
+ {
+  "name": "resume-check",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 smoke --suite resume --input in/resume-check --out out/resume-check --threads 4",
+  "fetch": [
+   {
+    "run_id": 41096091544,
+    "artifact": "smoke",
+    "dir": "in/resume-check"
+   }
+  ]
+ }
+]

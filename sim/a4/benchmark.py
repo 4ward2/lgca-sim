@@ -9,14 +9,14 @@ from .evaluate import run_ac_to_fp,run_bp,run_dt_streaming
 from .models import calibrate,predict
 
 @torch.no_grad()
-def synthetic_latency(model,arm,train,warmups=5,repeats=20):
+def synthetic_latency(model,arm,train,warmups=1,repeats=3):
     rows=[]; previous=torch.get_num_threads(); model.eval(); overall_start=time.perf_counter()
     ac=calibrate(model,train) if arm=='b' else None
     qbp=copy.deepcopy(model) if arm=='b' else None
     if qbp is not None: qbp.infer='max'
     engines=['ac','soft','qbp'] if arm=='b' else ['main']
     try:
-        for threads in (1,4):
+        for threads in (4,):  # only 4-thread rows enter the budget estimate (pilot fix 2026-10-31)
             torch.set_num_threads(threads)
             for length in LENGTHS:
                 for batch in (1,128):

@@ -9,6 +9,9 @@ on:
         description: "concurrent jobs"
         default: "12"
 run-name: batch ${{ inputs.manifest }}
+permissions:
+  contents: read
+  actions: read
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -42,6 +45,17 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
+      - name: fetch artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          job = next(j for j in json.load(open(os.environ["MANIFEST"])) if j["name"] == os.environ["NAME"])
+          for f in job.get("fetch", []):  # {"run_id": ..., "artifact": ..., "dir": ...}
+              subprocess.run(["gh", "run", "download", str(f["run_id"]), "-n", f["artifact"], "-D", f["dir"],
+                              "-R", os.environ["GITHUB_REPOSITORY"]], check=True)
+          PY
       - name: job
         run: |
           mkdir -p out

@@ -24,3 +24,4 @@ jobs:
       - run: python sim/test_tasks_a2.py
       - run: python sim/test_report_a2.py
       - run: python sim/test_b_arm.py
+      - run: python -m unittest sim.cert.test_cert

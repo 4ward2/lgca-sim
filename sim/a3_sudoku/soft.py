@@ -100,3 +100,47 @@ class CardinalityBP(nn.Module):
         if not history:
             beliefs=normalize(unary)
         return (beliefs,history) if return_history else beliefs
+
+def batched_forward(model,graph,puzzles,steps,return_history=False):
+    """Standard-board batched BP, vectorized across examples and equal-arity groups."""
+    device=model.theta.device
+    puzzles=torch.as_tensor(puzzles,dtype=torch.long,device=device)
+    if puzzles.ndim!=2 or puzzles.shape[1]!=len(graph.cells) or steps<1:
+        raise ValueError('invalid batch/steps')
+    for puzzle in puzzles.tolist():
+        check_puzzle(puzzle,graph.n,graph.regions)
+    groups=torch.tensor(graph.groups,device=device)
+    if len(set(map(len,graph.groups)))!=1:
+        raise ValueError('equal arity required')
+    batch=len(puzzles); factors,m=groups.shape
+    values=torch.arange(graph.n,device=device)
+    fixed=puzzles[:,:,None]>=0
+    truth=puzzles[:,:,None]==values
+    allowed=torch.stack((~(fixed & truth),~(fixed & ~truth)),-1).reshape(batch,graph.num_vars,2)
+    unary=torch.where(allowed,model.beta, -torch.inf)
+    messages=model.theta.new_zeros((batch,factors,m,2))
+    theta=model.theta-model.theta.max()
+    def conv(a,b):
+        return torch.stack([_lse(torch.stack([a[...,i]+b[...,j] for i in range(3) for j in range(3) if min(2,i+j)==k]),0) for k in range(3)],-1)
+    identity=model.theta.new_full((batch,factors,3),-torch.inf); identity[...,0]=0
+    history=[]
+    flat=groups.flatten()
+    for _ in range(steps):
+        # Incoming soft messages are finite: hard clamps only enter unary.
+        total=model.theta.new_zeros((batch,graph.num_vars,2)).index_add(1,flat,messages.reshape(batch,-1,2))
+        incoming=normalize(unary[:,groups]+total[:,groups]-messages)
+        leaves=[torch.cat((incoming[:,:,i],incoming.new_full((batch,factors,1),-torch.inf)),-1) for i in range(m)]
+        prefix=[identity]
+        for leaf in leaves:
+            prefix.append(conv(prefix[-1],leaf))
+        suffix=[identity]*(m+1)
+        for i in range(m-1,-1,-1):
+            suffix[i]=conv(leaves[i],suffix[i+1])
+        rows=[]
+        for i in range(m):
+            other=conv(prefix[i],suffix[i+1])
+            rows.append(torch.stack([_lse(other+theta[torch.tensor([min(2,k+h) for k in range(3)],device=device)],-1) for h in (0,1)],-1))
+        messages=normalize(torch.stack(rows,2))
+        total=model.theta.new_zeros((batch,graph.num_vars,2)).index_add(1,flat,messages.reshape(batch,-1,2))
+        beliefs=normalize(unary+total); history.append(beliefs)
+    return (beliefs,history) if return_history else beliefs

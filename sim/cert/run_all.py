@@ -8,7 +8,7 @@ from pathlib import Path
 
 import numpy as np
 
-from . import chain, grid
+from . import chain, grid, halting
 from .tables import load, confirm
 
 
@@ -40,7 +40,7 @@ def equivalence_key(t, task):
     return hashlib.sha256(bytes(best)).hexdigest()
 
 
-def crosscheck(t, task, seed=50001):
+def crosscheck(t, task, seed=80001):
     from sim import tasks
     rng = np.random.default_rng(seed)
     for n in (1, 2, 3, 5, 8, 13):
@@ -75,16 +75,16 @@ def main():
         classes.setdefault(key, []).append(name)
         row = dict(run=name, task=task, seed=seed, table_hash=t['table_sha256'],
                    checkpoint_sha256=t['checkpoint_sha256'], seconds=time.monotonic()-start,
-                   interpreter_crosscheck_seed=50001, **result)
+                   interpreter_crosscheck_seed=80001, halting=halting.decide(t, task), **result)
         rows.append(row)
         (a.out / (name + '_tables.json')).write_text(json.dumps(t), encoding='utf-8')
         print(f"{name}: {row['verdict']} ({row['seconds']:.3f}s)", flush=True)
     report = dict(runs=rows, equivalence_classes=list(classes.values()),
-                  scope='fixed-point readout; original evaluation halting window is not certified')
+                  scope='fixed-point readout and separate halting bounds (P/A PASS, M UNKNOWN)')
     (a.out / 'cert_report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
-    md = '| Run | Verdict | Relabelling | Table SHA256 | Seconds |\n|---|---|---|---|---|\n'
+    md = '| Run | Verdict | Relabelling | Table SHA256 | Checker SHA256 | Halting | Seconds |\n|---|---|---|---|---|---|---|\n'
     for r in rows:
-        md += f"| {r['run']} | {r['verdict']} | {r.get('pi', 'n/a')} | {r['table_hash']} | {r['seconds']:.3f} |\n"
+        md += f"| {r['run']} | {r['verdict']} | {r.get('pi', 'n/a')} | {r['table_hash']} | {r['checker_sha256']} | {r['halting']['verdict']} | {r['seconds']:.3f} |\n"
     (a.out / 'cert_report.md').write_text(md, encoding='utf-8')
     print(md)
 

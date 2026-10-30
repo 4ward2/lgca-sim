@@ -1,0 +1,1 @@
+﻿{"seed":60101,"steps":2000,"batch":32,"lr":0.01,"eval_every":100,"time_limit":6900,"eval_steps":16,"warmup_steps":500,"threads":4,"benchmark_seconds_per_step":null}

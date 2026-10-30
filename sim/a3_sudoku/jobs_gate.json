@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "artifact_contract": "Upload contents of out/<job>/; download each dependency contents into in/<job>/. For resume restore the entire training output directory, including best checkpoints.",
+  "environment": "Python 3.12, torch 2.14.1 CPU, numpy, scipy preinstalled; no downloads by these commands",
+  "generation_budget": "Four 1800-second jobs = 2 CPU hours. Quota deficits and layer counts must be read from summary.json; never silently fill with duplicates.",
+  "jobs": [
+    {
+      "name": "data_4_train",
+      "needs": [],
+      "command": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 4 --count 2000 --seed 60071 --time-limit 1800 --split train --output out/data_4_train/"
+    },
+    {
+      "name": "data_9_train",
+      "needs": [],
+      "command": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 9 --count 1000 --seed 60072 --time-limit 1800 --split train --output out/data_9_train/"
+    },
+    {
+      "name": "data_4_dev",
+      "needs": [],
+      "command": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 4 --count 200 --seed 61071 --time-limit 1800 --split dev --output out/data_4_dev/"
+    },
+    {
+      "name": "data_9_dev",
+      "needs": [],
+      "command": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 9 --count 200 --seed 61072 --time-limit 1800 --split dev --output out/data_9_dev/"
+    },
+    {
+      "name": "train_60101",
+      "needs": [
+        "data_4_train",
+        "data_9_train",
+        "data_4_dev",
+        "data_9_dev"
+      ],
+      "command": "OMP_NUM_THREADS=4 python -m sim.a3_sudoku.train --config sim/a3_sudoku/configs/pilot.json --seed 60101 --train in/data_4_train/manifest.json in/data_9_train/manifest.json --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json --output out/train_60101/",
+      "resume": "OMP_NUM_THREADS=4 python -m sim.a3_sudoku.train --config sim/a3_sudoku/configs/pilot.json --seed 60101 --train in/data_4_train/manifest.json in/data_9_train/manifest.json --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json --output out/train_60101/ --resume out/train_60101/last.pt"
+    },
+    {
+      "name": "train_60102",
+      "needs": [
+        "data_4_train",
+        "data_9_train",
+        "data_4_dev",
+        "data_9_dev"
+      ],
+      "command": "OMP_NUM_THREADS=4 python -m sim.a3_sudoku.train --config sim/a3_sudoku/configs/pilot.json --seed 60102 --train in/data_4_train/manifest.json in/data_9_train/manifest.json --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json --output out/train_60102/",
+      "resume": "OMP_NUM_THREADS=4 python -m sim.a3_sudoku.train --config sim/a3_sudoku/configs/pilot.json --seed 60102 --train in/data_4_train/manifest.json in/data_9_train/manifest.json --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json --output out/train_60102/ --resume out/train_60102/last.pt"
+    },
+    {
+      "name": "train_60103",
+      "needs": [
+        "data_4_train",
+        "data_9_train",
+        "data_4_dev",
+        "data_9_dev"
+      ],
+      "command": "OMP_NUM_THREADS=4 python -m sim.a3_sudoku.train --config sim/a3_sudoku/configs/pilot.json --seed 60103 --train in/data_4_train/manifest.json in/data_9_train/manifest.json --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json --output out/train_60103/",
+      "resume": "OMP_NUM_THREADS=4 python -m sim.a3_sudoku.train --config sim/a3_sudoku/configs/pilot.json --seed 60103 --train in/data_4_train/manifest.json in/data_9_train/manifest.json --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json --output out/train_60103/ --resume out/train_60103/last.pt"
+    },
+    {
+      "name": "gate",
+      "needs": [
+        "data_4_dev",
+        "data_9_dev",
+        "train_60101",
+        "train_60102",
+        "train_60103"
+      ],
+      "command": "OMP_NUM_THREADS=1 python -m sim.a3_sudoku.gate --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json --runs in/train_60101/ in/train_60102/ in/train_60103/ --node-limit 100000 --seconds 8 --search-count 100 --output out/gate/"
+    }
+  ]
+}

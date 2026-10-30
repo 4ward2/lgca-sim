@@ -17,11 +17,13 @@ Synchronous convergence takes <= V*n strict rounds, plus a stability check.
 """
 from collections import deque
 
-from .tables import unary, support, interpret, confirm
+from .tables import unary, support, interpret, confirm, validate, provenance
 
 
 def decide(t, task):
-    assert task in ('P', 'A') and t['dims'] == 1
+    if task not in ('P', 'A'):
+        raise ValueError('chain task must be P or A')
+    validate(t, task)
     alphabet = (2, 3) if task == 'P' else (4, 5, 6, 7)
     full = (1 << t['V']) - 1
 
@@ -73,4 +75,5 @@ def decide(t, task):
             st, y = spec(x, st); expected.append(y)
         assert pred.tolist() != expected
         out.update(counterexample=best, expected=expected, simulator_prediction=confirm(t, best))
+    out.update(provenance())
     return out

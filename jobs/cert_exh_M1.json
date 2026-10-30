@@ -1,0 +1,57 @@
+[
+ {
+  "name": "cert_exh_M_B_s1",
+  "fetch": [
+   {
+    "run_id": 40724532031,
+    "artifact": "M_B_s1",
+    "dir": "runs_in"
+   }
+  ],
+  "cmd": "mkdir -p out/cert_exh_M_B_s1 && python -m sim.cert.grid_exhaustive runs_in/M_B_s1 --max-cells 16 --time-limit 19000 > out/cert_exh_M_B_s1/exhaustive.json"
+ },
+ {
+  "name": "cert_exh_M_B_s2",
+  "fetch": [
+   {
+    "run_id": 40724532031,
+    "artifact": "M_B_s2",
+    "dir": "runs_in"
+   }
+  ],
+  "cmd": "mkdir -p out/cert_exh_M_B_s2 && python -m sim.cert.grid_exhaustive runs_in/M_B_s2 --max-cells 16 --time-limit 19000 > out/cert_exh_M_B_s2/exhaustive.json"
+ },
+ {
+  "name": "cert_exh_M_B_s6",
+  "fetch": [
+   {
+    "run_id": 40724532031,
+    "artifact": "M_B_s6",
+    "dir": "runs_in"
+   }
+  ],
+  "cmd": "mkdir -p out/cert_exh_M_B_s6 && python -m sim.cert.grid_exhaustive runs_in/M_B_s6 --max-cells 16 --time-limit 19000 > out/cert_exh_M_B_s6/exhaustive.json"
+ },
+ {
+  "name": "cert_exh_M_B_s9",
+  "fetch": [
+   {
+    "run_id": 40724532031,
+    "artifact": "M_B_s9",
+    "dir": "runs_in"
+   }
+  ],
+  "cmd": "mkdir -p out/cert_exh_M_B_s9 && python -m sim.cert.grid_exhaustive runs_in/M_B_s9 --max-cells 16 --time-limit 19000 > out/cert_exh_M_B_s9/exhaustive.json"
+ },
+ {
+  "name": "cert_exh_M_B_s10",
+  "fetch": [
+   {
+    "run_id": 40724532031,
+    "artifact": "M_B_s10",
+    "dir": "runs_in"
+   }
+  ],
+  "cmd": "mkdir -p out/cert_exh_M_B_s10 && python -m sim.cert.grid_exhaustive runs_in/M_B_s10 --max-cells 16 --time-limit 19000 > out/cert_exh_M_B_s10/exhaustive.json"
+ }
+]

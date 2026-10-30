@@ -1,0 +1,16 @@
+test_adversarial_mutations (sim.cert.test_cert.CertificateTests.test_adversarial_mutations) ... ok
+test_chain_arbitrary_tables (sim.cert.test_cert.CertificateTests.test_chain_arbitrary_tables) ... ok
+test_checker_mutant_is_killed (sim.cert.test_cert.CertificateTests.test_checker_mutant_is_killed) ... ok
+test_deployed_runs (sim.cert.test_cert.CertificateTests.test_deployed_runs) ... ok
+test_equivalence_relabelling (sim.cert.test_cert.CertificateTests.test_equivalence_relabelling) ... ok
+test_halting_small_exhaustive (sim.cert.test_cert.CertificateTests.test_halting_small_exhaustive) ... ok
+test_maze_exhaustive (sim.cert.test_cert.CertificateTests.test_maze_exhaustive) ... ok
+test_oracles_and_corruption (sim.cert.test_cert.CertificateTests.test_oracles_and_corruption) ... ok
+test_portable_verdicts (sim.cert.test_cert.CertificateTests.test_portable_verdicts) ... ok
+test_validation (sim.cert.test_cert.CertificateTests.test_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 7.961s
+
+OK
+MUTATION_COUNTS [{'task': 'P', 'counts': {'PASS': 16, 'FAIL': 28, 'UNKNOWN': 0, 'bounded_wrong': 28}}, {'task': 'P', 'counts': {'PASS': 14, 'FAIL': 30, 'UNKNOWN': 0, 'bounded_wrong': 30}}, {'task': 'A', 'counts': {'PASS': 44, 'FAIL': 76, 'UNKNOWN': 0, 'bounded_wrong': 76}}, {'task': 'A', 'counts': {'PASS': 42, 'FAIL': 78, 'UNKNOWN': 0, 'bounded_wrong': 78}}, {'task': 'M', 'counts': {'PASS': 97, 'FAIL': 0, 'UNKNOWN': 41, 'bounded_wrong': 41}}, {'task': 'M', 'counts': {'PASS': 97, 'FAIL': 0, 'UNKNOWN': 41, 'bounded_wrong': 41}}]

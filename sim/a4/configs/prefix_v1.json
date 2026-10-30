@@ -1,0 +1,56 @@
+{
+  "status": "DRAFT",
+  "seeds": [
+    173101,
+    173102,
+    173103,
+    173104,
+    173105,
+    173106,
+    173107,
+    173108,
+    173109,
+    173110
+  ],
+  "pilots": [
+    173001,
+    173002,
+    173003
+  ],
+  "lengths": [
+    40,
+    44,
+    48,
+    64,
+    128,
+    256,
+    512
+  ],
+  "train_length": 32,
+  "train_count": 8000,
+  "dev_count": 2000,
+  "test_count": 10000,
+  "steps": 2000,
+  "batch": 128,
+  "lr_b": 0.03,
+  "lr_rf": 0.01,
+  "weight_decay": 0,
+  "train_T": [
+    32,
+    64
+  ],
+  "fixed_depth": 64,
+  "threshold": 2,
+  "quantization": {
+    "bits": 6,
+    "delta": 0.25,
+    "infer": "max"
+  },
+  "calibration_count": 128,
+  "selection_every": 250,
+  "split_seed": 42,
+  "bootstrap_seed": 173901,
+  "bootstrap_draws": 10000,
+  "max_job_seconds": 14400,
+  "total_runner_hours": 120
+}

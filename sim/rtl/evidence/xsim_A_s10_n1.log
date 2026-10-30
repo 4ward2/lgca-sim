@@ -1,0 +1,44 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Admin/Documents/Project/LoopLUT-wt-cert/sim/rtl/build/A_B_s10_tables_1/core.sv" into library work
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Admin/Documents/Project/LoopLUT-wt-cert/sim/rtl/build/A_B_s10_tables_1/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb -s test_sim -mt 1 
+ERROR: [XSIM 43-3260] Illegal value "1" passed to "-mt" switch. Legal values are: auto, off or an integer greater than 1.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Admin/Documents/Project/LoopLUT-wt-cert/sim/rtl/build/A_B_s10_tables_1/core.sv" into library work
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Admin/Documents/Project/LoopLUT-wt-cert/sim/rtl/build/A_B_s10_tables_1/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb -s test_sim -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.core
+Compiling module work.tb
+Built simulation snapshot test_sim
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 23:41:11 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/test_sim/xsim_script.tcl
+# xsim {test_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+COSIM_PASS cases=15 domains=40
+$finish called at time : 1166 ns : File "C:/Users/Admin/Documents/Project/LoopLUT-wt-cert/sim/rtl/build/A_B_s10_tables_1/tb.sv" Line 221
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 23:41:13 2026...

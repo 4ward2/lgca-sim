@@ -1,0 +1,11 @@
+{
+  "kind": "synthetic inference only; no training",
+  "batch": 16,
+  "length": 32,
+  "warmup_batches": 5,
+  "timed_batches": 20,
+  "seconds": 0.1114845999982208,
+  "seconds_per_batch": 0.00557422999991104,
+  "threads": 2,
+  "formal_training_estimate": "unavailable until Actions pilot"
+}

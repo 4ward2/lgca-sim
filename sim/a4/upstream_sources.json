@@ -1,0 +1,9 @@
+{
+  "commit": "152fb1182fb5dc11275859407ceec46102c20e42",
+  "license": "MIT",
+  "files": {
+    "upstream_blocks.txt": "95151d0697effd91e6335b0e4f21b5225f03ccef5d0a0bbbba8f4545dbbd49af",
+    "upstream_dt_net_1d.txt": "ec08c44b0f5b8b8b7e3bf535655caf49f0511cbd94ffefb1c890947126d28f4b",
+    "upstream_training.txt": "b32030db9b5b4a27688209dbd8b91c39bf81160d892d9ebbcc7d64d4190a9706"
+  }
+}

@@ -1,0 +1,2 @@
+upstream_*.txt text eol=lf
+UPSTREAM_LICENSE text eol=lf

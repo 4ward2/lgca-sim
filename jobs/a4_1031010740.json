@@ -1,0 +1,13 @@
+[
+ {
+  "name": "smoke",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 smoke --input in/smoke --out out/smoke --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/smoke"
+   }
+  ]
+ }
+]

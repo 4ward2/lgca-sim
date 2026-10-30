@@ -1,0 +1,6 @@
+[
+ {
+  "name": "data_9_dev2",
+  "cmd": "OMP_NUM_THREADS=2 python -m sim.a3_sudoku.gen --n 9 --count 300 --seed 61073 --time-limit 1800 --split dev --output out/data_9_dev2/"
+ }
+]

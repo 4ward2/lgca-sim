@@ -1,0 +1,1109 @@
+[
+ {
+  "name": "oracle-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm oracle --length 128 --input in/oracle-128 --out out/oracle-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/oracle-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/oracle-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/oracle-128"
+   }
+  ]
+ },
+ {
+  "name": "oracle-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm oracle --length 256 --input in/oracle-256 --out out/oracle-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/oracle-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/oracle-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/oracle-256"
+   }
+  ]
+ },
+ {
+  "name": "oracle-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm oracle --length 40 --input in/oracle-40 --out out/oracle-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/oracle-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/oracle-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/oracle-40"
+   }
+  ]
+ },
+ {
+  "name": "oracle-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm oracle --length 44 --input in/oracle-44 --out out/oracle-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/oracle-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/oracle-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/oracle-44"
+   }
+  ]
+ },
+ {
+  "name": "oracle-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm oracle --length 48 --input in/oracle-48 --out out/oracle-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/oracle-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/oracle-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/oracle-48"
+   }
+  ]
+ },
+ {
+  "name": "oracle-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm oracle --length 512 --input in/oracle-512 --out out/oracle-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/oracle-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/oracle-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/oracle-512"
+   }
+  ]
+ },
+ {
+  "name": "oracle-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm oracle --length 64 --input in/oracle-64 --out out/oracle-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/oracle-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/oracle-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/oracle-64"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173101",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173101 --input in/train-b-173101 --out out/train-b-173101 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173101"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173101"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173102",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173102 --input in/train-b-173102 --out out/train-b-173102 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173102"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173102"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173103",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173103 --input in/train-b-173103 --out out/train-b-173103 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173103"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173103"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173104",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173104 --input in/train-b-173104 --out out/train-b-173104 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173104"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173104"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173105",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173105 --input in/train-b-173105 --out out/train-b-173105 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173105"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173105"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173106",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173106 --input in/train-b-173106 --out out/train-b-173106 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173106"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173106"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173107",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173107 --input in/train-b-173107 --out out/train-b-173107 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173107"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173107"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173108",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173108 --input in/train-b-173108 --out out/train-b-173108 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173108"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173108"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173109",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173109 --input in/train-b-173109 --out out/train-b-173109 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173109"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173109"
+   }
+  ]
+ },
+ {
+  "name": "train-b-173110",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm b --seed 173110 --input in/train-b-173110 --out out/train-b-173110 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-b-173110"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-b-173110"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173101",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173101 --input in/train-dt-small-173101 --out out/train-dt-small-173101 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173101"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173101"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173102",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173102 --input in/train-dt-small-173102 --out out/train-dt-small-173102 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173102"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173102"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173103",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173103 --input in/train-dt-small-173103 --out out/train-dt-small-173103 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173103"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173103"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173104",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173104 --input in/train-dt-small-173104 --out out/train-dt-small-173104 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173104"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173104"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173105",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173105 --input in/train-dt-small-173105 --out out/train-dt-small-173105 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173105"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173105"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173106",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173106 --input in/train-dt-small-173106 --out out/train-dt-small-173106 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173106"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173106"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173107",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173107 --input in/train-dt-small-173107 --out out/train-dt-small-173107 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173107"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173107"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173108",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173108 --input in/train-dt-small-173108 --out out/train-dt-small-173108 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173108"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173108"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173109",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173109 --input in/train-dt-small-173109 --out out/train-dt-small-173109 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173109"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173109"
+   }
+  ]
+ },
+ {
+  "name": "train-dt-small-173110",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm dt-small --seed 173110 --input in/train-dt-small-173110 --out out/train-dt-small-173110 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-dt-small-173110"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-dt-small-173110"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173101",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173101 --input in/train-f-173101 --out out/train-f-173101 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173101"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173101"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173102",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173102 --input in/train-f-173102 --out out/train-f-173102 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173102"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173102"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173103",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173103 --input in/train-f-173103 --out out/train-f-173103 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173103"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173103"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173104",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173104 --input in/train-f-173104 --out out/train-f-173104 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173104"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173104"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173105",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173105 --input in/train-f-173105 --out out/train-f-173105 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173105"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173105"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173106",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173106 --input in/train-f-173106 --out out/train-f-173106 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173106"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173106"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173107",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173107 --input in/train-f-173107 --out out/train-f-173107 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173107"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173107"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173108",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173108 --input in/train-f-173108 --out out/train-f-173108 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173108"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173108"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173109",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173109 --input in/train-f-173109 --out out/train-f-173109 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173109"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173109"
+   }
+  ]
+ },
+ {
+  "name": "train-f-173110",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm f --seed 173110 --input in/train-f-173110 --out out/train-f-173110 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-f-173110"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-f-173110"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173101",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173101 --input in/train-r-173101 --out out/train-r-173101 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173101"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173101"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173102",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173102 --input in/train-r-173102 --out out/train-r-173102 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173102"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173102"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173103",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173103 --input in/train-r-173103 --out out/train-r-173103 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173103"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173103"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173104",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173104 --input in/train-r-173104 --out out/train-r-173104 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173104"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173104"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173105",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173105 --input in/train-r-173105 --out out/train-r-173105 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173105"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173105"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173106",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173106 --input in/train-r-173106 --out out/train-r-173106 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173106"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173106"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173107",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173107 --input in/train-r-173107 --out out/train-r-173107 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173107"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173107"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173108",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173108 --input in/train-r-173108 --out out/train-r-173108 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173108"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173108"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173109",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173109 --input in/train-r-173109 --out out/train-r-173109 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173109"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173109"
+   }
+  ]
+ },
+ {
+  "name": "train-r-173110",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm r --seed 173110 --input in/train-r-173110 --out out/train-r-173110 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-r-173110"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-r-173110"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173101",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173101 --input in/train-shared64-173101 --out out/train-shared64-173101 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173101"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173101"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173102",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173102 --input in/train-shared64-173102 --out out/train-shared64-173102 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173102"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173102"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173103",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173103 --input in/train-shared64-173103 --out out/train-shared64-173103 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173103"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173103"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173104",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173104 --input in/train-shared64-173104 --out out/train-shared64-173104 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173104"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173104"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173105",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173105 --input in/train-shared64-173105 --out out/train-shared64-173105 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173105"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173105"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173106",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173106 --input in/train-shared64-173106 --out out/train-shared64-173106 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173106"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173106"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173107",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173107 --input in/train-shared64-173107 --out out/train-shared64-173107 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173107"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173107"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173108",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173108 --input in/train-shared64-173108 --out out/train-shared64-173108 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173108"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173108"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173109",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173109 --input in/train-shared64-173109 --out out/train-shared64-173109 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173109"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173109"
+   }
+  ]
+ },
+ {
+  "name": "train-shared64-173110",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm shared64 --seed 173110 --input in/train-shared64-173110 --out out/train-shared64-173110 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-shared64-173110"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-shared64-173110"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173101",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173101 --input in/train-unshared64-173101 --out out/train-unshared64-173101 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173101"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173101"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173102",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173102 --input in/train-unshared64-173102 --out out/train-unshared64-173102 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173102"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173102"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173103",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173103 --input in/train-unshared64-173103 --out out/train-unshared64-173103 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173103"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173103"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173104",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173104 --input in/train-unshared64-173104 --out out/train-unshared64-173104 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173104"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173104"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173105",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173105 --input in/train-unshared64-173105 --out out/train-unshared64-173105 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173105"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173105"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173106",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173106 --input in/train-unshared64-173106 --out out/train-unshared64-173106 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173106"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173106"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173107",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173107 --input in/train-unshared64-173107 --out out/train-unshared64-173107 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173107"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173107"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173108",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173108 --input in/train-unshared64-173108 --out out/train-unshared64-173108 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173108"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173108"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173109",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173109 --input in/train-unshared64-173109 --out out/train-unshared64-173109 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173109"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173109"
+   }
+  ]
+ },
+ {
+  "name": "train-unshared64-173110",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 train --arm unshared64 --seed 173110 --input in/train-unshared64-173110 --out out/train-unshared64-173110 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/train-unshared64-173110"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/train-unshared64-173110"
+   }
+  ]
+ }
+]

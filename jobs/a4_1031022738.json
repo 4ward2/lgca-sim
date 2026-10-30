@@ -1,0 +1,73 @@
+[
+ {
+  "name": "freeze",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 freeze --input in/freeze --out out/freeze --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41104727931,
+    "artifact": "smoke",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-b",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-r",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-f",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-dt-small",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-shared64",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-unshared64",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41106173352,
+    "artifact": "learn-b-173001",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41106173352,
+    "artifact": "learn-b-173002",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41106173352,
+    "artifact": "learn-b-173003",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "checker-qualification",
+    "dir": "in/freeze"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "resume-check",
+    "dir": "in/freeze"
+   }
+  ]
+ }
+]

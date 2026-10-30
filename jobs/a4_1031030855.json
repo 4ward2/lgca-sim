@@ -1,0 +1,6422 @@
+[
+ {
+  "name": "abl-density-173101-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173101 --length 128 --input in/abl-density-173101-128 --out out/abl-density-173101-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173101-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173101-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173101-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-density-173101-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173101-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173101 --length 256 --input in/abl-density-173101-256 --out out/abl-density-173101-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173101-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173101-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173101-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-density-173101-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173101-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173101 --length 40 --input in/abl-density-173101-40 --out out/abl-density-173101-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173101-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173101-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173101-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-density-173101-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173101-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173101 --length 44 --input in/abl-density-173101-44 --out out/abl-density-173101-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173101-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173101-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173101-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-density-173101-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173101-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173101 --length 48 --input in/abl-density-173101-48 --out out/abl-density-173101-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173101-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173101-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173101-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-density-173101-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173101-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173101 --length 512 --input in/abl-density-173101-512 --out out/abl-density-173101-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173101-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173101-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173101-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-density-173101-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173101-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173101 --length 64 --input in/abl-density-173101-64 --out out/abl-density-173101-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173101-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173101-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173101-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-density-173101-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173102-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173102 --length 128 --input in/abl-density-173102-128 --out out/abl-density-173102-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173102-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173102-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173102-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-density-173102-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173102-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173102 --length 256 --input in/abl-density-173102-256 --out out/abl-density-173102-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173102-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173102-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173102-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-density-173102-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173102-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173102 --length 40 --input in/abl-density-173102-40 --out out/abl-density-173102-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173102-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173102-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173102-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-density-173102-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173102-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173102 --length 44 --input in/abl-density-173102-44 --out out/abl-density-173102-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173102-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173102-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173102-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-density-173102-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173102-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173102 --length 48 --input in/abl-density-173102-48 --out out/abl-density-173102-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173102-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173102-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173102-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-density-173102-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173102-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173102 --length 512 --input in/abl-density-173102-512 --out out/abl-density-173102-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173102-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173102-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173102-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-density-173102-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173102-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173102 --length 64 --input in/abl-density-173102-64 --out out/abl-density-173102-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173102-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173102-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173102-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-density-173102-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173104-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173104 --length 128 --input in/abl-density-173104-128 --out out/abl-density-173104-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173104-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173104-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173104-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-density-173104-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173104-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173104 --length 256 --input in/abl-density-173104-256 --out out/abl-density-173104-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173104-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173104-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173104-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-density-173104-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173104-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173104 --length 40 --input in/abl-density-173104-40 --out out/abl-density-173104-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173104-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173104-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173104-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-density-173104-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173104-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173104 --length 44 --input in/abl-density-173104-44 --out out/abl-density-173104-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173104-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173104-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173104-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-density-173104-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173104-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173104 --length 48 --input in/abl-density-173104-48 --out out/abl-density-173104-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173104-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173104-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173104-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-density-173104-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173104-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173104 --length 512 --input in/abl-density-173104-512 --out out/abl-density-173104-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173104-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173104-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173104-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-density-173104-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173104-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173104 --length 64 --input in/abl-density-173104-64 --out out/abl-density-173104-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173104-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173104-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173104-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-density-173104-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173105-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173105 --length 128 --input in/abl-density-173105-128 --out out/abl-density-173105-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173105-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173105-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173105-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-density-173105-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173105-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173105 --length 256 --input in/abl-density-173105-256 --out out/abl-density-173105-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173105-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173105-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173105-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-density-173105-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173105-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173105 --length 40 --input in/abl-density-173105-40 --out out/abl-density-173105-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173105-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173105-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173105-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-density-173105-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173105-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173105 --length 44 --input in/abl-density-173105-44 --out out/abl-density-173105-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173105-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173105-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173105-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-density-173105-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173105-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173105 --length 48 --input in/abl-density-173105-48 --out out/abl-density-173105-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173105-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173105-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173105-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-density-173105-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173105-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173105 --length 512 --input in/abl-density-173105-512 --out out/abl-density-173105-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173105-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173105-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173105-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-density-173105-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173105-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173105 --length 64 --input in/abl-density-173105-64 --out out/abl-density-173105-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173105-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173105-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173105-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-density-173105-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173107-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173107 --length 128 --input in/abl-density-173107-128 --out out/abl-density-173107-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173107-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173107-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173107-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-density-173107-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173107-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173107 --length 256 --input in/abl-density-173107-256 --out out/abl-density-173107-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173107-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173107-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173107-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-density-173107-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173107-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173107 --length 40 --input in/abl-density-173107-40 --out out/abl-density-173107-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173107-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173107-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173107-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-density-173107-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173107-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173107 --length 44 --input in/abl-density-173107-44 --out out/abl-density-173107-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173107-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173107-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173107-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-density-173107-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173107-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173107 --length 48 --input in/abl-density-173107-48 --out out/abl-density-173107-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173107-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173107-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173107-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-density-173107-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173107-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173107 --length 512 --input in/abl-density-173107-512 --out out/abl-density-173107-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173107-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173107-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173107-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-density-173107-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173107-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173107 --length 64 --input in/abl-density-173107-64 --out out/abl-density-173107-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173107-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173107-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173107-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-density-173107-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173108-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173108 --length 128 --input in/abl-density-173108-128 --out out/abl-density-173108-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173108-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173108-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173108-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-density-173108-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173108-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173108 --length 256 --input in/abl-density-173108-256 --out out/abl-density-173108-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173108-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173108-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173108-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-density-173108-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173108-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173108 --length 40 --input in/abl-density-173108-40 --out out/abl-density-173108-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173108-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173108-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173108-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-density-173108-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173108-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173108 --length 44 --input in/abl-density-173108-44 --out out/abl-density-173108-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173108-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173108-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173108-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-density-173108-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173108-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173108 --length 48 --input in/abl-density-173108-48 --out out/abl-density-173108-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173108-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173108-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173108-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-density-173108-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173108-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173108 --length 512 --input in/abl-density-173108-512 --out out/abl-density-173108-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173108-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173108-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173108-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-density-173108-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173108-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173108 --length 64 --input in/abl-density-173108-64 --out out/abl-density-173108-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173108-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173108-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173108-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-density-173108-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173109-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173109 --length 128 --input in/abl-density-173109-128 --out out/abl-density-173109-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173109-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173109-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173109-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-density-173109-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173109-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173109 --length 256 --input in/abl-density-173109-256 --out out/abl-density-173109-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173109-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173109-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173109-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-density-173109-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173109-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173109 --length 40 --input in/abl-density-173109-40 --out out/abl-density-173109-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173109-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173109-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173109-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-density-173109-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173109-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173109 --length 44 --input in/abl-density-173109-44 --out out/abl-density-173109-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173109-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173109-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173109-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-density-173109-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173109-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173109 --length 48 --input in/abl-density-173109-48 --out out/abl-density-173109-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173109-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173109-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173109-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-density-173109-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173109-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173109 --length 512 --input in/abl-density-173109-512 --out out/abl-density-173109-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173109-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173109-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173109-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-density-173109-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173109-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173109 --length 64 --input in/abl-density-173109-64 --out out/abl-density-173109-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173109-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173109-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173109-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-density-173109-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173110-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173110 --length 128 --input in/abl-density-173110-128 --out out/abl-density-173110-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173110-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173110-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173110-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-density-173110-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173110-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173110 --length 256 --input in/abl-density-173110-256 --out out/abl-density-173110-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173110-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173110-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173110-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-density-173110-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173110-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173110 --length 40 --input in/abl-density-173110-40 --out out/abl-density-173110-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173110-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173110-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173110-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-density-173110-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173110-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173110 --length 44 --input in/abl-density-173110-44 --out out/abl-density-173110-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173110-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173110-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173110-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-density-173110-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173110-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173110 --length 48 --input in/abl-density-173110-48 --out out/abl-density-173110-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173110-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173110-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173110-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-density-173110-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173110-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173110 --length 512 --input in/abl-density-173110-512 --out out/abl-density-173110-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173110-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173110-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173110-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-density-173110-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-density-173110-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind density --arm b --seed 173110 --length 64 --input in/abl-density-173110-64 --out out/abl-density-173110-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-density-173110-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-density-173110-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-density-173110-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-density-173110-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173101-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173101 --length 128 --input in/abl-deployment-173101-128 --out out/abl-deployment-173101-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173101-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173101-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173101-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-deployment-173101-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173101-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173101 --length 256 --input in/abl-deployment-173101-256 --out out/abl-deployment-173101-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173101-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173101-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173101-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-deployment-173101-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173101-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173101 --length 40 --input in/abl-deployment-173101-40 --out out/abl-deployment-173101-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173101-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173101-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173101-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-deployment-173101-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173101-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173101 --length 44 --input in/abl-deployment-173101-44 --out out/abl-deployment-173101-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173101-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173101-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173101-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-deployment-173101-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173101-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173101 --length 48 --input in/abl-deployment-173101-48 --out out/abl-deployment-173101-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173101-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173101-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173101-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-deployment-173101-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173101-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173101 --length 512 --input in/abl-deployment-173101-512 --out out/abl-deployment-173101-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173101-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173101-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173101-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-deployment-173101-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173101-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173101 --length 64 --input in/abl-deployment-173101-64 --out out/abl-deployment-173101-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173101-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173101-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173101-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-deployment-173101-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173102-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173102 --length 128 --input in/abl-deployment-173102-128 --out out/abl-deployment-173102-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173102-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173102-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173102-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-deployment-173102-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173102-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173102 --length 256 --input in/abl-deployment-173102-256 --out out/abl-deployment-173102-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173102-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173102-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173102-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-deployment-173102-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173102-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173102 --length 40 --input in/abl-deployment-173102-40 --out out/abl-deployment-173102-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173102-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173102-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173102-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-deployment-173102-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173102-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173102 --length 44 --input in/abl-deployment-173102-44 --out out/abl-deployment-173102-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173102-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173102-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173102-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-deployment-173102-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173102-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173102 --length 48 --input in/abl-deployment-173102-48 --out out/abl-deployment-173102-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173102-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173102-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173102-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-deployment-173102-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173102-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173102 --length 512 --input in/abl-deployment-173102-512 --out out/abl-deployment-173102-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173102-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173102-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173102-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-deployment-173102-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173102-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173102 --length 64 --input in/abl-deployment-173102-64 --out out/abl-deployment-173102-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173102-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173102-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173102-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-deployment-173102-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173104-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173104 --length 128 --input in/abl-deployment-173104-128 --out out/abl-deployment-173104-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173104-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173104-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173104-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-deployment-173104-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173104-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173104 --length 256 --input in/abl-deployment-173104-256 --out out/abl-deployment-173104-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173104-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173104-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173104-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-deployment-173104-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173104-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173104 --length 40 --input in/abl-deployment-173104-40 --out out/abl-deployment-173104-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173104-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173104-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173104-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-deployment-173104-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173104-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173104 --length 44 --input in/abl-deployment-173104-44 --out out/abl-deployment-173104-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173104-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173104-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173104-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-deployment-173104-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173104-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173104 --length 48 --input in/abl-deployment-173104-48 --out out/abl-deployment-173104-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173104-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173104-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173104-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-deployment-173104-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173104-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173104 --length 512 --input in/abl-deployment-173104-512 --out out/abl-deployment-173104-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173104-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173104-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173104-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-deployment-173104-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173104-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173104 --length 64 --input in/abl-deployment-173104-64 --out out/abl-deployment-173104-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173104-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173104-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173104-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-deployment-173104-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173105-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173105 --length 128 --input in/abl-deployment-173105-128 --out out/abl-deployment-173105-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173105-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173105-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173105-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-deployment-173105-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173105-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173105 --length 256 --input in/abl-deployment-173105-256 --out out/abl-deployment-173105-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173105-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173105-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173105-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-deployment-173105-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173105-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173105 --length 40 --input in/abl-deployment-173105-40 --out out/abl-deployment-173105-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173105-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173105-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173105-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-deployment-173105-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173105-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173105 --length 44 --input in/abl-deployment-173105-44 --out out/abl-deployment-173105-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173105-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173105-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173105-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-deployment-173105-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173105-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173105 --length 48 --input in/abl-deployment-173105-48 --out out/abl-deployment-173105-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173105-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173105-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173105-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-deployment-173105-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173105-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173105 --length 512 --input in/abl-deployment-173105-512 --out out/abl-deployment-173105-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173105-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173105-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173105-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-deployment-173105-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173105-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173105 --length 64 --input in/abl-deployment-173105-64 --out out/abl-deployment-173105-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173105-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173105-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173105-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-deployment-173105-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173107-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173107 --length 128 --input in/abl-deployment-173107-128 --out out/abl-deployment-173107-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173107-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173107-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173107-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-deployment-173107-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173107-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173107 --length 256 --input in/abl-deployment-173107-256 --out out/abl-deployment-173107-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173107-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173107-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173107-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-deployment-173107-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173107-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173107 --length 40 --input in/abl-deployment-173107-40 --out out/abl-deployment-173107-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173107-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173107-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173107-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-deployment-173107-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173107-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173107 --length 44 --input in/abl-deployment-173107-44 --out out/abl-deployment-173107-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173107-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173107-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173107-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-deployment-173107-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173107-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173107 --length 48 --input in/abl-deployment-173107-48 --out out/abl-deployment-173107-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173107-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173107-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173107-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-deployment-173107-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173107-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173107 --length 512 --input in/abl-deployment-173107-512 --out out/abl-deployment-173107-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173107-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173107-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173107-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-deployment-173107-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173107-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173107 --length 64 --input in/abl-deployment-173107-64 --out out/abl-deployment-173107-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173107-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173107-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173107-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-deployment-173107-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173108-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173108 --length 128 --input in/abl-deployment-173108-128 --out out/abl-deployment-173108-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173108-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173108-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173108-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-deployment-173108-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173108-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173108 --length 256 --input in/abl-deployment-173108-256 --out out/abl-deployment-173108-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173108-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173108-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173108-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-deployment-173108-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173108-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173108 --length 40 --input in/abl-deployment-173108-40 --out out/abl-deployment-173108-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173108-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173108-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173108-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-deployment-173108-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173108-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173108 --length 44 --input in/abl-deployment-173108-44 --out out/abl-deployment-173108-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173108-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173108-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173108-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-deployment-173108-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173108-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173108 --length 48 --input in/abl-deployment-173108-48 --out out/abl-deployment-173108-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173108-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173108-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173108-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-deployment-173108-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173108-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173108 --length 512 --input in/abl-deployment-173108-512 --out out/abl-deployment-173108-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173108-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173108-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173108-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-deployment-173108-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173108-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173108 --length 64 --input in/abl-deployment-173108-64 --out out/abl-deployment-173108-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173108-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173108-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173108-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-deployment-173108-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173109-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173109 --length 128 --input in/abl-deployment-173109-128 --out out/abl-deployment-173109-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173109-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173109-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173109-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-deployment-173109-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173109-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173109 --length 256 --input in/abl-deployment-173109-256 --out out/abl-deployment-173109-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173109-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173109-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173109-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-deployment-173109-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173109-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173109 --length 40 --input in/abl-deployment-173109-40 --out out/abl-deployment-173109-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173109-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173109-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173109-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-deployment-173109-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173109-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173109 --length 44 --input in/abl-deployment-173109-44 --out out/abl-deployment-173109-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173109-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173109-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173109-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-deployment-173109-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173109-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173109 --length 48 --input in/abl-deployment-173109-48 --out out/abl-deployment-173109-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173109-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173109-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173109-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-deployment-173109-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173109-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173109 --length 512 --input in/abl-deployment-173109-512 --out out/abl-deployment-173109-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173109-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173109-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173109-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-deployment-173109-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173109-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173109 --length 64 --input in/abl-deployment-173109-64 --out out/abl-deployment-173109-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173109-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173109-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173109-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-deployment-173109-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173110-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173110 --length 128 --input in/abl-deployment-173110-128 --out out/abl-deployment-173110-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173110-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173110-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173110-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-deployment-173110-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173110-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173110 --length 256 --input in/abl-deployment-173110-256 --out out/abl-deployment-173110-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173110-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173110-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173110-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-deployment-173110-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173110-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173110 --length 40 --input in/abl-deployment-173110-40 --out out/abl-deployment-173110-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173110-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173110-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173110-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-deployment-173110-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173110-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173110 --length 44 --input in/abl-deployment-173110-44 --out out/abl-deployment-173110-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173110-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173110-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173110-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-deployment-173110-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173110-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173110 --length 48 --input in/abl-deployment-173110-48 --out out/abl-deployment-173110-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173110-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173110-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173110-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-deployment-173110-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173110-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173110 --length 512 --input in/abl-deployment-173110-512 --out out/abl-deployment-173110-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173110-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173110-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173110-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-deployment-173110-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-deployment-173110-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind deployment --arm b --seed 173110 --length 64 --input in/abl-deployment-173110-64 --out out/abl-deployment-173110-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-deployment-173110-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-deployment-173110-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-deployment-173110-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-deployment-173110-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173101-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173101 --length 128 --input in/abl-unknown-173101-128 --out out/abl-unknown-173101-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173101-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173101-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173101-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-unknown-173101-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173101-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173101 --length 256 --input in/abl-unknown-173101-256 --out out/abl-unknown-173101-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173101-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173101-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173101-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-unknown-173101-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173101-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173101 --length 40 --input in/abl-unknown-173101-40 --out out/abl-unknown-173101-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173101-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173101-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173101-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-unknown-173101-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173101-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173101 --length 44 --input in/abl-unknown-173101-44 --out out/abl-unknown-173101-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173101-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173101-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173101-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-unknown-173101-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173101-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173101 --length 48 --input in/abl-unknown-173101-48 --out out/abl-unknown-173101-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173101-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173101-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173101-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-unknown-173101-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173101-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173101 --length 512 --input in/abl-unknown-173101-512 --out out/abl-unknown-173101-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173101-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173101-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173101-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-unknown-173101-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173101-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173101 --length 64 --input in/abl-unknown-173101-64 --out out/abl-unknown-173101-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173101-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173101-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173101-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/abl-unknown-173101-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173102-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173102 --length 128 --input in/abl-unknown-173102-128 --out out/abl-unknown-173102-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173102-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173102-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173102-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-unknown-173102-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173102-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173102 --length 256 --input in/abl-unknown-173102-256 --out out/abl-unknown-173102-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173102-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173102-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173102-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-unknown-173102-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173102-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173102 --length 40 --input in/abl-unknown-173102-40 --out out/abl-unknown-173102-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173102-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173102-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173102-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-unknown-173102-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173102-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173102 --length 44 --input in/abl-unknown-173102-44 --out out/abl-unknown-173102-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173102-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173102-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173102-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-unknown-173102-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173102-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173102 --length 48 --input in/abl-unknown-173102-48 --out out/abl-unknown-173102-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173102-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173102-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173102-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-unknown-173102-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173102-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173102 --length 512 --input in/abl-unknown-173102-512 --out out/abl-unknown-173102-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173102-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173102-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173102-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-unknown-173102-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173102-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173102 --length 64 --input in/abl-unknown-173102-64 --out out/abl-unknown-173102-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173102-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173102-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173102-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/abl-unknown-173102-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173104-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173104 --length 128 --input in/abl-unknown-173104-128 --out out/abl-unknown-173104-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173104-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173104-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173104-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-unknown-173104-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173104-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173104 --length 256 --input in/abl-unknown-173104-256 --out out/abl-unknown-173104-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173104-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173104-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173104-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-unknown-173104-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173104-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173104 --length 40 --input in/abl-unknown-173104-40 --out out/abl-unknown-173104-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173104-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173104-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173104-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-unknown-173104-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173104-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173104 --length 44 --input in/abl-unknown-173104-44 --out out/abl-unknown-173104-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173104-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173104-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173104-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-unknown-173104-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173104-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173104 --length 48 --input in/abl-unknown-173104-48 --out out/abl-unknown-173104-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173104-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173104-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173104-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-unknown-173104-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173104-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173104 --length 512 --input in/abl-unknown-173104-512 --out out/abl-unknown-173104-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173104-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173104-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173104-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-unknown-173104-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173104-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173104 --length 64 --input in/abl-unknown-173104-64 --out out/abl-unknown-173104-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173104-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173104-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173104-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/abl-unknown-173104-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173105-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173105 --length 128 --input in/abl-unknown-173105-128 --out out/abl-unknown-173105-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173105-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173105-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173105-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-unknown-173105-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173105-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173105 --length 256 --input in/abl-unknown-173105-256 --out out/abl-unknown-173105-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173105-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173105-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173105-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-unknown-173105-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173105-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173105 --length 40 --input in/abl-unknown-173105-40 --out out/abl-unknown-173105-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173105-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173105-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173105-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-unknown-173105-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173105-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173105 --length 44 --input in/abl-unknown-173105-44 --out out/abl-unknown-173105-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173105-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173105-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173105-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-unknown-173105-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173105-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173105 --length 48 --input in/abl-unknown-173105-48 --out out/abl-unknown-173105-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173105-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173105-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173105-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-unknown-173105-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173105-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173105 --length 512 --input in/abl-unknown-173105-512 --out out/abl-unknown-173105-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173105-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173105-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173105-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-unknown-173105-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173105-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173105 --length 64 --input in/abl-unknown-173105-64 --out out/abl-unknown-173105-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173105-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173105-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173105-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/abl-unknown-173105-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173107-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173107 --length 128 --input in/abl-unknown-173107-128 --out out/abl-unknown-173107-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173107-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173107-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173107-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-unknown-173107-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173107-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173107 --length 256 --input in/abl-unknown-173107-256 --out out/abl-unknown-173107-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173107-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173107-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173107-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-unknown-173107-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173107-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173107 --length 40 --input in/abl-unknown-173107-40 --out out/abl-unknown-173107-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173107-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173107-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173107-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-unknown-173107-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173107-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173107 --length 44 --input in/abl-unknown-173107-44 --out out/abl-unknown-173107-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173107-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173107-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173107-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-unknown-173107-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173107-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173107 --length 48 --input in/abl-unknown-173107-48 --out out/abl-unknown-173107-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173107-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173107-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173107-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-unknown-173107-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173107-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173107 --length 512 --input in/abl-unknown-173107-512 --out out/abl-unknown-173107-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173107-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173107-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173107-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-unknown-173107-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173107-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173107 --length 64 --input in/abl-unknown-173107-64 --out out/abl-unknown-173107-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173107-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173107-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173107-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/abl-unknown-173107-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173108-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173108 --length 128 --input in/abl-unknown-173108-128 --out out/abl-unknown-173108-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173108-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173108-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173108-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-unknown-173108-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173108-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173108 --length 256 --input in/abl-unknown-173108-256 --out out/abl-unknown-173108-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173108-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173108-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173108-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-unknown-173108-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173108-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173108 --length 40 --input in/abl-unknown-173108-40 --out out/abl-unknown-173108-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173108-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173108-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173108-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-unknown-173108-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173108-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173108 --length 44 --input in/abl-unknown-173108-44 --out out/abl-unknown-173108-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173108-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173108-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173108-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-unknown-173108-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173108-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173108 --length 48 --input in/abl-unknown-173108-48 --out out/abl-unknown-173108-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173108-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173108-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173108-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-unknown-173108-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173108-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173108 --length 512 --input in/abl-unknown-173108-512 --out out/abl-unknown-173108-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173108-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173108-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173108-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-unknown-173108-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173108-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173108 --length 64 --input in/abl-unknown-173108-64 --out out/abl-unknown-173108-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173108-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173108-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173108-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/abl-unknown-173108-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173109-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173109 --length 128 --input in/abl-unknown-173109-128 --out out/abl-unknown-173109-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173109-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173109-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173109-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-unknown-173109-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173109-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173109 --length 256 --input in/abl-unknown-173109-256 --out out/abl-unknown-173109-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173109-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173109-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173109-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-unknown-173109-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173109-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173109 --length 40 --input in/abl-unknown-173109-40 --out out/abl-unknown-173109-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173109-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173109-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173109-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-unknown-173109-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173109-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173109 --length 44 --input in/abl-unknown-173109-44 --out out/abl-unknown-173109-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173109-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173109-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173109-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-unknown-173109-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173109-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173109 --length 48 --input in/abl-unknown-173109-48 --out out/abl-unknown-173109-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173109-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173109-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173109-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-unknown-173109-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173109-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173109 --length 512 --input in/abl-unknown-173109-512 --out out/abl-unknown-173109-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173109-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173109-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173109-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-unknown-173109-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173109-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173109 --length 64 --input in/abl-unknown-173109-64 --out out/abl-unknown-173109-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173109-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173109-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173109-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/abl-unknown-173109-64"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173110-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173110 --length 128 --input in/abl-unknown-173110-128 --out out/abl-unknown-173110-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173110-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173110-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173110-128"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-unknown-173110-128"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173110-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173110 --length 256 --input in/abl-unknown-173110-256 --out out/abl-unknown-173110-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173110-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173110-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173110-256"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-unknown-173110-256"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173110-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173110 --length 40 --input in/abl-unknown-173110-40 --out out/abl-unknown-173110-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173110-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173110-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173110-40"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-unknown-173110-40"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173110-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173110 --length 44 --input in/abl-unknown-173110-44 --out out/abl-unknown-173110-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173110-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173110-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173110-44"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-unknown-173110-44"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173110-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173110 --length 48 --input in/abl-unknown-173110-48 --out out/abl-unknown-173110-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173110-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173110-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173110-48"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-unknown-173110-48"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173110-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173110 --length 512 --input in/abl-unknown-173110-512 --out out/abl-unknown-173110-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173110-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173110-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173110-512"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-unknown-173110-512"
+   }
+  ]
+ },
+ {
+  "name": "abl-unknown-173110-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 ablate --kind unknown --arm b --seed 173110 --length 64 --input in/abl-unknown-173110-64 --out out/abl-unknown-173110-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/abl-unknown-173110-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/abl-unknown-173110-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/abl-unknown-173110-64"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/abl-unknown-173110-64"
+   }
+  ]
+ },
+ {
+  "name": "cert-173101",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173101 --input in/cert-173101 --out out/cert-173101 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173101"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/cert-173101"
+   }
+  ]
+ },
+ {
+  "name": "cert-173102",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173102 --input in/cert-173102 --out out/cert-173102 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173102"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/cert-173102"
+   }
+  ]
+ },
+ {
+  "name": "cert-173104",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173104 --input in/cert-173104 --out out/cert-173104 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173104"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/cert-173104"
+   }
+  ]
+ },
+ {
+  "name": "cert-173105",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173105 --input in/cert-173105 --out out/cert-173105 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173105"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/cert-173105"
+   }
+  ]
+ },
+ {
+  "name": "cert-173107",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173107 --input in/cert-173107 --out out/cert-173107 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173107"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/cert-173107"
+   }
+  ]
+ },
+ {
+  "name": "cert-173108",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173108 --input in/cert-173108 --out out/cert-173108 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173108"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/cert-173108"
+   }
+  ]
+ },
+ {
+  "name": "cert-173109",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173109 --input in/cert-173109 --out out/cert-173109 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173109"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/cert-173109"
+   }
+  ]
+ },
+ {
+  "name": "cert-173110",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 certify --seed 173110 --input in/cert-173110 --out out/cert-173110 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/cert-173110"
+   },
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/cert-173110"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173101-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173101 --length 128 --input in/eval-b-173101-128 --out out/eval-b-173101-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/eval-b-173101-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173101-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173101-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173101-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173101-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173101 --length 256 --input in/eval-b-173101-256 --out out/eval-b-173101-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/eval-b-173101-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173101-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173101-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173101-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173101-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173101 --length 40 --input in/eval-b-173101-40 --out out/eval-b-173101-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/eval-b-173101-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173101-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173101-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173101-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173101-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173101 --length 44 --input in/eval-b-173101-44 --out out/eval-b-173101-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/eval-b-173101-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173101-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173101-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173101-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173101-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173101 --length 48 --input in/eval-b-173101-48 --out out/eval-b-173101-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/eval-b-173101-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173101-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173101-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173101-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173101-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173101 --length 512 --input in/eval-b-173101-512 --out out/eval-b-173101-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/eval-b-173101-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173101-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173101-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173101-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173101-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173101 --length 64 --input in/eval-b-173101-64 --out out/eval-b-173101-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173101",
+    "dir": "in/eval-b-173101-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173101-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173101-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173101-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173102-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173102 --length 128 --input in/eval-b-173102-128 --out out/eval-b-173102-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/eval-b-173102-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173102-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173102-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173102-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173102-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173102 --length 256 --input in/eval-b-173102-256 --out out/eval-b-173102-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/eval-b-173102-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173102-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173102-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173102-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173102-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173102 --length 40 --input in/eval-b-173102-40 --out out/eval-b-173102-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/eval-b-173102-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173102-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173102-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173102-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173102-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173102 --length 44 --input in/eval-b-173102-44 --out out/eval-b-173102-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/eval-b-173102-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173102-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173102-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173102-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173102-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173102 --length 48 --input in/eval-b-173102-48 --out out/eval-b-173102-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/eval-b-173102-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173102-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173102-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173102-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173102-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173102 --length 512 --input in/eval-b-173102-512 --out out/eval-b-173102-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/eval-b-173102-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173102-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173102-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173102-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173102-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173102 --length 64 --input in/eval-b-173102-64 --out out/eval-b-173102-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173102",
+    "dir": "in/eval-b-173102-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173102-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173102-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173102-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173104-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173104 --length 128 --input in/eval-b-173104-128 --out out/eval-b-173104-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/eval-b-173104-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173104-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173104-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173104-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173104-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173104 --length 256 --input in/eval-b-173104-256 --out out/eval-b-173104-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/eval-b-173104-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173104-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173104-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173104-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173104-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173104 --length 40 --input in/eval-b-173104-40 --out out/eval-b-173104-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/eval-b-173104-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173104-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173104-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173104-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173104-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173104 --length 44 --input in/eval-b-173104-44 --out out/eval-b-173104-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/eval-b-173104-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173104-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173104-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173104-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173104-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173104 --length 48 --input in/eval-b-173104-48 --out out/eval-b-173104-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/eval-b-173104-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173104-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173104-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173104-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173104-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173104 --length 512 --input in/eval-b-173104-512 --out out/eval-b-173104-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/eval-b-173104-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173104-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173104-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173104-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173104-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173104 --length 64 --input in/eval-b-173104-64 --out out/eval-b-173104-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173104",
+    "dir": "in/eval-b-173104-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173104-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173104-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173104-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173105-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173105 --length 128 --input in/eval-b-173105-128 --out out/eval-b-173105-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/eval-b-173105-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173105-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173105-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173105-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173105-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173105 --length 256 --input in/eval-b-173105-256 --out out/eval-b-173105-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/eval-b-173105-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173105-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173105-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173105-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173105-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173105 --length 40 --input in/eval-b-173105-40 --out out/eval-b-173105-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/eval-b-173105-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173105-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173105-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173105-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173105-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173105 --length 44 --input in/eval-b-173105-44 --out out/eval-b-173105-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/eval-b-173105-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173105-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173105-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173105-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173105-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173105 --length 48 --input in/eval-b-173105-48 --out out/eval-b-173105-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/eval-b-173105-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173105-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173105-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173105-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173105-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173105 --length 512 --input in/eval-b-173105-512 --out out/eval-b-173105-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/eval-b-173105-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173105-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173105-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173105-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173105-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173105 --length 64 --input in/eval-b-173105-64 --out out/eval-b-173105-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173105",
+    "dir": "in/eval-b-173105-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173105-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173105-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173105-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173107-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173107 --length 128 --input in/eval-b-173107-128 --out out/eval-b-173107-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/eval-b-173107-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173107-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173107-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173107-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173107-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173107 --length 256 --input in/eval-b-173107-256 --out out/eval-b-173107-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/eval-b-173107-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173107-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173107-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173107-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173107-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173107 --length 40 --input in/eval-b-173107-40 --out out/eval-b-173107-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/eval-b-173107-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173107-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173107-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173107-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173107-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173107 --length 44 --input in/eval-b-173107-44 --out out/eval-b-173107-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/eval-b-173107-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173107-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173107-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173107-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173107-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173107 --length 48 --input in/eval-b-173107-48 --out out/eval-b-173107-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/eval-b-173107-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173107-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173107-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173107-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173107-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173107 --length 512 --input in/eval-b-173107-512 --out out/eval-b-173107-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/eval-b-173107-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173107-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173107-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173107-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173107-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173107 --length 64 --input in/eval-b-173107-64 --out out/eval-b-173107-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173107",
+    "dir": "in/eval-b-173107-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173107-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173107-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173107-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173108-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173108 --length 128 --input in/eval-b-173108-128 --out out/eval-b-173108-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/eval-b-173108-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173108-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173108-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173108-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173108-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173108 --length 256 --input in/eval-b-173108-256 --out out/eval-b-173108-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/eval-b-173108-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173108-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173108-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173108-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173108-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173108 --length 40 --input in/eval-b-173108-40 --out out/eval-b-173108-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/eval-b-173108-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173108-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173108-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173108-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173108-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173108 --length 44 --input in/eval-b-173108-44 --out out/eval-b-173108-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/eval-b-173108-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173108-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173108-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173108-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173108-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173108 --length 48 --input in/eval-b-173108-48 --out out/eval-b-173108-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/eval-b-173108-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173108-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173108-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173108-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173108-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173108 --length 512 --input in/eval-b-173108-512 --out out/eval-b-173108-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/eval-b-173108-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173108-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173108-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173108-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173108-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173108 --length 64 --input in/eval-b-173108-64 --out out/eval-b-173108-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173108",
+    "dir": "in/eval-b-173108-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173108-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173108-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173108-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173109-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173109 --length 128 --input in/eval-b-173109-128 --out out/eval-b-173109-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/eval-b-173109-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173109-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173109-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173109-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173109-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173109 --length 256 --input in/eval-b-173109-256 --out out/eval-b-173109-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/eval-b-173109-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173109-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173109-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173109-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173109-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173109 --length 40 --input in/eval-b-173109-40 --out out/eval-b-173109-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/eval-b-173109-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173109-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173109-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173109-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173109-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173109 --length 44 --input in/eval-b-173109-44 --out out/eval-b-173109-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/eval-b-173109-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173109-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173109-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173109-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173109-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173109 --length 48 --input in/eval-b-173109-48 --out out/eval-b-173109-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/eval-b-173109-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173109-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173109-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173109-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173109-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173109 --length 512 --input in/eval-b-173109-512 --out out/eval-b-173109-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/eval-b-173109-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173109-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173109-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173109-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173109-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173109 --length 64 --input in/eval-b-173109-64 --out out/eval-b-173109-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173109",
+    "dir": "in/eval-b-173109-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173109-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173109-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173109-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173110-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173110 --length 128 --input in/eval-b-173110-128 --out out/eval-b-173110-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/eval-b-173110-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173110-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173110-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173110-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173110-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173110 --length 256 --input in/eval-b-173110-256 --out out/eval-b-173110-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/eval-b-173110-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173110-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173110-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173110-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173110-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173110 --length 40 --input in/eval-b-173110-40 --out out/eval-b-173110-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/eval-b-173110-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173110-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173110-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173110-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173110-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173110 --length 44 --input in/eval-b-173110-44 --out out/eval-b-173110-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/eval-b-173110-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173110-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173110-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173110-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173110-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173110 --length 48 --input in/eval-b-173110-48 --out out/eval-b-173110-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/eval-b-173110-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173110-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173110-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173110-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173110-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173110 --length 512 --input in/eval-b-173110-512 --out out/eval-b-173110-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/eval-b-173110-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173110-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173110-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173110-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-b-173110-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm b --seed 173110 --length 64 --input in/eval-b-173110-64 --out out/eval-b-173110-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-b-173110",
+    "dir": "in/eval-b-173110-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-b-173110-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-b-173110-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-b-173110-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173102-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173102 --length 128 --input in/eval-dt-small-173102-128 --out out/eval-dt-small-173102-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173102",
+    "dir": "in/eval-dt-small-173102-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173102-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173102-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173102-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173102-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173102 --length 256 --input in/eval-dt-small-173102-256 --out out/eval-dt-small-173102-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173102",
+    "dir": "in/eval-dt-small-173102-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173102-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173102-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173102-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173102-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173102 --length 40 --input in/eval-dt-small-173102-40 --out out/eval-dt-small-173102-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173102",
+    "dir": "in/eval-dt-small-173102-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173102-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173102-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173102-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173102-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173102 --length 44 --input in/eval-dt-small-173102-44 --out out/eval-dt-small-173102-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173102",
+    "dir": "in/eval-dt-small-173102-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173102-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173102-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173102-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173102-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173102 --length 48 --input in/eval-dt-small-173102-48 --out out/eval-dt-small-173102-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173102",
+    "dir": "in/eval-dt-small-173102-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173102-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173102-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173102-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173102-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173102 --length 512 --input in/eval-dt-small-173102-512 --out out/eval-dt-small-173102-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173102",
+    "dir": "in/eval-dt-small-173102-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173102-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173102-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173102-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173102-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173102 --length 64 --input in/eval-dt-small-173102-64 --out out/eval-dt-small-173102-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173102",
+    "dir": "in/eval-dt-small-173102-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173102-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173102-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173102-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173103-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173103 --length 128 --input in/eval-dt-small-173103-128 --out out/eval-dt-small-173103-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173103",
+    "dir": "in/eval-dt-small-173103-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173103-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173103-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173103-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173103-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173103 --length 256 --input in/eval-dt-small-173103-256 --out out/eval-dt-small-173103-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173103",
+    "dir": "in/eval-dt-small-173103-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173103-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173103-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173103-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173103-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173103 --length 40 --input in/eval-dt-small-173103-40 --out out/eval-dt-small-173103-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173103",
+    "dir": "in/eval-dt-small-173103-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173103-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173103-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173103-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173103-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173103 --length 44 --input in/eval-dt-small-173103-44 --out out/eval-dt-small-173103-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173103",
+    "dir": "in/eval-dt-small-173103-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173103-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173103-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173103-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173103-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173103 --length 48 --input in/eval-dt-small-173103-48 --out out/eval-dt-small-173103-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173103",
+    "dir": "in/eval-dt-small-173103-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173103-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173103-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173103-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173103-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173103 --length 512 --input in/eval-dt-small-173103-512 --out out/eval-dt-small-173103-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173103",
+    "dir": "in/eval-dt-small-173103-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173103-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173103-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173103-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173103-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173103 --length 64 --input in/eval-dt-small-173103-64 --out out/eval-dt-small-173103-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173103",
+    "dir": "in/eval-dt-small-173103-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173103-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173103-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173103-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173104-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173104 --length 128 --input in/eval-dt-small-173104-128 --out out/eval-dt-small-173104-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173104",
+    "dir": "in/eval-dt-small-173104-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173104-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173104-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173104-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173104-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173104 --length 256 --input in/eval-dt-small-173104-256 --out out/eval-dt-small-173104-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173104",
+    "dir": "in/eval-dt-small-173104-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173104-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173104-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173104-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173104-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173104 --length 40 --input in/eval-dt-small-173104-40 --out out/eval-dt-small-173104-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173104",
+    "dir": "in/eval-dt-small-173104-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173104-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173104-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173104-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-dt-small-173104-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm dt-small --seed 173104 --length 44 --input in/eval-dt-small-173104-44 --out out/eval-dt-small-173104-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41108828892,
+    "artifact": "train-dt-small-173104",
+    "dir": "in/eval-dt-small-173104-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-dt-small-173104-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-dt-small-173104-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-dt-small-173104-44"
+   }
+  ]
+ }
+]

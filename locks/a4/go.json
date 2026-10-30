@@ -1,0 +1,23 @@
+{
+  "arms": [
+    "b",
+    "r",
+    "f",
+    "dt-small",
+    "shared64",
+    "unshared64"
+  ],
+  "dt_status": "enabled",
+  "issues": [],
+  "passed_b_pilots": 3,
+  "status": "READY_FOR_REVIEW",
+  "total_runner_hours": 65.31425484495554,
+  "training_hours_per_seed": {
+    "b": 0.0907395682111105,
+    "dt-small": 0.2826379612044479,
+    "f": 0.011288229277778075,
+    "r": 0.18065452899777748,
+    "shared64": 0.055858618902222636,
+    "unshared64": 0.11514413809111068
+  }
+}

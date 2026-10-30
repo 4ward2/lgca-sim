@@ -1,0 +1,38 @@
+[
+ {
+  "name": "gate",
+  "cmd": "OMP_NUM_THREADS=1 python -m sim.a3_sudoku.gate --dev in/data_4_dev/manifest.json in/data_9_dev/manifest.json in/data_9_dev2/manifest.json --runs in/train_60101/ in/train_60102/ in/train_60103/ --node-limit 100000 --seconds 8 --search-count 100 --output out/gate/",
+  "fetch": [
+   {
+    "run_id": 41012457147,
+    "artifact": "data_4_dev",
+    "dir": "in"
+   },
+   {
+    "run_id": 41012457147,
+    "artifact": "data_9_dev",
+    "dir": "in"
+   },
+   {
+    "run_id": 41015747578,
+    "artifact": "data_9_dev2",
+    "dir": "in"
+   },
+   {
+    "run_id": 41015572981,
+    "artifact": "train_60101",
+    "dir": "in"
+   },
+   {
+    "run_id": 41015572981,
+    "artifact": "train_60102",
+    "dir": "in"
+   },
+   {
+    "run_id": 41015572981,
+    "artifact": "train_60103",
+    "dir": "in"
+   }
+  ]
+ }
+]

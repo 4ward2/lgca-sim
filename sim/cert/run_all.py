@@ -40,7 +40,7 @@ def equivalence_key(t, task):
     return hashlib.sha256(bytes(best)).hexdigest()
 
 
-def crosscheck(t, task, seed=80001):
+def crosscheck(t, task, seed=90001):
     from sim import tasks
     rng = np.random.default_rng(seed)
     for n in (1, 2, 3, 5, 8, 13):
@@ -75,7 +75,7 @@ def main():
         classes.setdefault(key, []).append(name)
         row = dict(run=name, task=task, seed=seed, table_hash=t['table_sha256'],
                    checkpoint_sha256=t['checkpoint_sha256'], seconds=time.monotonic()-start,
-                   interpreter_crosscheck_seed=80001, halting=halting.decide(t, task), **result)
+                   interpreter_crosscheck_seed=90001, halting=halting.decide(t, task), **result)
         rows.append(row)
         (a.out / (name + '_tables.json')).write_text(json.dumps(t), encoding='utf-8')
         print(f"{name}: {row['verdict']} ({row['seconds']:.3f}s)", flush=True)

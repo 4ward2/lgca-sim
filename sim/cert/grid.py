@@ -54,6 +54,8 @@ def _obligations(t, pi, wall):
 def replay(t, obligations):
     """Check the complete recorded proof for its chosen core/relabelling, no search."""
     validate(t, 'M')
+    if t['V'] != 2:
+        return False
     try:
         core = obligations[0]['expected']
         if core not in (1, 2, 3) or core & unary(t, 4) != core:

@@ -66,7 +66,7 @@ class CertificateTests(unittest.TestCase):
             for seed in range(1, 11):
                 _, _, t = load(Path(os.environ['CERT_RUNS']) / f'{task}_B_s{seed}')
                 self.assertEqual(verdict(t, task)['verdict'], expected_verdict(task, seed))
-                crosscheck(t, task, 80004)
+                crosscheck(t, task, 90004)
 
     def test_portable_verdicts(self):
         for task, seed in itertools.product(('P', 'A', 'M'), range(1, 11)):
@@ -159,7 +159,7 @@ class CertificateTests(unittest.TestCase):
         ns = dict(__name__='sim.cert._mutant', __package__='sim.cert')
         exec(compile(source, '<drop-backward-mutant>', 'exec'), ns)
         killed = False
-        rng = np.random.default_rng(80005)
+        rng = np.random.default_rng(90005)
         for _ in range(200):
             bad = extract(plant_ternary_oracle('P'))
             for key in ('u', 'r', 'o'):
@@ -173,10 +173,36 @@ class CertificateTests(unittest.TestCase):
             if killed: break
         self.assertTrue(killed, 'suite failed to kill missing-backward checker')
 
+    def test_v3_replay_regression(self):
+        from . import grid
+        from .tables import validate
+        # Astra's duplicated safe wall latent, with incorrect extra-bit readout.
+        t = fixture('M', 3); cert = certificate(t)
+        core = cert['wall_domain']; h = (core & -core).bit_length() - 1
+        bad = copy.deepcopy(t); bad['V'] = 3
+        bad['u'] = [row + [int(x == 4)] for x, row in enumerate(t['u'])]
+        r = np.zeros((2, 8, 8, 3, 3), dtype=int)
+        for e, a, b, i, j in itertools.product(range(2), range(8), range(8), range(3), range(3)):
+            if (i < 2 or a == 4) and (j < 2 or b == 4):
+                r[e,a,b,i,j] = t['r'][e][a][b][h if i == 2 else i][h if j == 2 else j]
+        bad['r'] = r.tolist()
+        bad['o'] = [row + [int(x == 4)] * 4 for x, row in enumerate(t['o'])]
+        validate(bad, 'M')
+        proof = grid._obligations(bad, cert['pi'], core)
+        self.assertTrue(all(o['passed'] for o in proof))
+        self.assertEqual(confirm(bad, [[7,4]]), [[1,1]])
+        self.assertFalse(grid.replay(bad, proof))
+        self.assertEqual(certificate(bad)['verdict'], 'UNKNOWN')
+        self.assertEqual(grid_decide(bad, witness=[[7,4]])['verdict'], 'FAIL')
+
+    def test_source_mutants(self):
+        from .checker_mutations import check_mutants
+        check_mutants(self)
+
     def test_oracles_and_corruption(self):
         for task in ('P', 'A', 'M'):
             t = extract(plant_ternary_oracle(task))
-            crosscheck(t, task, 80002)
+            crosscheck(t, task, 90002)
             result = certificate(t) if task == 'M' else decide(t, task)
             self.assertEqual(result['verdict'], 'PASS', (task, result))
             bad = copy.deepcopy(t)
@@ -195,7 +221,7 @@ class CertificateTests(unittest.TestCase):
 
     def test_chain_arbitrary_tables(self):
         # Exercise contradictions and non-oracle relations, not just learned tables.
-        rng = np.random.default_rng(80003)
+        rng = np.random.default_rng(90003)
         for task in ('P', 'A'):
             for _ in range(8):
                 t = extract(plant_ternary_oracle(task))

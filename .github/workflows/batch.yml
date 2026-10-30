@@ -50,11 +50,17 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           python - <<'PY'
-          import json, os, subprocess
+          import json, os, subprocess, time
           job = next(j for j in json.load(open(os.environ["MANIFEST"])) if j["name"] == os.environ["NAME"])
           for f in job.get("fetch", []):  # {"run_id": ..., "artifact": ..., "dir": ...}
-              subprocess.run(["gh", "run", "download", str(f["run_id"]), "-n", f["artifact"], "-D", f["dir"],
-                              "-R", os.environ["GITHUB_REPOSITORY"]], check=True)
+              for attempt in range(8):  # artifact egress is throttled transiently (HTTP 503); back off and retry
+                  r = subprocess.run(["gh", "run", "download", str(f["run_id"]), "-n", f["artifact"], "-D", f["dir"],
+                                      "-R", os.environ["GITHUB_REPOSITORY"]])
+                  if r.returncode == 0:
+                      break
+                  if attempt == 7:
+                      raise SystemExit("fetch failed: " + f["artifact"])
+                  time.sleep(min(30 * 2 ** attempt, 600))
           PY
       - name: job
         run: |

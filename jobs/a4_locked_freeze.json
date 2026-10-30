@@ -1,0 +1,6 @@
+[
+ {
+  "name": "freeze",
+  "cmd": "mkdir -p out/freeze && cp locks/a4/freeze.json locks/a4/go.json locks/a4/jobs_a4.json out/freeze/ && sha256sum out/freeze/*"
+ }
+]

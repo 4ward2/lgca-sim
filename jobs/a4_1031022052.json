@@ -1,0 +1,65 @@
+[
+ {
+  "name": "learn-b-173001",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --learnability --arm b --seed 173001 --input in/learn-b-173001 --out out/learn-b-173001 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/learn-b-173001"
+   },
+   {
+    "run_id": 41104727931,
+    "artifact": "smoke",
+    "dir": "in/learn-b-173001"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-b",
+    "dir": "in/learn-b-173001"
+   }
+  ]
+ },
+ {
+  "name": "learn-b-173002",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --learnability --arm b --seed 173002 --input in/learn-b-173002 --out out/learn-b-173002 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/learn-b-173002"
+   },
+   {
+    "run_id": 41104727931,
+    "artifact": "smoke",
+    "dir": "in/learn-b-173002"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-b",
+    "dir": "in/learn-b-173002"
+   }
+  ]
+ },
+ {
+  "name": "learn-b-173003",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 pilot --learnability --arm b --seed 173003 --input in/learn-b-173003 --out out/learn-b-173003 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/learn-b-173003"
+   },
+   {
+    "run_id": 41104727931,
+    "artifact": "smoke",
+    "dir": "in/learn-b-173003"
+   },
+   {
+    "run_id": 41105161682,
+    "artifact": "pilot-b",
+    "dir": "in/learn-b-173003"
+   }
+  ]
+ }
+]

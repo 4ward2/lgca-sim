@@ -1,0 +1,10 @@
+[
+ {
+  "name": "sat-smoke-m2d-n1-K2",
+  "cmd": "OMP_NUM_THREADS=4 pip install -q python-sat && mkdir -p out/sat-smoke-m2d-n1-K2 && python -m sim.a5.k2_sat --task m2d --n 1 --K 2 --out out/sat-smoke-m2d-n1-K2/m2d_n1_K2.cnf --time-limit 1800 | tee out/sat-smoke-m2d-n1-K2/result.txt"
+ },
+ {
+  "name": "sat-smoke-delay-d2",
+  "cmd": "OMP_NUM_THREADS=4 pip install -q python-sat && mkdir -p out/sat-smoke-delay-d2 && for K in 1 2 3 4; do python -m sim.a5.k2_sat --task delay --d 2 --K $K --n 5 --out out/sat-smoke-delay-d2/delay_d2_K$K.cnf --time-limit 900; done | tee out/sat-smoke-delay-d2/result.txt"
+ }
+]

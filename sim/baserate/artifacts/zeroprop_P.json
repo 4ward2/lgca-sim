@@ -1,0 +1,162 @@
+[
+ {
+  "table": "P_B_s1",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.498
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.531375
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s2",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.4925
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.525
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s3",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.50075
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.532625
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s4",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.49425
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.52725
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s5",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.5085
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.538375
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s6",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.494875
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.5275
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s7",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.494875
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.524875
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s8",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.50375
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.534
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s9",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.50025
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.528
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "P_B_s10",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.498
+  },
+  "rounds1": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.530625
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ }
+]

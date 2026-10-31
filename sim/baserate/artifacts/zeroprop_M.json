@@ -1,0 +1,162 @@
+[
+ {
+  "table": "M_B_s1",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6758055555555555
+  },
+  "rounds1": {
+   "exact_match": 0.07,
+   "cell_accuracy": 0.6980833333333333
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s2",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6945555555555556
+  },
+  "rounds1": {
+   "exact_match": 0.05,
+   "cell_accuracy": 0.7015
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s3",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6934027777777778
+  },
+  "rounds1": {
+   "exact_match": 0.054,
+   "cell_accuracy": 0.7003472222222222
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s4",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6974722222222223
+  },
+  "rounds1": {
+   "exact_match": 0.034,
+   "cell_accuracy": 0.7044166666666667
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s5",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6869305555555556
+  },
+  "rounds1": {
+   "exact_match": 0.036,
+   "cell_accuracy": 0.693875
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s6",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.7009861111111111
+  },
+  "rounds1": {
+   "exact_match": 0.05,
+   "cell_accuracy": 0.7114861111111112
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s7",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6954722222222223
+  },
+  "rounds1": {
+   "exact_match": 0.044,
+   "cell_accuracy": 0.7024166666666667
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s8",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6872083333333333
+  },
+  "rounds1": {
+   "exact_match": 0.048,
+   "cell_accuracy": 0.6941527777777777
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s9",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.7077638888888889
+  },
+  "rounds1": {
+   "exact_match": 0.034,
+   "cell_accuracy": 0.7147083333333333
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ },
+ {
+  "table": "M_B_s10",
+  "n": 500,
+  "rounds0": {
+   "exact_match": 0.0,
+   "cell_accuracy": 0.6872361111111112
+  },
+  "rounds1": {
+   "exact_match": 0.032,
+   "cell_accuracy": 0.6941805555555556
+  },
+  "fixed_point": {
+   "exact_match": 1.0,
+   "cell_accuracy": 1.0
+  }
+ }
+]

@@ -1,0 +1,33 @@
+﻿== zeroprop P
+P_B_s1 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s2 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s3 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s4 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s5 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s6 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s7 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s8 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s9 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+P_B_s10 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+== zeroprop A
+A_B_s1 {'rounds0': 0.0, 'rounds1': 0.006, 'fixed_point': 1.0}
+A_B_s2 {'rounds0': 0.0, 'rounds1': 0.004, 'fixed_point': 1.0}
+A_B_s3 {'rounds0': 0.0, 'rounds1': 0.002, 'fixed_point': 1.0}
+A_B_s4 {'rounds0': 0.0, 'rounds1': 0.002, 'fixed_point': 1.0}
+A_B_s5 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+A_B_s6 {'rounds0': 0.0, 'rounds1': 0.002, 'fixed_point': 1.0}
+A_B_s7 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+A_B_s8 {'rounds0': 0.0, 'rounds1': 0.002, 'fixed_point': 1.0}
+A_B_s9 {'rounds0': 0.0, 'rounds1': 0.0, 'fixed_point': 1.0}
+A_B_s10 {'rounds0': 0.0, 'rounds1': 0.002, 'fixed_point': 1.0}
+== zeroprop M
+M_B_s1 {'rounds0': 0.0, 'rounds1': 0.07, 'fixed_point': 1.0}
+M_B_s2 {'rounds0': 0.0, 'rounds1': 0.05, 'fixed_point': 1.0}
+M_B_s3 {'rounds0': 0.0, 'rounds1': 0.054, 'fixed_point': 1.0}
+M_B_s4 {'rounds0': 0.0, 'rounds1': 0.034, 'fixed_point': 1.0}
+M_B_s5 {'rounds0': 0.0, 'rounds1': 0.036, 'fixed_point': 1.0}
+M_B_s6 {'rounds0': 0.0, 'rounds1': 0.05, 'fixed_point': 1.0}
+M_B_s7 {'rounds0': 0.0, 'rounds1': 0.044, 'fixed_point': 1.0}
+M_B_s8 {'rounds0': 0.0, 'rounds1': 0.048, 'fixed_point': 1.0}
+M_B_s9 {'rounds0': 0.0, 'rounds1': 0.034, 'fixed_point': 1.0}
+M_B_s10 {'rounds0': 0.0, 'rounds1': 0.032, 'fixed_point': 1.0}

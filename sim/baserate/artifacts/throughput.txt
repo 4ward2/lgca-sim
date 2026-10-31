@@ -1,0 +1,12 @@
+﻿== P uniform
+0 of 200 PASS, Wilson 95% upper bound 1.88e-02 {'FAIL': 200} 1.3s
+== P density
+0 of 200 PASS, Wilson 95% upper bound 1.88e-02 {'FAIL': 200} 1.4s
+== A uniform
+0 of 200 PASS, Wilson 95% upper bound 1.88e-02 {'FAIL': 200} 1.4s
+== A density
+0 of 200 PASS, Wilson 95% upper bound 1.88e-02 {'FAIL': 200} 1.6s
+== M uniform
+0 of 200 PASS, Wilson 95% upper bound 1.88e-02 {'UNKNOWN': 200, 'UNKNOWN/bounded_FAIL': 200} 1.7s
+== M density
+0 of 200 PASS, Wilson 95% upper bound 1.88e-02 {'UNKNOWN': 200, 'UNKNOWN/bounded_FAIL': 200} 1.9s

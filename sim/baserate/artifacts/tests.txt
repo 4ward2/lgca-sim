@@ -1,0 +1,11 @@
+test_corrupted_table_fails (sim.baserate.test_baserate.BaseRateTests.test_corrupted_table_fails) ... ok
+test_end_to_end_small (sim.baserate.test_baserate.BaseRateTests.test_end_to_end_small) ... ok
+test_planted_oracles_pass (sim.baserate.test_baserate.BaseRateTests.test_planted_oracles_pass) ... ok
+test_real_zero_prop_fixed_point_matches (sim.baserate.test_baserate.BaseRateTests.test_real_zero_prop_fixed_point_matches) ... ok
+test_sampler_shapes_and_densities (sim.baserate.test_baserate.BaseRateTests.test_sampler_shapes_and_densities) ... ok
+test_wilson (sim.baserate.test_baserate.BaseRateTests.test_wilson) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.125s
+
+OK

@@ -106,7 +106,8 @@ def dev_bce(model, cfg, task, mode="soft"):
 
 
 def summarize_log(log, k_steps=10000, ood_thr=0.9):
-    """Pre-registered criterion: sustained train n=16 >= 0.99 (hard) for >= k_steps, then running max of n=32 > ood_thr."""
+    """Pre-registered criterion: sustained train n=16 >= 0.99 (hard) for >= k_steps; then flipped iff at some logged step
+    >= sustained_from hard_32 > ood_thr AND hard_16 >= 0.99 at that SAME step (a post-collapse hit does not count)."""
     steps = [r["step"] for r in log]
     ok = [r["hard_16"] >= 0.99 for r in log]
     start = None
@@ -126,7 +127,7 @@ def summarize_log(log, k_steps=10000, ood_thr=0.9):
         after = [r for r in log if r["step"] >= sustained_from]
         res["running_max_hard_32_after"] = max(r["hard_32"] for r in after)
         res["running_max_hard_64_after"] = max(r.get("hard_64", 0.0) for r in after)
-        res["flipped"] = res["running_max_hard_32_after"] > ood_thr
+        res["flipped"] = any(r["hard_32"] > ood_thr and r["hard_16"] >= 0.99 for r in after)
     else:
         res["flipped"] = False
     return res

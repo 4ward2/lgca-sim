@@ -346,11 +346,19 @@ def cli(argv=None):
     except ImportError:
         print("pysat not importable: not solving (run kissat/cadical on the DIMACS, then --decode)")
         return None
+    t1 = time.time()
     status, model = solve_pysat(path, a.solver, a.time_limit)
     print("RESULT", status)
+    result = dict(status=status, task=a.task, n=a.n, K=a.K, d=a.d if a.task == "delay" else None,
+                  targets=a.targets if a.task == "m2d" else "all", vars=info["vars"], clauses=info["clauses"],
+                  seconds=round(time.time() - t1, 1), rounds=info.get("rounds"), time_limit=a.time_limit,
+                  solver=a.solver)
+    ret = status
     if status == "SAT":
-        return report_solution(decode(mapping, set(model)), inst, a)
-    return status
+        ret = report_solution(decode(mapping, set(model)), inst, a)
+    with open(path + ".result.json", "w", encoding="utf-8") as f:  # machine-readable outcome (verdict_a5 reads it)
+        json.dump(result, f)
+    return ret
 
 
 def report_solution(sol, inst, a):

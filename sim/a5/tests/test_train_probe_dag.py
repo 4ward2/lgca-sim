@@ -33,6 +33,14 @@ class TestSchedule(unittest.TestCase):
         self.assertFalse(r["flipped"])
         log += [mk(500 * i, 1.0, 0.95) for i in range(30, 32)]
         self.assertTrue(rp.summarize_log(log)["flipped"])
+        # hard_16 collapsed before a later hard_32 > 0.9: not a flip (needs hard_16 >= 0.99 at that same step)
+        col = [mk(500 * i, 1.0, 0.0) for i in range(1, 30)] + [mk(500 * i, 0.2, 0.95) for i in range(30, 40)]
+        rc = rp.summarize_log(col)
+        self.assertTrue(rc["train_sustained_reached"])
+        self.assertFalse(rc["flipped"])
+        self.assertTrue(rp.summarize_log(col + [mk(500 * 40, 1.0, 0.95)])["flipped"])  # both at the same later step
+        early = [mk(500, 1.0, 0.95)] + [mk(500 * i, 1.0, 0.0) for i in range(2, 40)]  # hit before sustained_from
+        self.assertFalse(rp.summarize_log(early)["flipped"])
         bad = [mk(500 * i, 1.0 if i % 10 else 0.0, 0.99) for i in range(1, 40)]
         self.assertFalse(rp.summarize_log(bad)["train_sustained_reached"])
 
@@ -64,6 +72,23 @@ class TestDag(unittest.TestCase):
         errs, n = dag_check.check(JOBS)
         self.assertEqual(errs, [])
         self.assertGreater(n, 100)
+
+    def test_sat_jobs_pilot_flags_and_verdict(self):
+        jobs = {j["name"]: j for j in mj.build()["jobs"]}
+        sat = [j for j in jobs.values() if j.get("kind") == "SAT"]
+        self.assertEqual(len(sat), 12)
+        for j in sat:
+            self.assertTrue(j["command"].startswith("pip install -q python-sat &&"), j["name"])
+            self.assertIn("--time-limit 14400", j["command"])
+            self.assertIn(f"--out out/{j['name']}/k.cnf", j["command"])
+        for j in jobs.values():
+            if j.get("kind") == "B":
+                self.assertEqual("--no_test" in j["command"], not j["formal"], j["name"])
+        v = jobs["verdict"]
+        self.assertTrue({"report"} | {j["name"] for j in sat} <= set(v["needs"]))
+        self.assertEqual(sum(1 for n in v["needs"] if n.endswith("-formal")), 15)
+        self.assertEqual(sum(1 for n in v["needs"] if n.endswith("-g4")), 30)
+        self.assertEqual(len(jobs), 164)
 
     def test_detects_bad_dag(self):
         d = mj.build()

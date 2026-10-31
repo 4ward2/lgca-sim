@@ -3,7 +3,7 @@
 Checks: schema keys, unique names, needs refer to existing jobs, acyclic, every command writes only to out/<own name>/
 (no other out/ path), every in/ path in a command is in/<own name>/<one of its needs>/, B jobs have disjoint seed sets
 >= 300000 (never 12345/24680), formal B needs the pilot of the same (task, K), R segment chain is contiguous,
-report needs every B job and every final R segment.
+report needs every B job and every final R segment; verdict needs report, SAT jobs, formal B, final R; pilots --no_test.
 """
 import json
 import os
@@ -82,6 +82,21 @@ def check(path):
         want = {j["name"] for j in jobs if j.get("kind") == "B"} | set(finals)
         if set(rep["needs"]) != want:
             errs.append("report needs mismatch")
+    ver = by.get("verdict")
+    if ver is None:
+        errs.append("no verdict job")
+    else:
+        sat = {j["name"] for j in jobs if j.get("kind") == "SAT"}
+        formal = {j["name"] for j in jobs if j.get("kind") == "B" and j["formal"]}
+        if set(ver["needs"]) != {"report"} | sat | formal | set(finals):
+            errs.append("verdict needs mismatch")
+        for j in jobs:
+            if j.get("kind") == "SAT" and not j["command"].startswith("pip install -q python-sat &&"):
+                errs.append(f"{j['name']}: SAT command must start with pip install")
+            if j.get("kind") == "B" and not j["formal"] and "--no_test" not in j["command"]:
+                errs.append(f"{j['name']}: pilot without --no_test")
+            if j.get("kind") == "B" and j["formal"] and "--no_test" in j["command"]:
+                errs.append(f"{j['name']}: formal with --no_test")
     return errs, len(jobs)
 
 

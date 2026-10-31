@@ -283,6 +283,31 @@ class TestDimacsAndCli(unittest.TestCase):
             res = ks.cli(["--task", "m2d", "--n", "1", "--out", path, "--no-solve", "--decode", mf])
             self.assertEqual(res, "SAT")  # decode reports (the decoded all-false tables are of course wrong; only plumbing is tested)
 
+    def test_cli_writes_result_json(self):
+        import sys
+        import types
+        for status in ("UNSAT", "TIMEOUT", "SAT"):
+            with tempfile.TemporaryDirectory() as td:
+                path = os.path.join(td, "k.cnf")
+                old_mod, old_solve = sys.modules.get("pysat"), ks.solve_pysat
+                sys.modules["pysat"] = types.ModuleType("pysat")
+                ks.solve_pysat = lambda p, solver, tl, st=status: (st, [] if st == "SAT" else None)
+                try:
+                    ks.cli(["--task", "delay", "--d", "1", "--n", "2", "--K", "2", "--time-limit", "7", "--out", path])
+                finally:
+                    ks.solve_pysat = old_solve
+                    if old_mod is None:
+                        del sys.modules["pysat"]
+                    else:
+                        sys.modules["pysat"] = old_mod
+                with open(path + ".result.json") as f:
+                    r = json.load(f)
+                self.assertEqual(r["status"], status)
+                self.assertEqual((r["task"], r["n"], r["K"], r["d"]), ("delay", 2, 2, 1))
+                for k in ("targets", "vars", "clauses", "seconds"):
+                    self.assertIn(k, r)
+                self.assertGreater(r["vars"], 0)
+
     def test_m2d_k2_n1_sizes(self):
         inst = ks.m2d_instances(1)
         cnf, tv, info = ks.encode(inst, 2, 8)

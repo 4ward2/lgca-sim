@@ -1,0 +1,110 @@
+[
+ {
+  "name": "baserate-P-uniform-0",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode uniform --count 25000 --seed 810000 --out out/baserate-P-uniform-0 --time-limit 9000"
+ },
+ {
+  "name": "baserate-P-uniform-1",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode uniform --count 25000 --seed 810001 --out out/baserate-P-uniform-1 --time-limit 9000"
+ },
+ {
+  "name": "baserate-P-uniform-2",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode uniform --count 25000 --seed 810002 --out out/baserate-P-uniform-2 --time-limit 9000"
+ },
+ {
+  "name": "baserate-P-uniform-3",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode uniform --count 25000 --seed 810003 --out out/baserate-P-uniform-3 --time-limit 9000"
+ },
+ {
+  "name": "baserate-P-density-0",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode density --count 25000 --seed 811000 --out out/baserate-P-density-0 --time-limit 9000"
+ },
+ {
+  "name": "baserate-P-density-1",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode density --count 25000 --seed 811001 --out out/baserate-P-density-1 --time-limit 9000"
+ },
+ {
+  "name": "baserate-P-density-2",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode density --count 25000 --seed 811002 --out out/baserate-P-density-2 --time-limit 9000"
+ },
+ {
+  "name": "baserate-P-density-3",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --mode density --count 25000 --seed 811003 --out out/baserate-P-density-3 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-uniform-0",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode uniform --count 25000 --seed 812000 --out out/baserate-A-uniform-0 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-uniform-1",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode uniform --count 25000 --seed 812001 --out out/baserate-A-uniform-1 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-uniform-2",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode uniform --count 25000 --seed 812002 --out out/baserate-A-uniform-2 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-uniform-3",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode uniform --count 25000 --seed 812003 --out out/baserate-A-uniform-3 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-density-0",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode density --count 25000 --seed 813000 --out out/baserate-A-density-0 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-density-1",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode density --count 25000 --seed 813001 --out out/baserate-A-density-1 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-density-2",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode density --count 25000 --seed 813002 --out out/baserate-A-density-2 --time-limit 9000"
+ },
+ {
+  "name": "baserate-A-density-3",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --mode density --count 25000 --seed 813003 --out out/baserate-A-density-3 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-uniform-0",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode uniform --count 25000 --seed 814000 --out out/baserate-M-uniform-0 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-uniform-1",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode uniform --count 25000 --seed 814001 --out out/baserate-M-uniform-1 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-uniform-2",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode uniform --count 25000 --seed 814002 --out out/baserate-M-uniform-2 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-uniform-3",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode uniform --count 25000 --seed 814003 --out out/baserate-M-uniform-3 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-density-0",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode density --count 25000 --seed 815000 --out out/baserate-M-density-0 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-density-1",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode density --count 25000 --seed 815001 --out out/baserate-M-density-1 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-density-2",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode density --count 25000 --seed 815002 --out out/baserate-M-density-2 --time-limit 9000"
+ },
+ {
+  "name": "baserate-M-density-3",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --mode density --count 25000 --seed 815003 --out out/baserate-M-density-3 --time-limit 9000"
+ },
+ {
+  "name": "baserate-zeroprop-P",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task P --zeroprop --seed 800006 --out out/baserate-zeroprop-P"
+ },
+ {
+  "name": "baserate-zeroprop-A",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task A --zeroprop --seed 800006 --out out/baserate-zeroprop-A"
+ },
+ {
+  "name": "baserate-zeroprop-M",
+  "cmd": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python sim/baserate/baserate.py --task M --zeroprop --seed 800006 --out out/baserate-zeroprop-M"
+ }
+]

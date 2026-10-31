@@ -1,0 +1,332 @@
+[
+ {
+  "name": "rA-d0-s300201-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d0-s300201-g3 --resume in/rA-d0-s300201-g3/rA-d0-s300201-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d0-s300201-g2",
+    "dir": "in/rA-d0-s300201-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d0-s300202-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d0-s300202-g3 --resume in/rA-d0-s300202-g3/rA-d0-s300202-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d0-s300202-g2",
+    "dir": "in/rA-d0-s300202-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d0-s300203-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d0-s300203-g3 --resume in/rA-d0-s300203-g3/rA-d0-s300203-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d0-s300203-g2",
+    "dir": "in/rA-d0-s300203-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d1-s300201-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d1-s300201-g3 --resume in/rA-d1-s300201-g3/rA-d1-s300201-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d1-s300201-g2",
+    "dir": "in/rA-d1-s300201-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d1-s300202-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d1-s300202-g3 --resume in/rA-d1-s300202-g3/rA-d1-s300202-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d1-s300202-g2",
+    "dir": "in/rA-d1-s300202-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d1-s300203-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d1-s300203-g3 --resume in/rA-d1-s300203-g3/rA-d1-s300203-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d1-s300203-g2",
+    "dir": "in/rA-d1-s300203-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d10-s300201-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d10-s300201-g3 --resume in/rA-d10-s300201-g3/rA-d10-s300201-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d10-s300201-g2",
+    "dir": "in/rA-d10-s300201-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d10-s300202-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d10-s300202-g3 --resume in/rA-d10-s300202-g3/rA-d10-s300202-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d10-s300202-g2",
+    "dir": "in/rA-d10-s300202-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d10-s300203-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d10-s300203-g3 --resume in/rA-d10-s300203-g3/rA-d10-s300203-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d10-s300203-g2",
+    "dir": "in/rA-d10-s300203-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d3-s300201-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d3-s300201-g3 --resume in/rA-d3-s300201-g3/rA-d3-s300201-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d3-s300201-g2",
+    "dir": "in/rA-d3-s300201-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d3-s300202-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d3-s300202-g3 --resume in/rA-d3-s300202-g3/rA-d3-s300202-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d3-s300202-g2",
+    "dir": "in/rA-d3-s300202-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d3-s300203-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d3-s300203-g3 --resume in/rA-d3-s300203-g3/rA-d3-s300203-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d3-s300203-g2",
+    "dir": "in/rA-d3-s300203-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d30-s300201-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d30-s300201-g3 --resume in/rA-d30-s300201-g3/rA-d30-s300201-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d30-s300201-g2",
+    "dir": "in/rA-d30-s300201-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d30-s300202-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d30-s300202-g3 --resume in/rA-d30-s300202-g3/rA-d30-s300202-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d30-s300202-g2",
+    "dir": "in/rA-d30-s300202-g3"
+   }
+  ]
+ },
+ {
+  "name": "rA-d30-s300203-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d30-s300203-g3 --resume in/rA-d30-s300203-g3/rA-d30-s300203-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rA-d30-s300203-g2",
+    "dir": "in/rA-d30-s300203-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d0-s1-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d0-s1-g3 --resume in/rP-d0-s1-g3/rP-d0-s1-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d0-s1-g2",
+    "dir": "in/rP-d0-s1-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d0-s3-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d0-s3-g3 --resume in/rP-d0-s3-g3/rP-d0-s3-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d0-s3-g2",
+    "dir": "in/rP-d0-s3-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d0-s7-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d0-s7-g3 --resume in/rP-d0-s7-g3/rP-d0-s7-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d0-s7-g2",
+    "dir": "in/rP-d0-s7-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d1-s1-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d1-s1-g3 --resume in/rP-d1-s1-g3/rP-d1-s1-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d1-s1-g2",
+    "dir": "in/rP-d1-s1-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d1-s3-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d1-s3-g3 --resume in/rP-d1-s3-g3/rP-d1-s3-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d1-s3-g2",
+    "dir": "in/rP-d1-s3-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d1-s7-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d1-s7-g3 --resume in/rP-d1-s7-g3/rP-d1-s7-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d1-s7-g2",
+    "dir": "in/rP-d1-s7-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d10-s1-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d10-s1-g3 --resume in/rP-d10-s1-g3/rP-d10-s1-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d10-s1-g2",
+    "dir": "in/rP-d10-s1-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d10-s3-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d10-s3-g3 --resume in/rP-d10-s3-g3/rP-d10-s3-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d10-s3-g2",
+    "dir": "in/rP-d10-s3-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d10-s7-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d10-s7-g3 --resume in/rP-d10-s7-g3/rP-d10-s7-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d10-s7-g2",
+    "dir": "in/rP-d10-s7-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d3-s1-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d3-s1-g3 --resume in/rP-d3-s1-g3/rP-d3-s1-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d3-s1-g2",
+    "dir": "in/rP-d3-s1-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d3-s3-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d3-s3-g3 --resume in/rP-d3-s3-g3/rP-d3-s3-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d3-s3-g2",
+    "dir": "in/rP-d3-s3-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d3-s7-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d3-s7-g3 --resume in/rP-d3-s7-g3/rP-d3-s7-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d3-s7-g2",
+    "dir": "in/rP-d3-s7-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d30-s1-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d30-s1-g3 --resume in/rP-d30-s1-g3/rP-d30-s1-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d30-s1-g2",
+    "dir": "in/rP-d30-s1-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d30-s3-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d30-s3-g3 --resume in/rP-d30-s3-g3/rP-d30-s3-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d30-s3-g2",
+    "dir": "in/rP-d30-s3-g3"
+   }
+  ]
+ },
+ {
+  "name": "rP-d30-s7-g3",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d30-s7-g3 --resume in/rP-d30-s7-g3/rP-d30-s7-g2",
+  "fetch": [
+   {
+    "run_id": 41178309040,
+    "artifact": "rP-d30-s7-g2",
+    "dir": "in/rP-d30-s7-g3"
+   }
+  ]
+ }
+]

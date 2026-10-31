@@ -1,0 +1,1094 @@
+[
+ {
+  "name": "eval-unshared64-173105-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173105 --length 128 --input in/eval-unshared64-173105-128 --out out/eval-unshared64-173105-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173105",
+    "dir": "in/eval-unshared64-173105-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173105-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173105-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173105-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173105-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173105 --length 256 --input in/eval-unshared64-173105-256 --out out/eval-unshared64-173105-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173105",
+    "dir": "in/eval-unshared64-173105-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173105-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173105-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173105-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173105-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173105 --length 40 --input in/eval-unshared64-173105-40 --out out/eval-unshared64-173105-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173105",
+    "dir": "in/eval-unshared64-173105-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173105-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173105-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173105-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173105-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173105 --length 44 --input in/eval-unshared64-173105-44 --out out/eval-unshared64-173105-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173105",
+    "dir": "in/eval-unshared64-173105-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173105-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173105-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173105-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173105-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173105 --length 48 --input in/eval-unshared64-173105-48 --out out/eval-unshared64-173105-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173105",
+    "dir": "in/eval-unshared64-173105-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173105-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173105-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173105-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173105-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173105 --length 512 --input in/eval-unshared64-173105-512 --out out/eval-unshared64-173105-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173105",
+    "dir": "in/eval-unshared64-173105-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173105-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173105-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173105-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173105-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173105 --length 64 --input in/eval-unshared64-173105-64 --out out/eval-unshared64-173105-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173105",
+    "dir": "in/eval-unshared64-173105-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173105-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173105-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173105-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173106-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173106 --length 128 --input in/eval-unshared64-173106-128 --out out/eval-unshared64-173106-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173106",
+    "dir": "in/eval-unshared64-173106-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173106-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173106-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173106-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173106-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173106 --length 256 --input in/eval-unshared64-173106-256 --out out/eval-unshared64-173106-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173106",
+    "dir": "in/eval-unshared64-173106-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173106-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173106-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173106-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173106-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173106 --length 40 --input in/eval-unshared64-173106-40 --out out/eval-unshared64-173106-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173106",
+    "dir": "in/eval-unshared64-173106-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173106-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173106-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173106-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173106-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173106 --length 44 --input in/eval-unshared64-173106-44 --out out/eval-unshared64-173106-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173106",
+    "dir": "in/eval-unshared64-173106-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173106-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173106-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173106-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173106-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173106 --length 48 --input in/eval-unshared64-173106-48 --out out/eval-unshared64-173106-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173106",
+    "dir": "in/eval-unshared64-173106-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173106-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173106-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173106-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173106-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173106 --length 512 --input in/eval-unshared64-173106-512 --out out/eval-unshared64-173106-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173106",
+    "dir": "in/eval-unshared64-173106-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173106-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173106-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173106-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173106-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173106 --length 64 --input in/eval-unshared64-173106-64 --out out/eval-unshared64-173106-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173106",
+    "dir": "in/eval-unshared64-173106-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173106-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173106-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173106-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173107-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173107 --length 128 --input in/eval-unshared64-173107-128 --out out/eval-unshared64-173107-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173107",
+    "dir": "in/eval-unshared64-173107-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173107-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173107-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173107-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173107-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173107 --length 256 --input in/eval-unshared64-173107-256 --out out/eval-unshared64-173107-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173107",
+    "dir": "in/eval-unshared64-173107-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173107-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173107-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173107-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173107-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173107 --length 40 --input in/eval-unshared64-173107-40 --out out/eval-unshared64-173107-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173107",
+    "dir": "in/eval-unshared64-173107-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173107-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173107-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173107-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173107-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173107 --length 44 --input in/eval-unshared64-173107-44 --out out/eval-unshared64-173107-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173107",
+    "dir": "in/eval-unshared64-173107-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173107-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173107-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173107-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173107-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173107 --length 48 --input in/eval-unshared64-173107-48 --out out/eval-unshared64-173107-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173107",
+    "dir": "in/eval-unshared64-173107-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173107-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173107-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173107-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173107-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173107 --length 512 --input in/eval-unshared64-173107-512 --out out/eval-unshared64-173107-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173107",
+    "dir": "in/eval-unshared64-173107-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173107-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173107-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173107-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173107-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173107 --length 64 --input in/eval-unshared64-173107-64 --out out/eval-unshared64-173107-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173107",
+    "dir": "in/eval-unshared64-173107-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173107-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173107-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173107-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173108-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173108 --length 128 --input in/eval-unshared64-173108-128 --out out/eval-unshared64-173108-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173108",
+    "dir": "in/eval-unshared64-173108-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173108-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173108-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173108-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173108-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173108 --length 256 --input in/eval-unshared64-173108-256 --out out/eval-unshared64-173108-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173108",
+    "dir": "in/eval-unshared64-173108-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173108-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173108-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173108-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173108-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173108 --length 40 --input in/eval-unshared64-173108-40 --out out/eval-unshared64-173108-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173108",
+    "dir": "in/eval-unshared64-173108-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173108-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173108-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173108-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173108-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173108 --length 44 --input in/eval-unshared64-173108-44 --out out/eval-unshared64-173108-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173108",
+    "dir": "in/eval-unshared64-173108-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173108-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173108-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173108-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173108-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173108 --length 48 --input in/eval-unshared64-173108-48 --out out/eval-unshared64-173108-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173108",
+    "dir": "in/eval-unshared64-173108-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173108-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173108-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173108-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173108-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173108 --length 512 --input in/eval-unshared64-173108-512 --out out/eval-unshared64-173108-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173108",
+    "dir": "in/eval-unshared64-173108-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173108-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173108-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173108-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173108-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173108 --length 64 --input in/eval-unshared64-173108-64 --out out/eval-unshared64-173108-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173108",
+    "dir": "in/eval-unshared64-173108-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173108-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173108-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173108-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173109-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173109 --length 128 --input in/eval-unshared64-173109-128 --out out/eval-unshared64-173109-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173109",
+    "dir": "in/eval-unshared64-173109-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173109-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173109-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173109-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173109-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173109 --length 256 --input in/eval-unshared64-173109-256 --out out/eval-unshared64-173109-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173109",
+    "dir": "in/eval-unshared64-173109-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173109-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173109-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173109-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173109-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173109 --length 40 --input in/eval-unshared64-173109-40 --out out/eval-unshared64-173109-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173109",
+    "dir": "in/eval-unshared64-173109-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173109-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173109-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173109-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173109-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173109 --length 44 --input in/eval-unshared64-173109-44 --out out/eval-unshared64-173109-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173109",
+    "dir": "in/eval-unshared64-173109-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173109-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173109-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173109-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173109-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173109 --length 48 --input in/eval-unshared64-173109-48 --out out/eval-unshared64-173109-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173109",
+    "dir": "in/eval-unshared64-173109-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173109-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173109-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173109-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173109-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173109 --length 512 --input in/eval-unshared64-173109-512 --out out/eval-unshared64-173109-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173109",
+    "dir": "in/eval-unshared64-173109-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173109-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173109-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173109-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173109-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173109 --length 64 --input in/eval-unshared64-173109-64 --out out/eval-unshared64-173109-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173109",
+    "dir": "in/eval-unshared64-173109-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173109-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173109-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173109-64"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173110-128",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173110 --length 128 --input in/eval-unshared64-173110-128 --out out/eval-unshared64-173110-128 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173110",
+    "dir": "in/eval-unshared64-173110-128"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173110-128"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173110-128"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173110-128"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173110-256",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173110 --length 256 --input in/eval-unshared64-173110-256 --out out/eval-unshared64-173110-256 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173110",
+    "dir": "in/eval-unshared64-173110-256"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173110-256"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173110-256"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173110-256"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173110-40",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173110 --length 40 --input in/eval-unshared64-173110-40 --out out/eval-unshared64-173110-40 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173110",
+    "dir": "in/eval-unshared64-173110-40"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173110-40"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173110-40"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173110-40"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173110-44",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173110 --length 44 --input in/eval-unshared64-173110-44 --out out/eval-unshared64-173110-44 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173110",
+    "dir": "in/eval-unshared64-173110-44"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173110-44"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173110-44"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173110-44"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173110-48",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173110 --length 48 --input in/eval-unshared64-173110-48 --out out/eval-unshared64-173110-48 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173110",
+    "dir": "in/eval-unshared64-173110-48"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173110-48"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173110-48"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173110-48"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173110-512",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173110 --length 512 --input in/eval-unshared64-173110-512 --out out/eval-unshared64-173110-512 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173110",
+    "dir": "in/eval-unshared64-173110-512"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173110-512"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173110-512"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173110-512"
+   }
+  ]
+ },
+ {
+  "name": "eval-unshared64-173110-64",
+  "cmd": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a4 evaluate --arm unshared64 --seed 173110 --length 64 --input in/eval-unshared64-173110-64 --out out/eval-unshared64-173110-64 --threads 4",
+  "fetch": [
+   {
+    "run_id": 41125635927,
+    "artifact": "train-unshared64-173110",
+    "dir": "in/eval-unshared64-173110-64"
+   },
+   {
+    "run_id": 41095689486,
+    "artifact": "data",
+    "dir": "in/eval-unshared64-173110-64"
+   },
+   {
+    "run_id": 41095284576,
+    "artifact": "fetch",
+    "dir": "in/eval-unshared64-173110-64"
+   },
+   {
+    "run_id": 41108472557,
+    "artifact": "freeze",
+    "dir": "in/eval-unshared64-173110-64"
+   }
+  ]
+ }
+]

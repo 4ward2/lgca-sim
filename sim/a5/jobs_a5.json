@@ -1,0 +1,2369 @@
+{
+ "schema_version": 1,
+ "status": "exploratory-A5; not locked (brief_A5 pending Fable audit)",
+ "artifact_contract": "Each dependency is downloaded into in/<consumer>/<dependency>/. All writes remain out/<job>/. R segments resume from in/<job>/<previous segment>/ckpt.pt.",
+ "jobs": [
+  {
+   "name": "b-m1d-k2-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300101 --threads 4 --out out/b-m1d-k2-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300102 --threads 4 --out out/b-m1d-k2-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300103 --threads 4 --out out/b-m1d-k2-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m1d",
+   "K": 2,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m1d-k2-formal",
+   "needs": [
+    "b-m1d-k2-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300111 --threads 4 --out out/b-m1d-k2-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300112 --threads 4 --out out/b-m1d-k2-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300113 --threads 4 --out out/b-m1d-k2-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300114 --threads 4 --out out/b-m1d-k2-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300115 --threads 4 --out out/b-m1d-k2-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300116 --threads 4 --out out/b-m1d-k2-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300117 --threads 4 --out out/b-m1d-k2-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300118 --threads 4 --out out/b-m1d-k2-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300119 --threads 4 --out out/b-m1d-k2-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 2 --seed 300120 --threads 4 --out out/b-m1d-k2-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m1d",
+   "K": 2,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m1d-k4-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300101 --threads 4 --out out/b-m1d-k4-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300102 --threads 4 --out out/b-m1d-k4-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300103 --threads 4 --out out/b-m1d-k4-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m1d",
+   "K": 4,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m1d-k4-formal",
+   "needs": [
+    "b-m1d-k4-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300111 --threads 4 --out out/b-m1d-k4-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300112 --threads 4 --out out/b-m1d-k4-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300113 --threads 4 --out out/b-m1d-k4-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300114 --threads 4 --out out/b-m1d-k4-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300115 --threads 4 --out out/b-m1d-k4-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300116 --threads 4 --out out/b-m1d-k4-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300117 --threads 4 --out out/b-m1d-k4-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300118 --threads 4 --out out/b-m1d-k4-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300119 --threads 4 --out out/b-m1d-k4-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 4 --seed 300120 --threads 4 --out out/b-m1d-k4-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m1d",
+   "K": 4,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m1d-k16-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300101 --threads 4 --out out/b-m1d-k16-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300102 --threads 4 --out out/b-m1d-k16-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300103 --threads 4 --out out/b-m1d-k16-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m1d",
+   "K": 16,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m1d-k16-formal",
+   "needs": [
+    "b-m1d-k16-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300111 --threads 4 --out out/b-m1d-k16-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300112 --threads 4 --out out/b-m1d-k16-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300113 --threads 4 --out out/b-m1d-k16-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300114 --threads 4 --out out/b-m1d-k16-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300115 --threads 4 --out out/b-m1d-k16-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300116 --threads 4 --out out/b-m1d-k16-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300117 --threads 4 --out out/b-m1d-k16-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300118 --threads 4 --out out/b-m1d-k16-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300119 --threads 4 --out out/b-m1d-k16-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m1d --K 16 --seed 300120 --threads 4 --out out/b-m1d-k16-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m1d",
+   "K": 16,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m2d_dense-k2-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300101 --threads 4 --out out/b-m2d_dense-k2-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300102 --threads 4 --out out/b-m2d_dense-k2-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300103 --threads 4 --out out/b-m2d_dense-k2-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m2d_dense",
+   "K": 2,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m2d_dense-k2-formal",
+   "needs": [
+    "b-m2d_dense-k2-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300111 --threads 4 --out out/b-m2d_dense-k2-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300112 --threads 4 --out out/b-m2d_dense-k2-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300113 --threads 4 --out out/b-m2d_dense-k2-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300114 --threads 4 --out out/b-m2d_dense-k2-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300115 --threads 4 --out out/b-m2d_dense-k2-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300116 --threads 4 --out out/b-m2d_dense-k2-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300117 --threads 4 --out out/b-m2d_dense-k2-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300118 --threads 4 --out out/b-m2d_dense-k2-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300119 --threads 4 --out out/b-m2d_dense-k2-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 2 --seed 300120 --threads 4 --out out/b-m2d_dense-k2-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m2d_dense",
+   "K": 2,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m2d_dense-k4-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300101 --threads 4 --out out/b-m2d_dense-k4-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300102 --threads 4 --out out/b-m2d_dense-k4-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300103 --threads 4 --out out/b-m2d_dense-k4-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m2d_dense",
+   "K": 4,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m2d_dense-k4-formal",
+   "needs": [
+    "b-m2d_dense-k4-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300111 --threads 4 --out out/b-m2d_dense-k4-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300112 --threads 4 --out out/b-m2d_dense-k4-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300113 --threads 4 --out out/b-m2d_dense-k4-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300114 --threads 4 --out out/b-m2d_dense-k4-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300115 --threads 4 --out out/b-m2d_dense-k4-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300116 --threads 4 --out out/b-m2d_dense-k4-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300117 --threads 4 --out out/b-m2d_dense-k4-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300118 --threads 4 --out out/b-m2d_dense-k4-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300119 --threads 4 --out out/b-m2d_dense-k4-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 4 --seed 300120 --threads 4 --out out/b-m2d_dense-k4-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m2d_dense",
+   "K": 4,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m2d_dense-k16-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300101 --threads 4 --out out/b-m2d_dense-k16-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300102 --threads 4 --out out/b-m2d_dense-k16-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300103 --threads 4 --out out/b-m2d_dense-k16-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m2d_dense",
+   "K": 16,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m2d_dense-k16-formal",
+   "needs": [
+    "b-m2d_dense-k16-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300111 --threads 4 --out out/b-m2d_dense-k16-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300112 --threads 4 --out out/b-m2d_dense-k16-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300113 --threads 4 --out out/b-m2d_dense-k16-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300114 --threads 4 --out out/b-m2d_dense-k16-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300115 --threads 4 --out out/b-m2d_dense-k16-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300116 --threads 4 --out out/b-m2d_dense-k16-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300117 --threads 4 --out out/b-m2d_dense-k16-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300118 --threads 4 --out out/b-m2d_dense-k16-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300119 --threads 4 --out out/b-m2d_dense-k16-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_dense --K 16 --seed 300120 --threads 4 --out out/b-m2d_dense-k16-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m2d_dense",
+   "K": 16,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m2d_last-k2-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300101 --threads 4 --out out/b-m2d_last-k2-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300102 --threads 4 --out out/b-m2d_last-k2-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300103 --threads 4 --out out/b-m2d_last-k2-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m2d_last",
+   "K": 2,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m2d_last-k2-formal",
+   "needs": [
+    "b-m2d_last-k2-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300111 --threads 4 --out out/b-m2d_last-k2-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300112 --threads 4 --out out/b-m2d_last-k2-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300113 --threads 4 --out out/b-m2d_last-k2-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300114 --threads 4 --out out/b-m2d_last-k2-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300115 --threads 4 --out out/b-m2d_last-k2-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300116 --threads 4 --out out/b-m2d_last-k2-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300117 --threads 4 --out out/b-m2d_last-k2-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300118 --threads 4 --out out/b-m2d_last-k2-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300119 --threads 4 --out out/b-m2d_last-k2-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 2 --seed 300120 --threads 4 --out out/b-m2d_last-k2-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m2d_last",
+   "K": 2,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m2d_last-k4-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300101 --threads 4 --out out/b-m2d_last-k4-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300102 --threads 4 --out out/b-m2d_last-k4-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300103 --threads 4 --out out/b-m2d_last-k4-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m2d_last",
+   "K": 4,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m2d_last-k4-formal",
+   "needs": [
+    "b-m2d_last-k4-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300111 --threads 4 --out out/b-m2d_last-k4-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300112 --threads 4 --out out/b-m2d_last-k4-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300113 --threads 4 --out out/b-m2d_last-k4-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300114 --threads 4 --out out/b-m2d_last-k4-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300115 --threads 4 --out out/b-m2d_last-k4-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300116 --threads 4 --out out/b-m2d_last-k4-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300117 --threads 4 --out out/b-m2d_last-k4-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300118 --threads 4 --out out/b-m2d_last-k4-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300119 --threads 4 --out out/b-m2d_last-k4-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 4 --seed 300120 --threads 4 --out out/b-m2d_last-k4-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m2d_last",
+   "K": 4,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-m2d_last-k16-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300101 --threads 4 --out out/b-m2d_last-k16-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300102 --threads 4 --out out/b-m2d_last-k16-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300103 --threads 4 --out out/b-m2d_last-k16-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "m2d_last",
+   "K": 16,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-m2d_last-k16-formal",
+   "needs": [
+    "b-m2d_last-k16-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300111 --threads 4 --out out/b-m2d_last-k16-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300112 --threads 4 --out out/b-m2d_last-k16-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300113 --threads 4 --out out/b-m2d_last-k16-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300114 --threads 4 --out out/b-m2d_last-k16-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300115 --threads 4 --out out/b-m2d_last-k16-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300116 --threads 4 --out out/b-m2d_last-k16-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300117 --threads 4 --out out/b-m2d_last-k16-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300118 --threads 4 --out out/b-m2d_last-k16-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300119 --threads 4 --out out/b-m2d_last-k16-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task m2d_last --K 16 --seed 300120 --threads 4 --out out/b-m2d_last-k16-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "m2d_last",
+   "K": 16,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-delay3-k1-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300101 --threads 4 --out out/b-delay3-k1-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300102 --threads 4 --out out/b-delay3-k1-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300103 --threads 4 --out out/b-delay3-k1-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "delay3",
+   "K": 1,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-delay3-k1-formal",
+   "needs": [
+    "b-delay3-k1-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300111 --threads 4 --out out/b-delay3-k1-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300112 --threads 4 --out out/b-delay3-k1-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300113 --threads 4 --out out/b-delay3-k1-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300114 --threads 4 --out out/b-delay3-k1-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300115 --threads 4 --out out/b-delay3-k1-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300116 --threads 4 --out out/b-delay3-k1-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300117 --threads 4 --out out/b-delay3-k1-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300118 --threads 4 --out out/b-delay3-k1-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300119 --threads 4 --out out/b-delay3-k1-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 1 --seed 300120 --threads 4 --out out/b-delay3-k1-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "delay3",
+   "K": 1,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-delay3-k5-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300101 --threads 4 --out out/b-delay3-k5-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300102 --threads 4 --out out/b-delay3-k5-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300103 --threads 4 --out out/b-delay3-k5-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "delay3",
+   "K": 5,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-delay3-k5-formal",
+   "needs": [
+    "b-delay3-k5-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300111 --threads 4 --out out/b-delay3-k5-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300112 --threads 4 --out out/b-delay3-k5-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300113 --threads 4 --out out/b-delay3-k5-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300114 --threads 4 --out out/b-delay3-k5-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300115 --threads 4 --out out/b-delay3-k5-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300116 --threads 4 --out out/b-delay3-k5-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300117 --threads 4 --out out/b-delay3-k5-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300118 --threads 4 --out out/b-delay3-k5-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300119 --threads 4 --out out/b-delay3-k5-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 5 --seed 300120 --threads 4 --out out/b-delay3-k5-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "delay3",
+   "K": 5,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-delay3-k8-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300101 --threads 4 --out out/b-delay3-k8-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300102 --threads 4 --out out/b-delay3-k8-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300103 --threads 4 --out out/b-delay3-k8-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "delay3",
+   "K": 8,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-delay3-k8-formal",
+   "needs": [
+    "b-delay3-k8-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300111 --threads 4 --out out/b-delay3-k8-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300112 --threads 4 --out out/b-delay3-k8-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300113 --threads 4 --out out/b-delay3-k8-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300114 --threads 4 --out out/b-delay3-k8-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300115 --threads 4 --out out/b-delay3-k8-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300116 --threads 4 --out out/b-delay3-k8-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300117 --threads 4 --out out/b-delay3-k8-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300118 --threads 4 --out out/b-delay3-k8-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300119 --threads 4 --out out/b-delay3-k8-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay3 --K 8 --seed 300120 --threads 4 --out out/b-delay3-k8-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "delay3",
+   "K": 8,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-delay4-k2-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300101 --threads 4 --out out/b-delay4-k2-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300102 --threads 4 --out out/b-delay4-k2-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300103 --threads 4 --out out/b-delay4-k2-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "delay4",
+   "K": 2,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-delay4-k2-formal",
+   "needs": [
+    "b-delay4-k2-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300111 --threads 4 --out out/b-delay4-k2-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300112 --threads 4 --out out/b-delay4-k2-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300113 --threads 4 --out out/b-delay4-k2-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300114 --threads 4 --out out/b-delay4-k2-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300115 --threads 4 --out out/b-delay4-k2-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300116 --threads 4 --out out/b-delay4-k2-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300117 --threads 4 --out out/b-delay4-k2-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300118 --threads 4 --out out/b-delay4-k2-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300119 --threads 4 --out out/b-delay4-k2-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 2 --seed 300120 --threads 4 --out out/b-delay4-k2-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "delay4",
+   "K": 2,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-delay4-k6-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300101 --threads 4 --out out/b-delay4-k6-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300102 --threads 4 --out out/b-delay4-k6-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300103 --threads 4 --out out/b-delay4-k6-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "delay4",
+   "K": 6,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-delay4-k6-formal",
+   "needs": [
+    "b-delay4-k6-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300111 --threads 4 --out out/b-delay4-k6-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300112 --threads 4 --out out/b-delay4-k6-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300113 --threads 4 --out out/b-delay4-k6-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300114 --threads 4 --out out/b-delay4-k6-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300115 --threads 4 --out out/b-delay4-k6-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300116 --threads 4 --out out/b-delay4-k6-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300117 --threads 4 --out out/b-delay4-k6-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300118 --threads 4 --out out/b-delay4-k6-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300119 --threads 4 --out out/b-delay4-k6-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 6 --seed 300120 --threads 4 --out out/b-delay4-k6-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "delay4",
+   "K": 6,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "b-delay4-k16-pilot",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300101 --threads 4 --out out/b-delay4-k16-pilot/s300101 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300102 --threads 4 --out out/b-delay4-k16-pilot/s300102 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300103 --threads 4 --out out/b-delay4-k16-pilot/s300103",
+   "kind": "B",
+   "formal": false,
+   "task": "delay4",
+   "K": 16,
+   "seeds": [
+    300101,
+    300102,
+    300103
+   ]
+  },
+  {
+   "name": "b-delay4-k16-formal",
+   "needs": [
+    "b-delay4-k16-pilot"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300111 --threads 4 --out out/b-delay4-k16-formal/s300111 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300112 --threads 4 --out out/b-delay4-k16-formal/s300112 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300113 --threads 4 --out out/b-delay4-k16-formal/s300113 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300114 --threads 4 --out out/b-delay4-k16-formal/s300114 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300115 --threads 4 --out out/b-delay4-k16-formal/s300115 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300116 --threads 4 --out out/b-delay4-k16-formal/s300116 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300117 --threads 4 --out out/b-delay4-k16-formal/s300117 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300118 --threads 4 --out out/b-delay4-k16-formal/s300118 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300119 --threads 4 --out out/b-delay4-k16-formal/s300119 && OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_b --task delay4 --K 16 --seed 300120 --threads 4 --out out/b-delay4-k16-formal/s300120",
+   "kind": "B",
+   "formal": true,
+   "task": "delay4",
+   "K": 16,
+   "seeds": [
+    300111,
+    300112,
+    300113,
+    300114,
+    300115,
+    300116,
+    300117,
+    300118,
+    300119,
+    300120
+   ]
+  },
+  {
+   "name": "rA-d0-s300201-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 0 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d0-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 0,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300201-g2",
+   "needs": [
+    "rA-d0-s300201-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 0 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d0-s300201-g2 --resume in/rA-d0-s300201-g2/rA-d0-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 0,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300201-g3",
+   "needs": [
+    "rA-d0-s300201-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d0-s300201-g3 --resume in/rA-d0-s300201-g3/rA-d0-s300201-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 0,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300201-g4",
+   "needs": [
+    "rA-d0-s300201-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 0 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d0-s300201-g4 --resume in/rA-d0-s300201-g4/rA-d0-s300201-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 0,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300202-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 0 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d0-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 0,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300202-g2",
+   "needs": [
+    "rA-d0-s300202-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 0 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d0-s300202-g2 --resume in/rA-d0-s300202-g2/rA-d0-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 0,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300202-g3",
+   "needs": [
+    "rA-d0-s300202-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d0-s300202-g3 --resume in/rA-d0-s300202-g3/rA-d0-s300202-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 0,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300202-g4",
+   "needs": [
+    "rA-d0-s300202-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 0 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d0-s300202-g4 --resume in/rA-d0-s300202-g4/rA-d0-s300202-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 0,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300203-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 0 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d0-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 0,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300203-g2",
+   "needs": [
+    "rA-d0-s300203-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 0 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d0-s300203-g2 --resume in/rA-d0-s300203-g2/rA-d0-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 0,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300203-g3",
+   "needs": [
+    "rA-d0-s300203-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d0-s300203-g3 --resume in/rA-d0-s300203-g3/rA-d0-s300203-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 0,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d0-s300203-g4",
+   "needs": [
+    "rA-d0-s300203-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 0 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d0-s300203-g4 --resume in/rA-d0-s300203-g4/rA-d0-s300203-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 0,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300201-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 1 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d1-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 1,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300201-g2",
+   "needs": [
+    "rA-d1-s300201-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 1 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d1-s300201-g2 --resume in/rA-d1-s300201-g2/rA-d1-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 1,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300201-g3",
+   "needs": [
+    "rA-d1-s300201-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d1-s300201-g3 --resume in/rA-d1-s300201-g3/rA-d1-s300201-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 1,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300201-g4",
+   "needs": [
+    "rA-d1-s300201-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 1 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d1-s300201-g4 --resume in/rA-d1-s300201-g4/rA-d1-s300201-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 1,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300202-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 1 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d1-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 1,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300202-g2",
+   "needs": [
+    "rA-d1-s300202-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 1 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d1-s300202-g2 --resume in/rA-d1-s300202-g2/rA-d1-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 1,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300202-g3",
+   "needs": [
+    "rA-d1-s300202-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d1-s300202-g3 --resume in/rA-d1-s300202-g3/rA-d1-s300202-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 1,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300202-g4",
+   "needs": [
+    "rA-d1-s300202-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 1 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d1-s300202-g4 --resume in/rA-d1-s300202-g4/rA-d1-s300202-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 1,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300203-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 1 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d1-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 1,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300203-g2",
+   "needs": [
+    "rA-d1-s300203-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 1 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d1-s300203-g2 --resume in/rA-d1-s300203-g2/rA-d1-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 1,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300203-g3",
+   "needs": [
+    "rA-d1-s300203-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d1-s300203-g3 --resume in/rA-d1-s300203-g3/rA-d1-s300203-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 1,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d1-s300203-g4",
+   "needs": [
+    "rA-d1-s300203-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 1 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d1-s300203-g4 --resume in/rA-d1-s300203-g4/rA-d1-s300203-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 1,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300201-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 3 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d3-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 3,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300201-g2",
+   "needs": [
+    "rA-d3-s300201-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 3 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d3-s300201-g2 --resume in/rA-d3-s300201-g2/rA-d3-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 3,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300201-g3",
+   "needs": [
+    "rA-d3-s300201-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d3-s300201-g3 --resume in/rA-d3-s300201-g3/rA-d3-s300201-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 3,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300201-g4",
+   "needs": [
+    "rA-d3-s300201-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 3 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d3-s300201-g4 --resume in/rA-d3-s300201-g4/rA-d3-s300201-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 3,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300202-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 3 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d3-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 3,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300202-g2",
+   "needs": [
+    "rA-d3-s300202-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 3 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d3-s300202-g2 --resume in/rA-d3-s300202-g2/rA-d3-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 3,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300202-g3",
+   "needs": [
+    "rA-d3-s300202-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d3-s300202-g3 --resume in/rA-d3-s300202-g3/rA-d3-s300202-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 3,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300202-g4",
+   "needs": [
+    "rA-d3-s300202-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 3 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d3-s300202-g4 --resume in/rA-d3-s300202-g4/rA-d3-s300202-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 3,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300203-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 3 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d3-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 3,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300203-g2",
+   "needs": [
+    "rA-d3-s300203-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 3 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d3-s300203-g2 --resume in/rA-d3-s300203-g2/rA-d3-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 3,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300203-g3",
+   "needs": [
+    "rA-d3-s300203-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d3-s300203-g3 --resume in/rA-d3-s300203-g3/rA-d3-s300203-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 3,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d3-s300203-g4",
+   "needs": [
+    "rA-d3-s300203-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 3 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d3-s300203-g4 --resume in/rA-d3-s300203-g4/rA-d3-s300203-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 3,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300201-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 10 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d10-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 10,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300201-g2",
+   "needs": [
+    "rA-d10-s300201-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 10 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d10-s300201-g2 --resume in/rA-d10-s300201-g2/rA-d10-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 10,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300201-g3",
+   "needs": [
+    "rA-d10-s300201-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d10-s300201-g3 --resume in/rA-d10-s300201-g3/rA-d10-s300201-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 10,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300201-g4",
+   "needs": [
+    "rA-d10-s300201-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 10 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d10-s300201-g4 --resume in/rA-d10-s300201-g4/rA-d10-s300201-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 10,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300202-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 10 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d10-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 10,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300202-g2",
+   "needs": [
+    "rA-d10-s300202-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 10 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d10-s300202-g2 --resume in/rA-d10-s300202-g2/rA-d10-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 10,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300202-g3",
+   "needs": [
+    "rA-d10-s300202-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d10-s300202-g3 --resume in/rA-d10-s300202-g3/rA-d10-s300202-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 10,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300202-g4",
+   "needs": [
+    "rA-d10-s300202-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 10 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d10-s300202-g4 --resume in/rA-d10-s300202-g4/rA-d10-s300202-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 10,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300203-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 10 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d10-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 10,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300203-g2",
+   "needs": [
+    "rA-d10-s300203-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 10 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d10-s300203-g2 --resume in/rA-d10-s300203-g2/rA-d10-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 10,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300203-g3",
+   "needs": [
+    "rA-d10-s300203-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d10-s300203-g3 --resume in/rA-d10-s300203-g3/rA-d10-s300203-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 10,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d10-s300203-g4",
+   "needs": [
+    "rA-d10-s300203-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 10 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d10-s300203-g4 --resume in/rA-d10-s300203-g4/rA-d10-s300203-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 10,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300201-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 30 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d30-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 30,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300201-g2",
+   "needs": [
+    "rA-d30-s300201-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 30 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d30-s300201-g2 --resume in/rA-d30-s300201-g2/rA-d30-s300201-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 30,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300201-g3",
+   "needs": [
+    "rA-d30-s300201-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d30-s300201-g3 --resume in/rA-d30-s300201-g3/rA-d30-s300201-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 30,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300201-g4",
+   "needs": [
+    "rA-d30-s300201-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300201 --decay 30 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d30-s300201-g4 --resume in/rA-d30-s300201-g4/rA-d30-s300201-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300201,
+   "decay": 30,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300202-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 30 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d30-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 30,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300202-g2",
+   "needs": [
+    "rA-d30-s300202-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 30 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d30-s300202-g2 --resume in/rA-d30-s300202-g2/rA-d30-s300202-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 30,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300202-g3",
+   "needs": [
+    "rA-d30-s300202-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d30-s300202-g3 --resume in/rA-d30-s300202-g3/rA-d30-s300202-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 30,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300202-g4",
+   "needs": [
+    "rA-d30-s300202-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300202 --decay 30 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d30-s300202-g4 --resume in/rA-d30-s300202-g4/rA-d30-s300202-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300202,
+   "decay": 30,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300203-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 30 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rA-d30-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 30,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300203-g2",
+   "needs": [
+    "rA-d30-s300203-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 30 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rA-d30-s300203-g2 --resume in/rA-d30-s300203-g2/rA-d30-s300203-g1",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 30,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300203-g3",
+   "needs": [
+    "rA-d30-s300203-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rA-d30-s300203-g3 --resume in/rA-d30-s300203-g3/rA-d30-s300203-g2",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 30,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rA-d30-s300203-g4",
+   "needs": [
+    "rA-d30-s300203-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task A --seed 300203 --decay 30 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rA-d30-s300203-g4 --resume in/rA-d30-s300203-g4/rA-d30-s300203-g3",
+   "kind": "R",
+   "task": "A",
+   "seed": 300203,
+   "decay": 30,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": false
+  },
+  {
+   "name": "rP-d0-s1-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 0 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d0-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 0,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s1-g2",
+   "needs": [
+    "rP-d0-s1-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 0 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d0-s1-g2 --resume in/rP-d0-s1-g2/rP-d0-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 0,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s1-g3",
+   "needs": [
+    "rP-d0-s1-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d0-s1-g3 --resume in/rP-d0-s1-g3/rP-d0-s1-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 0,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s1-g4",
+   "needs": [
+    "rP-d0-s1-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 0 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d0-s1-g4 --resume in/rP-d0-s1-g4/rP-d0-s1-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 0,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s3-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 0 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d0-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 0,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s3-g2",
+   "needs": [
+    "rP-d0-s3-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 0 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d0-s3-g2 --resume in/rP-d0-s3-g2/rP-d0-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 0,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s3-g3",
+   "needs": [
+    "rP-d0-s3-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d0-s3-g3 --resume in/rP-d0-s3-g3/rP-d0-s3-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 0,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s3-g4",
+   "needs": [
+    "rP-d0-s3-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 0 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d0-s3-g4 --resume in/rP-d0-s3-g4/rP-d0-s3-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 0,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s7-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 0 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d0-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 0,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s7-g2",
+   "needs": [
+    "rP-d0-s7-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 0 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d0-s7-g2 --resume in/rP-d0-s7-g2/rP-d0-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 0,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s7-g3",
+   "needs": [
+    "rP-d0-s7-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 0 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d0-s7-g3 --resume in/rP-d0-s7-g3/rP-d0-s7-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 0,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d0-s7-g4",
+   "needs": [
+    "rP-d0-s7-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 0 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d0-s7-g4 --resume in/rP-d0-s7-g4/rP-d0-s7-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 0,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s1-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 1 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d1-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 1,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s1-g2",
+   "needs": [
+    "rP-d1-s1-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 1 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d1-s1-g2 --resume in/rP-d1-s1-g2/rP-d1-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 1,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s1-g3",
+   "needs": [
+    "rP-d1-s1-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d1-s1-g3 --resume in/rP-d1-s1-g3/rP-d1-s1-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 1,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s1-g4",
+   "needs": [
+    "rP-d1-s1-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 1 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d1-s1-g4 --resume in/rP-d1-s1-g4/rP-d1-s1-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 1,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s3-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 1 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d1-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 1,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s3-g2",
+   "needs": [
+    "rP-d1-s3-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 1 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d1-s3-g2 --resume in/rP-d1-s3-g2/rP-d1-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 1,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s3-g3",
+   "needs": [
+    "rP-d1-s3-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d1-s3-g3 --resume in/rP-d1-s3-g3/rP-d1-s3-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 1,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s3-g4",
+   "needs": [
+    "rP-d1-s3-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 1 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d1-s3-g4 --resume in/rP-d1-s3-g4/rP-d1-s3-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 1,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s7-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 1 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d1-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 1,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s7-g2",
+   "needs": [
+    "rP-d1-s7-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 1 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d1-s7-g2 --resume in/rP-d1-s7-g2/rP-d1-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 1,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s7-g3",
+   "needs": [
+    "rP-d1-s7-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 1 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d1-s7-g3 --resume in/rP-d1-s7-g3/rP-d1-s7-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 1,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d1-s7-g4",
+   "needs": [
+    "rP-d1-s7-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 1 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d1-s7-g4 --resume in/rP-d1-s7-g4/rP-d1-s7-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 1,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s1-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 3 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d3-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 3,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s1-g2",
+   "needs": [
+    "rP-d3-s1-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 3 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d3-s1-g2 --resume in/rP-d3-s1-g2/rP-d3-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 3,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s1-g3",
+   "needs": [
+    "rP-d3-s1-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d3-s1-g3 --resume in/rP-d3-s1-g3/rP-d3-s1-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 3,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s1-g4",
+   "needs": [
+    "rP-d3-s1-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 3 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d3-s1-g4 --resume in/rP-d3-s1-g4/rP-d3-s1-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 3,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s3-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 3 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d3-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 3,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s3-g2",
+   "needs": [
+    "rP-d3-s3-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 3 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d3-s3-g2 --resume in/rP-d3-s3-g2/rP-d3-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 3,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s3-g3",
+   "needs": [
+    "rP-d3-s3-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d3-s3-g3 --resume in/rP-d3-s3-g3/rP-d3-s3-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 3,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s3-g4",
+   "needs": [
+    "rP-d3-s3-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 3 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d3-s3-g4 --resume in/rP-d3-s3-g4/rP-d3-s3-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 3,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s7-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 3 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d3-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 3,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s7-g2",
+   "needs": [
+    "rP-d3-s7-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 3 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d3-s7-g2 --resume in/rP-d3-s7-g2/rP-d3-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 3,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s7-g3",
+   "needs": [
+    "rP-d3-s7-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 3 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d3-s7-g3 --resume in/rP-d3-s7-g3/rP-d3-s7-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 3,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d3-s7-g4",
+   "needs": [
+    "rP-d3-s7-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 3 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d3-s7-g4 --resume in/rP-d3-s7-g4/rP-d3-s7-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 3,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s1-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 10 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d10-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 10,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s1-g2",
+   "needs": [
+    "rP-d10-s1-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 10 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d10-s1-g2 --resume in/rP-d10-s1-g2/rP-d10-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 10,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s1-g3",
+   "needs": [
+    "rP-d10-s1-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d10-s1-g3 --resume in/rP-d10-s1-g3/rP-d10-s1-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 10,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s1-g4",
+   "needs": [
+    "rP-d10-s1-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 10 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d10-s1-g4 --resume in/rP-d10-s1-g4/rP-d10-s1-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 10,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s3-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 10 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d10-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 10,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s3-g2",
+   "needs": [
+    "rP-d10-s3-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 10 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d10-s3-g2 --resume in/rP-d10-s3-g2/rP-d10-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 10,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s3-g3",
+   "needs": [
+    "rP-d10-s3-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d10-s3-g3 --resume in/rP-d10-s3-g3/rP-d10-s3-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 10,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s3-g4",
+   "needs": [
+    "rP-d10-s3-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 10 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d10-s3-g4 --resume in/rP-d10-s3-g4/rP-d10-s3-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 10,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s7-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 10 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d10-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 10,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s7-g2",
+   "needs": [
+    "rP-d10-s7-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 10 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d10-s7-g2 --resume in/rP-d10-s7-g2/rP-d10-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 10,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s7-g3",
+   "needs": [
+    "rP-d10-s7-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 10 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d10-s7-g3 --resume in/rP-d10-s7-g3/rP-d10-s7-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 10,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d10-s7-g4",
+   "needs": [
+    "rP-d10-s7-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 10 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d10-s7-g4 --resume in/rP-d10-s7-g4/rP-d10-s7-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 10,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s1-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 30 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d30-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 30,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s1-g2",
+   "needs": [
+    "rP-d30-s1-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 30 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d30-s1-g2 --resume in/rP-d30-s1-g2/rP-d30-s1-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 30,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s1-g3",
+   "needs": [
+    "rP-d30-s1-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d30-s1-g3 --resume in/rP-d30-s1-g3/rP-d30-s1-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 30,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s1-g4",
+   "needs": [
+    "rP-d30-s1-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 1 --decay 30 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d30-s1-g4 --resume in/rP-d30-s1-g4/rP-d30-s1-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 1,
+   "decay": 30,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s3-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 30 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d30-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 30,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s3-g2",
+   "needs": [
+    "rP-d30-s3-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 30 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d30-s3-g2 --resume in/rP-d30-s3-g2/rP-d30-s3-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 30,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s3-g3",
+   "needs": [
+    "rP-d30-s3-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d30-s3-g3 --resume in/rP-d30-s3-g3/rP-d30-s3-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 30,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s3-g4",
+   "needs": [
+    "rP-d30-s3-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 3 --decay 30 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d30-s3-g4 --resume in/rP-d30-s3-g4/rP-d30-s3-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 3,
+   "decay": 30,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s7-g1",
+   "needs": [],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 30 --head const --steps 60000 --stop_at 15000 --threads 4 --out out/rP-d30-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 30,
+   "head": "const",
+   "segment": 1,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s7-g2",
+   "needs": [
+    "rP-d30-s7-g1"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 30 --head const --steps 60000 --stop_at 30000 --threads 4 --out out/rP-d30-s7-g2 --resume in/rP-d30-s7-g2/rP-d30-s7-g1",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 30,
+   "head": "const",
+   "segment": 2,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s7-g3",
+   "needs": [
+    "rP-d30-s7-g2"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 30 --head const --steps 60000 --stop_at 45000 --threads 4 --out out/rP-d30-s7-g3 --resume in/rP-d30-s7-g3/rP-d30-s7-g2",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 30,
+   "head": "const",
+   "segment": 3,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "rP-d30-s7-g4",
+   "needs": [
+    "rP-d30-s7-g3"
+   ],
+   "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 python -m sim.a5.train_r_probe --task P --seed 7 --decay 30 --head const --steps 60000 --stop_at 60000 --threads 4 --out out/rP-d30-s7-g4 --resume in/rP-d30-s7-g4/rP-d30-s7-g3",
+   "kind": "R",
+   "task": "P",
+   "seed": 7,
+   "decay": 30,
+   "head": "const",
+   "segment": 4,
+   "segments": 4,
+   "control": true
+  },
+  {
+   "name": "report",
+   "needs": [
+    "b-m1d-k2-pilot",
+    "b-m1d-k2-formal",
+    "b-m1d-k4-pilot",
+    "b-m1d-k4-formal",
+    "b-m1d-k16-pilot",
+    "b-m1d-k16-formal",
+    "b-m2d_dense-k2-pilot",
+    "b-m2d_dense-k2-formal",
+    "b-m2d_dense-k4-pilot",
+    "b-m2d_dense-k4-formal",
+    "b-m2d_dense-k16-pilot",
+    "b-m2d_dense-k16-formal",
+    "b-m2d_last-k2-pilot",
+    "b-m2d_last-k2-formal",
+    "b-m2d_last-k4-pilot",
+    "b-m2d_last-k4-formal",
+    "b-m2d_last-k16-pilot",
+    "b-m2d_last-k16-formal",
+    "b-delay3-k1-pilot",
+    "b-delay3-k1-formal",
+    "b-delay3-k5-pilot",
+    "b-delay3-k5-formal",
+    "b-delay3-k8-pilot",
+    "b-delay3-k8-formal",
+    "b-delay4-k2-pilot",
+    "b-delay4-k2-formal",
+    "b-delay4-k6-pilot",
+    "b-delay4-k6-formal",
+    "b-delay4-k16-pilot",
+    "b-delay4-k16-formal",
+    "rA-d0-s300201-g4",
+    "rA-d0-s300202-g4",
+    "rA-d0-s300203-g4",
+    "rA-d1-s300201-g4",
+    "rA-d1-s300202-g4",
+    "rA-d1-s300203-g4",
+    "rA-d3-s300201-g4",
+    "rA-d3-s300202-g4",
+    "rA-d3-s300203-g4",
+    "rA-d10-s300201-g4",
+    "rA-d10-s300202-g4",
+    "rA-d10-s300203-g4",
+    "rA-d30-s300201-g4",
+    "rA-d30-s300202-g4",
+    "rA-d30-s300203-g4",
+    "rP-d0-s1-g4",
+    "rP-d0-s3-g4",
+    "rP-d0-s7-g4",
+    "rP-d1-s1-g4",
+    "rP-d1-s3-g4",
+    "rP-d1-s7-g4",
+    "rP-d3-s1-g4",
+    "rP-d3-s3-g4",
+    "rP-d3-s7-g4",
+    "rP-d10-s1-g4",
+    "rP-d10-s3-g4",
+    "rP-d10-s7-g4",
+    "rP-d30-s1-g4",
+    "rP-d30-s3-g4",
+    "rP-d30-s7-g4"
+   ],
+   "kind": "report",
+   "command": "python -m sim.a5.report_a5 --input in/report --out out/report"
+  }
+ ]
+}
